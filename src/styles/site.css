@@ -3435,6 +3435,62 @@ html {
     white-space: nowrap;
   }
 
+/* Desktop hero composition fixes: keep the phone away from copy and keep chart inside the admin window. */
+@media (min-width: 721px) {
+  .hero-visual:has(.admin-window) {
+    width: 620px;
+    height: 462px;
+    margin-left: 86px;
+  }
+
+  .hero-visual:has(.admin-window) .admin-window {
+    right: 0;
+    width: 560px;
+    height: 398px;
+    overflow: hidden;
+  }
+
+  .hero-visual:has(.admin-window) .metric-row {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .hero-visual:has(.admin-window) .metric-card {
+    min-height: 108px;
+    padding: 13px 14px;
+  }
+
+  .hero-visual:has(.admin-window) .metric-card strong {
+    font-size: 22px;
+  }
+
+  .hero-visual:has(.admin-window) .phone-mini {
+    left: 12%;
+    bottom: 12px;
+    transform: scale(0.82);
+    transform-origin: left bottom;
+  }
+
+  .hero-visual:has(.admin-window) .bar-chart {
+    height: 118px;
+    margin-top: 50px;
+    padding: 16px 18px 14px 178px;
+    gap: 12px;
+  }
+
+  .hero-visual:has(.admin-window) .bar {
+    flex: 1;
+    width: auto;
+    max-width: 38px;
+  }
+
+  .hero-visual:has(.admin-window) .admin-flow {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12px;
+    padding-left: 178px;
+  }
+}
+
 @media (max-width: 1439px) {
   .site {
     width: 100%;

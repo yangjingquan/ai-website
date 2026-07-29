@@ -148,19 +148,32 @@
           </div>
           <div class="showcase-grid">
             <div class="large-dashboard">
-              <div class="dash-nav"><strong>业务管理中心</strong><div class="dash-tabs"><span class="dash-tab active">订单</span><span class="dash-tab">客户</span><span class="dash-tab">库存</span><span class="dash-tab">统计</span></div></div>
+              <div class="dash-nav">
+                <strong>业务管理中心</strong>
+                <div class="dash-tabs">
+                  <button
+                    v-for="tab in homeShowcaseTabs"
+                    :key="tab.key"
+                    type="button"
+                    class="dash-tab"
+                    :class="{ active: activeHomeShowcaseTab === tab.key }"
+                    @click="activeHomeShowcaseTab = tab.key"
+                  >
+                    {{ tab.label }}
+                  </button>
+                </div>
+              </div>
               <div class="dash-content">
-                <div class="dash-block"><strong>订单流转</strong><p>待支付、待处理、待发货、待核销、已完成、售后等状态清晰分层。</p></div>
-                <div class="dash-block"><strong>客户管理</strong><p>线索来源、客户标签、跟进记录、会员权益和转化阶段统一维护。</p></div>
-                <div class="dash-block"><strong>库存审批</strong><p>采购入库、库存预警、调拨盘点、费用审批和操作权限按角色配置。</p></div>
-                <div class="dash-block"><strong>数据看板</strong><p>订单趋势、商品销量、客户增长、库存周转和经营报表可视化汇总。</p></div>
-                <div class="wide-chart"><strong>近 7 日业务趋势</strong><div class="chart-bars"><span style="height: 52px"></span><span style="height: 76px"></span><span style="height: 96px"></span><span style="height: 68px"></span><span style="height: 112px"></span><span style="height: 88px"></span><span style="height: 104px"></span></div></div>
+                <div v-for="block in activeHomeShowcase.blocks" :key="block.title" class="dash-block"><strong>{{ block.title }}</strong><p>{{ block.description }}</p></div>
+                <div class="wide-chart"><strong>{{ activeHomeShowcase.chartTitle }}</strong><div class="chart-bars"><span v-for="bar in activeHomeShowcase.bars" :key="bar" :style="{ height: `${bar}px` }"></span></div></div>
               </div>
             </div>
             <div class="module-list">
-              <article class="module-card"><h3>小程序 / APP 前台</h3><p>首页装修、商品列表、服务预约、客户中心、订单提交、移动表单和消息提醒。</p><div class="chip-row"><span class="chip">体验清晰</span><span class="chip">状态完整</span></div></article>
-              <article class="module-card"><h3>CRM / ERP 后台</h3><p>把客户、商品、订单、库存、审批、排班和基础资料放进后台，让业务人员自己维护。</p><div class="chip-row"><span class="chip">可运营</span><span class="chip">可管理</span><span class="chip">可扩展</span></div></article>
-              <article class="module-card"><h3>接口与部署</h3><p>服务端接口、数据库、微信支付、登录授权、APP 发布、部署上线和运行维护统一处理。</p><div class="chip-row"><span class="chip">稳定交付</span><span class="chip">长期维护</span></div></article>
+              <article v-for="card in activeHomeShowcase.cards" :key="card.title" class="module-card">
+                <h3>{{ card.title }}</h3>
+                <p>{{ card.description }}</p>
+                <div class="chip-row"><span v-for="chip in card.chips" :key="chip" class="chip">{{ chip }}</span></div>
+              </article>
             </div>
           </div>
         </div>
@@ -220,5 +233,81 @@
 </template>
 
 <script setup>
+import { computed, ref } from 'vue'
 import SiteNav from '../components/SiteNav.vue'
+
+const activeHomeShowcaseTab = ref('order')
+
+const homeShowcaseTabs = [
+  {
+    key: 'order',
+    label: '订单',
+    chartTitle: '近 7 日订单趋势',
+    bars: [52, 76, 96, 68, 112, 88, 104],
+    blocks: [
+      { title: '订单流转', description: '待支付、待处理、待发货、待核销、已完成、售后等状态清晰分层。' },
+      { title: '支付与退款', description: '微信支付、退款申请、支付回调、财务流水和异常订单统一记录。' },
+      { title: '核销发货', description: '支持到店核销、门店自提、物流发货、订单打印和售后处理。' },
+      { title: '订单看板', description: '按时间、状态、商品、客户和门店筛选，快速掌握业务进度。' }
+    ],
+    cards: [
+      { title: '小程序 / APP 前台', description: '首页装修、商品列表、服务预约、客户中心、订单提交、移动表单和消息提醒。', chips: ['体验清晰', '状态完整'] },
+      { title: 'CRM / ERP 后台', description: '把客户、商品、订单、库存、审批、排班和基础资料放进后台，让业务人员自己维护。', chips: ['可运营', '可管理', '可扩展'] },
+      { title: '接口与部署', description: '服务端接口、数据库、微信支付、登录授权、APP 发布、部署上线和运行维护统一处理。', chips: ['稳定交付', '长期维护'] }
+    ]
+  },
+  {
+    key: 'customer',
+    label: '客户',
+    chartTitle: '近 7 日客户增长',
+    bars: [44, 62, 82, 78, 96, 118, 102],
+    blocks: [
+      { title: '客户档案', description: '沉淀客户来源、联系方式、标签、权益、成交记录和售后服务信息。' },
+      { title: '线索跟进', description: '销售线索分配、跟进记录、提醒任务和转化阶段集中维护。' },
+      { title: '会员运营', description: '会员等级、积分、优惠券、复购提醒和私域触达按客户分层配置。' },
+      { title: '转化统计', description: '客户增长、来源转化、复购情况和销售绩效可视化汇总。' }
+    ],
+    cards: [
+      { title: '客户侧更顺', description: '客户可以清楚完成注册、咨询、下单、预约、查询、售后和消息接收。', chips: ['注册', '咨询', '消息'] },
+      { title: '销售侧更省', description: '客户线索、跟进阶段、标签分群和成交记录统一保存，减少重复沟通。', chips: ['线索', '跟进', '转化'] },
+      { title: '运营侧更准', description: '按客户来源、标签、等级和消费记录做精细化运营，提高复购机会。', chips: ['标签', '分群', '复购'] }
+    ]
+  },
+  {
+    key: 'inventory',
+    label: '库存',
+    chartTitle: '近 7 日库存周转',
+    bars: [68, 54, 90, 74, 116, 86, 98],
+    blocks: [
+      { title: '商品库存', description: '商品分类、规格、价格、上下架、门店库存和服务项目统一维护。' },
+      { title: '采购入库', description: '采购单、入库记录、批次管理、供应商信息和成本数据可追踪。' },
+      { title: '调拨盘点', description: '门店调拨、库存盘点、报损记录和库存变动原因清楚留痕。' },
+      { title: '库存预警', description: '低库存、超卖风险、预售占用和异常库存及时提醒。' }
+    ],
+    cards: [
+      { title: '商品管理后台', description: '商品、服务、套餐、规格、价格和库存统一配置，前台实时同步。', chips: ['商品', '规格', '价格'] },
+      { title: 'ERP 库存协同', description: '采购、入库、出库、调拨、盘点和预警形成完整进销存链路。', chips: ['采购', '盘点', '预警'] },
+      { title: '数据辅助补货', description: '结合销量和库存周转判断补货节奏，减少缺货、压货和人工统计。', chips: ['销量', '周转', '补货'] }
+    ]
+  },
+  {
+    key: 'stats',
+    label: '统计',
+    chartTitle: '近 7 日经营数据',
+    bars: [58, 86, 72, 102, 128, 94, 116],
+    blocks: [
+      { title: '经营看板', description: '订单趋势、销售额、客户增长、商品销量和库存周转集中展示。' },
+      { title: '报表筛选', description: '按时间、门店、员工、商品、客户来源和订单状态筛选分析。' },
+      { title: '导入导出', description: '支持客户、商品、订单、库存和财务数据导入导出。' },
+      { title: '异常提醒', description: '退款异常、库存异常、审批积压和订单卡点可及时发现。' }
+    ],
+    cards: [
+      { title: '老板看得懂', description: '关键经营指标、趋势变化和异常情况清楚呈现，辅助快速判断。', chips: ['指标', '趋势', '异常'] },
+      { title: '团队用得上', description: '销售、运营、仓储和财务都能按自己的角色查看相关数据。', chips: ['角色', '筛选', '协同'] },
+      { title: '后续可迭代', description: '报表口径和数据结构提前规划，后续扩展营销、财务和绩效更顺。', chips: ['报表', '口径', '扩展'] }
+    ]
+  }
+]
+
+const activeHomeShowcase = computed(() => homeShowcaseTabs.find((tab) => tab.key === activeHomeShowcaseTab.value) || homeShowcaseTabs[0])
 </script>
