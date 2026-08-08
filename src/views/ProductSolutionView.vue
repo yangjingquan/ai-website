@@ -10,8 +10,8 @@
             <h1>产品方案先有框架，再按你的业务定制。</h1>
             <p class="lead">提供商城、团购、点餐、预约、APP、CRM、ERP 等成熟产品方向，先用预设模块缩短启动周期，再围绕客户流程、字段、权限、接口和报表做定制开发。</p>
             <div class="hero-actions">
-              <button class="btn primary">查看组合方案</button>
-              <button class="btn secondary">咨询定制范围</button>
+              <a class="btn primary" href="#contact">获取适合的方案</a>
+              <a class="btn secondary" href="#contact">免费评估范围</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>7类</strong><span>预设产品方向</span></div>
@@ -185,7 +185,7 @@
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
               <div class="contact-line"><span>手机号</span><strong>15566047217</strong></div>
-              <button class="btn dark">立即沟通产品方案</button>
+              <a class="btn dark" href="tel:15566047217">立即预约产品评估</a>
             </div>
           </div>
         </div>

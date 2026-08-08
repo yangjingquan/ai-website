@@ -10,8 +10,8 @@
             <h1>系统能力不是堆功能，是解决业务卡点。</h1>
             <p class="lead">围绕客户真实痛点设计系统能力：信息分散、订单混乱、客户跟不住、库存不准确、员工权限不清、数据靠手算、流程靠催、上线后没人维护，都可以通过系统化能力逐步解决。</p>
             <div class="hero-actions">
-              <button class="btn primary">查看痛点方案</button>
-              <button class="btn secondary">咨询系统能力</button>
+              <a class="btn primary" href="#contact">查看痛点方案</a>
+              <a class="btn secondary" href="#contact">免费评估系统范围</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>8类</strong><span>核心系统能力</span></div>
@@ -185,7 +185,7 @@
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
               <div class="contact-line"><span>手机号</span><strong>15566047217</strong></div>
-              <button class="btn dark">立即沟通系统痛点</button>
+              <a class="btn dark" href="tel:15566047217">立即预约系统评估</a>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@
       <RouterLink to="/system-capability" active-class="active">系统能力</RouterLink>
       <RouterLink to="/development-capability" active-class="active">开发能力</RouterLink>
       <RouterLink to="/delivery-process" active-class="active">交付流程</RouterLink>
-      <button class="btn primary" type="button" @click="goContact">联系开发者</button>
+      <button class="btn primary" type="button" @click="goContact">免费需求评估</button>
     </div>
   </nav>
 </template>

@@ -10,8 +10,8 @@
             <h1>开发能力覆盖前端、后端、数据和上线全链路。</h1>
             <p class="lead">按业务场景选择合适技术栈，支持小程序、H5、APP、Web 管理后台、服务端接口、数据库建模、支付消息、部署运维和后续迭代，让商业系统从页面到数据都能稳定交付。</p>
             <div class="hero-actions">
-              <button class="btn primary">查看技术能力</button>
-              <button class="btn secondary">咨询技术选型</button>
+              <a class="btn primary" href="#contact">查看技术能力</a>
+              <a class="btn secondary" href="#contact">免费评估技术方案</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>10+</strong><span>常用开发语言</span></div>
@@ -250,7 +250,7 @@
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
               <div class="contact-line"><span>手机号</span><strong>15566047217</strong></div>
-              <button class="btn dark">立即沟通技术方案</button>
+              <a class="btn dark" href="tel:15566047217">立即预约技术评估</a>
             </div>
           </div>
         </div>

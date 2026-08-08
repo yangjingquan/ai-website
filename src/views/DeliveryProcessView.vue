@@ -10,8 +10,8 @@
             <h1>交付流程可视化，每一步都有确认物。</h1>
             <p class="lead">面向小程序、APP、CRM、ERP 等商业系统定制开发，把合作拆成清晰阶段：先定业务边界，再定页面与数据结构，随后开发联调、测试验收、部署上线与持续迭代。</p>
             <div class="hero-actions">
-              <button class="btn primary">查看交付阶段</button>
-              <button class="btn secondary">咨询项目排期</button>
+              <a class="btn primary" href="#contact">查看交付阶段</a>
+              <a class="btn secondary" href="#contact">免费评估排期</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>6步</strong><span>标准交付路径</span></div>
@@ -213,7 +213,7 @@
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span>Yizhixiaofeiyang7988</div>
               <div class="contact-line"><span>手机号</span>15566047217</div>
-              <button class="btn dark">立即沟通交付流程</button>
+              <a class="btn dark" href="tel:15566047217">立即预约交付评估</a>
             </div>
           </div>
         </div>
@@ -296,4 +296,3 @@ const deliveryTabs = [
 
 const activeDelivery = computed(() => deliveryTabs.find((tab) => tab.key === activeDeliveryTab.value) || deliveryTabs[0])
 </script>
-

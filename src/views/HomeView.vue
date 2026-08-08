@@ -7,26 +7,26 @@
         <section class="hero">
           <div class="hero-copy">
             <div class="eyebrow">小程序 · APP · CRM · ERP 定制开发</div>
-            <h1>商业系统定制开发，从获客到管理一套打通。</h1>
-            <p class="lead">面向商城、团购、点餐、预约、APP、CRM、ERP 等业务场景，提供前端体验、管理后台、后端接口、支付订单、数据报表、部署上线与长期维护的一体化开发服务。</p>
+            <h1>把想法拆成可上线的商业系统，先评估，再开发。</h1>
+            <p class="lead">从业务目标、页面原型到前台、后台、接口和部署上线，帮你把“想做一个系统”变成一份看得懂、能验收、可继续迭代的功能清单。</p>
             <div class="hero-actions">
-              <button class="btn primary">查看产品方案</button>
-              <button class="btn secondary">微信咨询</button>
+              <RouterLink class="btn primary" to="/product-solution">查看适合的方案</RouterLink>
+              <a class="btn secondary" href="#contact">免费需求评估</a>
             </div>
             <div class="trust-row">
-              <div class="trust-item"><strong>7类</strong><span>成熟产品方向</span></div>
-              <div class="trust-item"><strong>全栈</strong><span>前后端独立交付</span></div>
-              <div class="trust-item"><strong>7天</strong><span>原型快速启动</span></div>
+              <div class="trust-item"><strong>先评估</strong><span>先给功能清单与范围</span></div>
+              <div class="trust-item"><strong>分阶段</strong><span>原型、开发、上线可确认</span></div>
+              <div class="trust-item"><strong>全流程</strong><span>前后台与部署持续跟进</span></div>
             </div>
           </div>
 
           <div class="hero-visual">
             <div class="admin-window">
-              <div class="window-top"><div class="window-title">商业系统管理中心</div><div class="status-pill">实时运行中</div></div>
+              <div class="window-top"><div class="window-title">商业系统管理中心</div><div class="status-pill">示例看板</div></div>
               <div class="metric-row">
-                <div class="metric-card"><strong>18,420</strong><span>订单与客户</span></div>
-                <div class="metric-card"><strong>96.8%</strong><span>流程完成率</span></div>
-                <div class="metric-card"><strong>20+</strong><span>业务模块</span></div>
+                <div class="metric-card"><strong>订单</strong><span>状态、支付、退款</span></div>
+                <div class="metric-card"><strong>客户</strong><span>档案、跟进、分群</span></div>
+                <div class="metric-card"><strong>权限</strong><span>角色、日志、数据范围</span></div>
               </div>
               <div class="bar-chart">
                 <div class="bar" style="height: 62px"></div>
@@ -46,7 +46,7 @@
                 <div class="mini-grid"><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div><div class="mini-card"></div></div>
               </div>
             </div>
-            <div class="floating-note"><strong>模块可组合</strong><span>APP、客户、订单、库存、财务、审批、报表按需组合。</span></div>
+            <div class="floating-note"><strong>交付物可确认</strong><span>功能清单、页面原型、阶段版本与上线资料，按节点沟通。</span></div>
           </div>
         </section>
       </div>
@@ -100,6 +100,67 @@
               <p>适合进销存、采购、仓储、财务和内部审批，帮助企业把订单、库存、成本与执行流程统一管理。</p>
               <div class="feature-list"><span>采购库存管理</span><span>审批权限流程</span><span>经营报表统计</span></div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof-section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="section-title">先看问题怎么解决，再决定要不要开发</h2>
+            <p class="section-subtitle">下面是常见业务场景的案例方向示例。真实客户名称、截图和结果指标可在获得授权后补充，避免用无法核验的数字替代证据。</p>
+          </div>
+          <div class="proof-grid">
+            <article class="proof-card">
+              <div class="proof-meta"><span class="proof-label">示例案例 01</span><span class="proof-status">案例方向</span></div>
+              <h3>社区团购：从活动发布到提货核销</h3>
+              <div class="proof-row"><strong>常见问题</strong><span>团长、活动库存、提货记录分散在表格和聊天里。</span></div>
+              <div class="proof-row"><strong>交付范围</strong><span>团长权限、活动配置、库存同步、订单查询、提货核销与统计。</span></div>
+              <div class="proof-result">可继续补充：实际页面截图、项目周期与上线后的运营反馈</div>
+            </article>
+            <article class="proof-card">
+              <div class="proof-meta"><span class="proof-label">示例案例 02</span><span class="proof-status">案例方向</span></div>
+              <h3>服务预约：把排班、提醒和客户档案放在一起</h3>
+              <div class="proof-row"><strong>常见问题</strong><span>预约靠人工确认，客户历史记录和员工排班难同步。</span></div>
+              <div class="proof-row"><strong>交付范围</strong><span>服务项目、时段库存、员工排班、预约状态、到店提醒与 CRM 档案。</span></div>
+              <div class="proof-result">可继续补充：预约流程图、后台操作视频与客户授权信息</div>
+            </article>
+            <article class="proof-card">
+              <div class="proof-meta"><span class="proof-label">示例案例 03</span><span class="proof-status">案例方向</span></div>
+              <h3>进销存后台：让采购、库存和审批有记录</h3>
+              <div class="proof-row"><strong>常见问题</strong><span>采购、入库、出库和盘点数据不同步，异常很难追查。</span></div>
+              <div class="proof-row"><strong>交付范围</strong><span>采购单、库存变动、盘点、角色权限、审批流与经营报表。</span></div>
+              <div class="proof-result">可继续补充：数据结构、权限表和上线维护方式</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section boundary-section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="section-title">合作边界提前说清，报价和周期才不会失控</h2>
+            <p class="section-subtitle">定制开发不适合用一个“起步价”覆盖所有项目。先把包含项、变量项和后续费用讲明白，再根据范围评估。</p>
+          </div>
+          <div class="boundary-grid">
+            <article class="boundary-card"><div class="boundary-index">01</div><h3>首轮评估包含什么</h3><p>业务目标、用户角色、核心流程、页面清单、后台模块、第三方接口与首期边界。</p><div class="boundary-note">输出：可沟通的功能清单</div></article>
+            <article class="boundary-card"><div class="boundary-index">02</div><h3>费用和周期受什么影响</h3><p>端数量、功能模块、UI 深度、支付/地图/短信等接口、数据迁移、发布审核和验收要求。</p><div class="boundary-note">原则：先按范围评估，再确认排期</div></article>
+            <article class="boundary-card"><div class="boundary-index">03</div><h3>上线后怎么继续维护</h3><p>可按问题修复、服务器与证书协助、版本迭代、报表优化和新模块开发继续合作。</p><div class="boundary-note">交接：账号、部署说明、验收清单与待办建议</div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section security-section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="section-title">业务系统的可信度，也来自上线后的可维护</h2>
+            <p class="section-subtitle">针对 CRM / ERP 和涉及支付的项目，提前确认权限、日志、备份、回调和部署归属，减少上线后的不确定性。</p>
+          </div>
+          <div class="security-grid">
+            <article class="security-card"><div class="security-icon">权</div><h3>角色与数据权限</h3><p>按管理员、员工、门店或部门拆分功能菜单和数据范围，关键操作留痕。</p></article>
+            <article class="security-card"><div class="security-icon">备</div><h3>备份与环境交接</h3><p>说明服务器、域名、证书、数据库、存储和备份责任，方便后续接手。</p></article>
+            <article class="security-card"><div class="security-icon">付</div><h3>支付与异常状态</h3><p>围绕支付回调、退款、取消、库存扣减和失败重试确认完整状态闭环。</p></article>
+            <article class="security-card"><div class="security-icon">维</div><h3>问题响应与迭代</h3><p>上线后区分问题修复和新需求，记录版本、影响范围与下一步处理方式。</p></article>
           </div>
         </div>
       </section>
@@ -213,14 +274,14 @@
         <div class="wrap">
           <div class="contact-panel">
             <div>
-              <h2>有 APP、CRM、ERP 或小程序开发需求，可以直接联系我沟通。</h2>
-              <p>你可以先准备业务类型、主要功能、是否需要后台、期望上线时间。我会帮你把想法拆成可开发的页面、流程和功能清单。</p>
-              <div class="chip-row"><span class="chip">需求沟通</span><span class="chip">原型评估</span><span class="chip">定制开发</span><span class="chip">上线维护</span></div>
+            <h2>免费做一次需求评估，先拿到适合你的功能清单。</h2>
+              <p>把业务类型、主要功能、参考案例、是否需要后台和期望上线时间发来。我会先帮你判断首期范围，再讨论周期、费用与后续维护。</p>
+              <div class="chip-row"><span class="chip">首期范围</span><span class="chip">功能清单</span><span class="chip">周期评估</span><span class="chip">维护方式</span></div>
             </div>
             <div class="contact-box">
-              <div class="contact-line"><span>微信号</span>Yizhixiaofeiyang7988</div>
-              <div class="contact-line"><span>手机号</span>15566047217</div>
-              <button class="btn dark">立即沟通需求</button>
+              <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
+              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
+              <a class="btn dark" href="tel:15566047217">立即预约需求评估</a>
             </div>
           </div>
         </div>
