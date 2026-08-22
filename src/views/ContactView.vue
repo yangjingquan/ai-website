@@ -24,7 +24,7 @@ const touched = ref(false)
 const submitted = ref(false)
 const submitting = ref(false)
 const submitError = ref('')
-const apiBase = (import.meta.env.VITE_API_BASE || 'http://localhost:8100').replace(/\/$/, '')
+const apiBase = (import.meta.env.VITE_API_BASE || 'http://wbapi.nexbyte.top').replace(/\/$/, '')
 
 async function submitForm() {
   touched.value = true
