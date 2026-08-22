@@ -1,5 +1,5 @@
 <template>
-  <main class="site" id="site">
+  <main class="site" id="site" tabindex="-1">
 
       <div class="wrap">
         <SiteNav />
@@ -7,11 +7,11 @@
         <section class="hero">
           <div class="hero-copy">
             <div class="eyebrow">需求评估 · 原型设计 · 开发联调 · 上线维护</div>
-            <h1>交付流程可视化，每一步都有确认物。</h1>
+            <h1>把项目拆成阶段，每一步都有交付物。</h1>
             <p class="lead">面向小程序、APP、CRM、ERP 等商业系统定制开发，把合作拆成清晰阶段：先定业务边界，再定页面与数据结构，随后开发联调、测试验收、部署上线与持续迭代。</p>
             <div class="hero-actions">
               <a class="btn primary" href="#contact">查看交付阶段</a>
-              <a class="btn secondary" href="#contact">免费评估排期</a>
+              <a class="btn secondary" href="#contact">发起排期评估</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>6步</strong><span>标准交付路径</span></div>
@@ -99,6 +99,7 @@
                     type="button"
                     class="dash-tab"
                     :class="{ active: activeDeliveryTab === tab.key }"
+                    :aria-pressed="activeDeliveryTab === tab.key"
                     @click="activeDeliveryTab = tab.key"
                   >
                     {{ tab.label }}
@@ -123,6 +124,9 @@
           </div>
         </div>
       </section>
+
+      <details class="page-more">
+        <summary>查看确认事项、质量控制、交接与常见问题</summary>
 
       <section class="section">
         <div class="wrap">
@@ -202,6 +206,8 @@
         </div>
       </section>
 
+      </details>
+
       <section class="contact-section" id="contact">
         <div class="wrap">
           <div class="contact-panel">
@@ -212,7 +218,7 @@
             </div>
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span>Yizhixiaofeiyang7988</div>
-              <div class="contact-line"><span>手机号</span>15566047217</div>
+              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
               <a class="btn dark" href="tel:15566047217">立即预约交付评估</a>
             </div>
           </div>
@@ -220,7 +226,7 @@
       </section>
 
       <footer class="footer">
-        <div class="wrap">小肥羊开发工作室 · 小程序 / APP / CRM / ERP 商业系统定制开发 · 辽ICP备2026015396号</div>
+        <div class="wrap">小肥羊开发工作室 · 小程序 / APP / CRM / ERP 商业系统定制开发 · <a class="filing-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">辽ICP备2026015396号</a><RouterLink class="footer-link" to="/privacy">隐私与服务说明</RouterLink></div>
       </footer>
   </main>
 </template>

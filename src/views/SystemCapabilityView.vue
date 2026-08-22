@@ -1,5 +1,5 @@
 <template>
-  <main class="site" id="site">
+  <main class="site" id="site" tabindex="-1">
 
       <div class="wrap">
         <SiteNav />
@@ -7,11 +7,11 @@
         <section class="hero">
           <div class="hero-copy">
             <div class="eyebrow">订单 · 客户 · 库存 · 权限 · 数据 · 自动化</div>
-            <h1>系统能力不是堆功能，是解决业务卡点。</h1>
+            <h1>把业务卡点，拆成可交付的系统能力。</h1>
             <p class="lead">围绕客户真实痛点设计系统能力：信息分散、订单混乱、客户跟不住、库存不准确、员工权限不清、数据靠手算、流程靠催、上线后没人维护，都可以通过系统化能力逐步解决。</p>
             <div class="hero-actions">
               <a class="btn primary" href="#contact">查看痛点方案</a>
-              <a class="btn secondary" href="#contact">免费评估系统范围</a>
+              <a class="btn secondary" href="#contact">发起系统评估</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>8类</strong><span>核心系统能力</span></div>
@@ -88,6 +88,7 @@
                     type="button"
                     class="dash-tab"
                     :class="{ active: activeSystemTab === tab.key }"
+                    :aria-pressed="activeSystemTab === tab.key"
                     @click="activeSystemTab = tab.key"
                   >
                     {{ tab.label }}
@@ -109,6 +110,9 @@
           </div>
         </div>
       </section>
+
+      <details class="page-more">
+        <summary>查看完整系统能力、价值、落地顺序与常见问题</summary>
 
       <section class="section">
         <div class="wrap">
@@ -174,6 +178,8 @@
         </div>
       </section>
 
+      </details>
+
       <section class="contact-section" id="contact">
         <div class="wrap">
           <div class="contact-panel">
@@ -184,7 +190,7 @@
             </div>
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
-              <div class="contact-line"><span>手机号</span><strong>15566047217</strong></div>
+              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
               <a class="btn dark" href="tel:15566047217">立即预约系统评估</a>
             </div>
           </div>
@@ -192,7 +198,7 @@
       </section>
 
       <footer class="footer">
-        <div class="wrap">小肥羊开发工作室 · 系统能力 / 业务痛点 / 流程闭环 / 数据管理 · 辽ICP备2026015396号</div>
+        <div class="wrap">小肥羊开发工作室 · 系统能力 / 业务痛点 / 流程闭环 / 数据管理 · <a class="filing-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">辽ICP备2026015396号</a><RouterLink class="footer-link" to="/privacy">隐私与服务说明</RouterLink></div>
       </footer>
   </main>
 </template>

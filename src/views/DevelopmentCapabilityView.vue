@@ -1,5 +1,5 @@
 <template>
-  <main class="site" id="site">
+  <main class="site" id="site" tabindex="-1">
 
       <div class="wrap">
         <SiteNav />
@@ -7,11 +7,11 @@
         <section class="hero">
           <div class="hero-copy">
             <div class="eyebrow">多语言 · 多平台 · 多数据库 · 全栈开发</div>
-            <h1>开发能力覆盖前端、后端、数据和上线全链路。</h1>
+            <h1>从前端到部署，完整交付一套系统。</h1>
             <p class="lead">按业务场景选择合适技术栈，支持小程序、H5、APP、Web 管理后台、服务端接口、数据库建模、支付消息、部署运维和后续迭代，让商业系统从页面到数据都能稳定交付。</p>
             <div class="hero-actions">
               <a class="btn primary" href="#contact">查看技术能力</a>
-              <a class="btn secondary" href="#contact">免费评估技术方案</a>
+              <a class="btn secondary" href="#contact">发起技术评估</a>
             </div>
             <div class="trust-row">
               <div class="trust-item"><strong>10+</strong><span>常用开发语言</span></div>
@@ -27,10 +27,11 @@
                 <button
                   v-for="tab in stackTabs"
                   :key="tab.key"
-                  type="button"
-                  class="stack-tab"
-                  :class="{ active: activeStackTab === tab.key }"
-                  @click="activeStackTab = tab.key"
+                    type="button"
+                    class="stack-tab"
+                    :class="{ active: activeStackTab === tab.key }"
+                    :aria-pressed="activeStackTab === tab.key"
+                    @click="activeStackTab = tab.key"
                 >
                   {{ tab.label }}
                 </button>
@@ -131,6 +132,7 @@
                     type="button"
                     class="dash-tab"
                     :class="{ active: activeArchitectureTab === tab.key }"
+                    :aria-pressed="activeArchitectureTab === tab.key"
                     @click="activeArchitectureTab = tab.key"
                   >
                     {{ tab.label }}
@@ -155,6 +157,9 @@
           </div>
         </div>
       </section>
+
+      <details class="page-more">
+        <summary>查看平台、数据库、部署与常见问题</summary>
 
       <section class="section">
         <div class="wrap">
@@ -239,6 +244,8 @@
         </div>
       </section>
 
+      </details>
+
       <section class="contact-section" id="contact">
         <div class="wrap">
           <div class="contact-panel">
@@ -249,7 +256,7 @@
             </div>
             <div class="contact-box">
               <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
-              <div class="contact-line"><span>手机号</span><strong>15566047217</strong></div>
+              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
               <a class="btn dark" href="tel:15566047217">立即预约技术评估</a>
             </div>
           </div>
@@ -257,7 +264,7 @@
       </section>
 
       <footer class="footer">
-        <div class="wrap">小肥羊开发工作室 · 小程序 / APP / CRM / ERP / 多语言多平台全栈开发 · 辽ICP备2026015396号</div>
+        <div class="wrap">小肥羊开发工作室 · 小程序 / APP / CRM / ERP / 多语言多平台全栈开发 · <a class="filing-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">辽ICP备2026015396号</a><RouterLink class="footer-link" to="/privacy">隐私与服务说明</RouterLink></div>
       </footer>
   </main>
 </template>

@@ -1,0 +1,21 @@
+<template>
+  <main class="site content-page" id="site" tabindex="-1">
+    <div class="wrap"><SiteNav /><section class="content-hero" aria-labelledby="pricing-title"><div><div class="eyebrow">报价说明 · 服务范围 · 付款节点</div><h1 id="pricing-title">先确认范围，再确定报价和交付。</h1><p class="content-lead">支持固定报价、分阶段报价或按工时评估。当前项目起步价为 ￥2,000，最终价格根据端数量、功能模块、接口和交付要求确认。</p><div class="hero-actions"><RouterLink class="btn primary" to="/contact">提交报价信息</RouterLink><RouterLink class="btn secondary" to="/services">查看服务范围</RouterLink></div></div><div class="hero-summary"><span>报价原则</span><strong>范围透明 · 节点清楚 · 变更可追踪</strong><p>价格范围：￥2,000 起，上不封顶，按项目范围报价。</p><div class="summary-line"><b>报价模式</b><span>固定报价 / 分阶段 / 按工时</span></div><div class="summary-line"><b>售后期限</b><span>默认一年</span></div></div></section></div>
+
+    <section class="section" aria-labelledby="package-title"><div class="wrap"><div class="section-head"><h2 id="package-title" class="section-title">服务包结构</h2><p class="section-subtitle">不把所有项目套进同一个价格，先确认范围，再选择报价方式。</p></div><div class="pricing-grid"><article class="pricing-card"><span class="pricing-label">方案 A · 评估</span><h3>需求梳理包</h3><div class="price-placeholder">￥2,000 起</div><p>适合还没有完整需求文档，需要先把业务范围和首期功能拆清楚的项目。</p><ul class="check-list"><li>业务目标和用户角色梳理</li><li>页面、流程、字段和权限清单</li><li>后续开发范围和排期建议</li></ul></article><article class="pricing-card featured"><span class="pricing-label">方案 B · 开发</span><h3>核心系统包</h3><div class="price-placeholder">按范围报价</div><p>适合先上线一个核心交易或管理闭环，再按模块继续迭代的项目。</p><ul class="check-list"><li>前台、后台、接口和数据库</li><li>按阶段提供版本并验收</li><li>默认售后期限一年</li></ul></article><article class="pricing-card"><span class="pricing-label">方案 C · 持续</span><h3>维护迭代包</h3><div class="price-placeholder">按工时 / 阶段报价</div><p>适合已有系统，需要问题修复、版本发布、报表优化或持续增加业务模块。</p><ul class="check-list"><li>维护期间不限次数修改</li><li>问题修复与新需求分开评估</li><li>具体响应方式按项目确认</li></ul></article></div></div></section>
+
+    <section class="section soft-section" aria-labelledby="included-title"><div class="wrap"><div class="section-head"><h2 id="included-title" class="section-title">报价必须明确包含和不包含什么</h2></div><div class="comparison-grid"><article class="comparison-card"><div class="eyebrow">通常包含</div><ul class="check-list"><li>需求范围、页面清单和首期交付边界。</li><li>约定端的页面、接口和后台模块。</li><li>阶段演示、测试修复和上线资料。</li><li>源代码、设计稿和账号归属客户。</li></ul></article><article class="comparison-card warning-panel"><div class="eyebrow">需要单独计费 / 确认</div><ul class="check-list"><li>服务器、域名、短信、支付、地图和第三方平台费用。</li><li>数据清洗、历史数据迁移和大量内容录入。</li><li>超出首期范围的功能、重大流程变更和额外端适配。</li><li>维护期间不限次数修改，但新需求需重新评估。</li></ul></article></div></div></section>
+
+    <section class="section" aria-labelledby="payment-title"><div class="wrap"><div class="section-head"><h2 id="payment-title" class="section-title">付款和验收节点</h2><p class="section-subtitle">如无特殊要求，默认分三期支付。</p></div><div class="payment-grid"><article class="payment-card"><span>30%</span><h3>立项阶段</h3><p>确认需求范围和合作后支付。</p></article><article class="payment-card"><span>40%</span><h3>开发中期</h3><p>核心模块完成并进入阶段联调后支付。</p></article><article class="payment-card"><span>30%</span><h3>验收阶段</h3><p>完成验收和上线交接后支付。</p></article><article class="payment-card"><span>1 年</span><h3>售后期限</h3><p>默认一年，维护期间约定范围内不限次数修改。</p></article></div></div></section>
+
+    <section class="section" aria-labelledby="pricing-faq-title"><div class="wrap"><div class="section-head"><h2 id="pricing-faq-title" class="section-title">报价说明常见问题</h2></div><div class="faq-grid"><article class="faq-card"><h3>为什么不能直接报一个总价？</h3><p>端数量、流程复杂度、后台模块、接口和数据迁移都会影响成本，需要先确认范围。</p></article><article class="faq-card"><h3>可以先做一个小版本吗？</h3><p>可以。建议先定义首期核心闭环和后续预留，避免低价版本无法继续扩展。</p></article><article class="faq-card"><h3>需求中途变化怎么办？</h3><p>先记录变更影响，再确认新的费用、排期和验收范围。</p></article><article class="faq-card"><h3>上线后是否包含维护？</h3><p>售后期限默认一年，维护期间约定范围内不限次数修改；新功能或超范围需求需要重新评估。</p></article></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>把业务类型、核心功能和上线目标发来，我再给出适合的报价范围。</h2><p>报价前需要的信息越完整，后续变更和预期差异越少。</p></div><RouterLink class="btn dark" to="/contact">提交报价信息</RouterLink></div></div></section>
+    <SiteFooter text="小肥羊开发工作室 · 报价说明" />
+  </main>
+</template>
+
+<script setup>
+import SiteNav from '../components/SiteNav.vue'
+import SiteFooter from '../components/SiteFooter.vue'
+</script>

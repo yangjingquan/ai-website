@@ -2,3 +2,8 @@ node_modules
 dist
 .superdesign
 .idea
+.DS_Store
+audit-evidence
+docs
+output
+tmp
