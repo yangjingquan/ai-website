@@ -1,22 +1,22 @@
 <template>
-  <main class="site" id="site" tabindex="-1">
+  <main class="site development-capability-page" id="site" tabindex="-1">
 
       <div class="wrap">
         <SiteNav />
 
         <section class="hero">
           <div class="hero-copy">
-            <div class="eyebrow">多语言 · 多平台 · 多数据库 · 全栈开发</div>
-            <h1>从前端到部署，完整交付一套系统。</h1>
-            <p class="lead">按业务场景选择合适技术栈，支持小程序、H5、APP、Web 管理后台、服务端接口、数据库建模、支付消息、部署运维和后续迭代，让商业系统从页面到数据都能稳定交付。</p>
+            <div class="eyebrow">多端交付 · 技术选型 · 接口对接 · 部署维护</div>
+            <h1>从前端到部署，交付一套可运行、可维护的系统。</h1>
+            <p class="lead">根据业务场景选择合适的技术方案，覆盖小程序、APP、Web 后台、服务端、数据库、接口对接和上线维护。</p>
             <div class="hero-actions">
-              <a class="btn primary" href="#contact">查看技术能力</a>
+              <a class="btn primary" href="#tech-stack">查看开发能力</a>
               <a class="btn secondary" href="#contact">发起技术评估</a>
             </div>
             <div class="trust-row">
-              <div class="trust-item"><strong>10+</strong><span>常用开发语言</span></div>
-              <div class="trust-item"><strong>6端</strong><span>多平台交付覆盖</span></div>
-              <div class="trust-item"><strong>全栈</strong><span>从数据库到前台</span></div>
+              <div class="trust-item"><strong>多语言</strong><span>按项目选型</span></div>
+              <div class="trust-item"><strong>多端</strong><span>用户、员工、管理端</span></div>
+              <div class="trust-item"><strong>全栈</strong><span>从前端到部署</span></div>
             </div>
           </div>
 
@@ -44,65 +44,64 @@
                 </div>
               </div>
             </div>
-            <div class="code-panel"><strong>不是绑定单一技术栈</strong><span>根据预算、周期、团队习惯、扩展性和上线平台选择更合适的实现方式。</span></div>
           </div>
         </section>
       </div>
 
-      <section class="section">
+      <section class="section" id="tech-stack">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">多语言开发能力，按项目复杂度选择更合适的后端方案</h2>
-            <p class="section-subtitle">不会为了展示技术而堆技术，重点是让业务系统的接口、权限、订单、报表和第三方对接长期可维护。</p>
+            <h2 class="section-title">后端技术栈，按项目选择合适的实现方式</h2>
+            <p class="section-subtitle">围绕接口、权限、订单、报表和第三方对接，选择更容易上线和维护的方案。</p>
           </div>
           <div class="language-grid">
             <article class="language-card">
               <div class="icon">J</div>
               <h3>Java / Spring Boot</h3>
-              <p>适合 CRM、ERP、审批流、财务库存、权限复杂的企业管理系统，结构稳定，团队接手成本低。</p>
+              <p>适合 CRM、ERP、审批、财务库存和权限复杂的企业系统，结构稳定，便于团队接手。</p>
               <div class="feature-list"><span>RBAC 权限体系</span><span>复杂业务流程</span><span>企业级接口服务</span></div>
             </article>
             <article class="language-card">
               <div class="icon">N</div>
               <h3>Node.js / NestJS</h3>
-              <p>适合前后端协同快速迭代，接口开发效率高，适配管理后台、活动系统、轻量业务中台。</p>
+              <p>适合前后端协同快速迭代，常用于管理后台、活动系统和轻量业务中台。</p>
               <div class="feature-list"><span>REST / GraphQL 接口</span><span>实时消息与任务</span><span>TypeScript 工程化</span></div>
             </article>
             <article class="language-card">
               <div class="icon">Py</div>
               <h3>Python / Django / FastAPI</h3>
-              <p>适合数据处理、内部工具、自动化脚本、AI 接口集成和报表分析，开发灵活，验证速度快。</p>
+              <p>适合数据处理、内部工具、自动化和 AI 接口集成，验证速度快。</p>
               <div class="feature-list"><span>数据清洗与分析</span><span>AI 能力接入</span><span>后台管理工具</span></div>
             </article>
             <article class="language-card">
               <div class="icon">P</div>
               <h3>PHP / Laravel / ThinkPHP</h3>
-              <p>适合官网、商城、内容管理、传统业务系统改造和存量 PHP 项目维护，部署成本友好。</p>
+              <p>适合商城、官网、内容管理和存量 PHP 系统改造，适合预算有限、需要快速上线的项目。</p>
               <div class="feature-list"><span>商城内容系统</span><span>旧系统二次开发</span><span>轻量后台接口</span></div>
             </article>
             <article class="language-card">
               <div class="icon">Go</div>
               <h3>Go / Gin</h3>
-              <p>适合高并发接口、任务调度、网关服务和对性能要求更高的业务模块，服务简洁、运行稳定。</p>
+              <p>适合高并发接口、任务调度、网关和对性能要求较高的业务模块。</p>
               <div class="feature-list"><span>高并发接口</span><span>异步任务服务</span><span>网关与中间层</span></div>
             </article>
             <article class="language-card">
               <div class="icon">C#</div>
               <h3>.NET / C#</h3>
-              <p>适合 Windows 生态、企业内部系统、桌面工具和已有 .NET 团队的项目，便于延续原有资产。</p>
+              <p>适合企业内部系统、桌面工具和已有 .NET 团队的项目，便于延续原有资产。</p>
               <div class="feature-list"><span>企业内部系统</span><span>桌面与服务端</span><span>存量系统维护</span></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="tech-selection">
         <div class="wrap">
           <div class="choice-band">
             <article class="choice-card">
               <div class="eyebrow">技术选型原则</div>
-              <h3>先看业务场景，再决定语言、框架和数据库。</h3>
-              <p>同样是商城、预约、CRM 或 ERP，不同团队预算、上线周期、数据规模和后续维护方式都会影响技术选型。开发能力页面要传递的是“能选、会选、能落地”。</p>
+              <h3>技术选型不追求最多，而是追求适合项目。</h3>
+              <p>根据业务复杂度、上线周期、预算和后续维护方式，决定语言、框架和数据库。</p>
               <div class="chip-row"><span class="chip">周期可控</span><span class="chip">成本可控</span><span class="chip">后续可维护</span><span class="chip">扩展可预留</span></div>
             </article>
             <div class="choice-list">
@@ -115,11 +114,11 @@
         </div>
       </section>
 
-      <section class="showcase">
+      <section class="showcase" id="fullstack">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">全栈开发不是只写页面，而是把端、服务、数据和部署连成系统</h2>
-            <p class="section-subtitle">商业项目交付需要同时照顾用户体验、后台效率、接口稳定、数据安全和上线维护，任何一层脱节都会影响真实使用。</p>
+            <h2 class="section-title">前端、服务、数据与部署，协同完成一次交付</h2>
+            <p class="section-subtitle">每一层都对应真实交付：用户体验、后台效率、接口稳定和上线维护。</p>
           </div>
           <div class="showcase-grid">
             <div class="tech-dashboard">
@@ -158,17 +157,14 @@
         </div>
       </section>
 
-      <details class="page-more">
-        <summary>查看平台、数据库、部署与常见问题</summary>
-
-      <section class="section">
+      <section class="section" id="platforms">
         <div class="wrap">
           <div class="section-head">
             <h2 class="section-title">多平台交付能力，覆盖用户端、员工端和管理端</h2>
-            <p class="section-subtitle">同一套业务可以根据使用场景拆成不同入口：客户用小程序，员工用移动端，管理者用后台，老板看报表。</p>
+            <p class="section-subtitle">用户端承接业务，员工端负责操作，管理端配置规则并查看数据。</p>
           </div>
           <div class="platform-grid">
-            <article class="platform-card"><div class="icon">微</div><h3>微信小程序</h3><p>适合获客、商城、预约、点餐、会员、核销和私域运营，天然靠近微信生态。</p><div class="feature-list"><span>微信登录支付</span><span>模板消息订阅</span><span>门店与核销</span></div></article>
+            <article class="platform-card"><div class="icon">微</div><h3>微信小程序</h3><p>适合微信登录、支付、商城、预约、点餐、会员和核销等业务场景。</p><div class="feature-list"><span>微信登录支付</span><span>消息订阅</span><span>门店与核销</span></div></article>
             <article class="platform-card"><div class="icon">APP</div><h3>iOS / Android APP</h3><p>适合高频使用、会员服务、员工协同、设备能力调用和品牌独立入口。</p><div class="feature-list"><span>推送与扫码</span><span>文件与定位</span><span>应用发布支持</span></div></article>
             <article class="platform-card"><div class="icon">H5</div><h3>Web / H5</h3><p>适合活动页、移动官网、客户查询、外部分享和无需安装的轻量业务入口。</p><div class="feature-list"><span>响应式页面</span><span>分享传播</span><span>轻量表单流程</span></div></article>
             <article class="platform-card"><div class="icon">管</div><h3>管理后台 / CRM / ERP</h3><p>适合商品、订单、客户、库存、员工、审批、财务和报表等高频运营操作。</p><div class="feature-list"><span>权限角色</span><span>数据看板</span><span>导入导出</span></div></article>
@@ -176,32 +172,30 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="data-capability">
         <div class="wrap">
           <div class="data-board">
             <article class="quality-card">
               <div class="eyebrow">多数据库能力</div>
-              <h3>不同数据用不同存储方式，系统才会长期好维护。</h3>
-              <p>业务系统不是只有一张订单表。客户、商品、库存、支付流水、操作日志、搜索、缓存、报表和附件都需要合适的数据结构与存储策略。</p>
+              <h3>数据结构先设计清楚，系统才好扩展。</h3>
+              <p>订单、客户、库存、日志和报表需要不同的数据结构；先把核心模型设计好，再决定数据库、缓存和搜索方案。</p>
               <div class="chip-row"><span class="chip">字段建模</span><span class="chip">索引优化</span><span class="chip">缓存设计</span><span class="chip">备份恢复</span></div>
             </article>
             <div class="data-grid compact">
-              <article class="data-card"><div class="icon">My</div><h3>MySQL / MariaDB</h3><p>订单、商品、会员、库存、财务等结构化业务数据的常用选择。</p></article>
-              <article class="data-card"><div class="icon">Pg</div><h3>PostgreSQL</h3><p>适合更复杂查询、地理位置、JSON 字段和报表分析能力。</p></article>
-              <article class="data-card"><div class="icon">Re</div><h3>Redis</h3><p>用于登录态、验证码、缓存、限流、排行榜和高频读取场景。</p></article>
-              <article class="data-card"><div class="icon">Mo</div><h3>MongoDB / 文档数据</h3><p>适合灵活表单、日志、配置、内容数据和字段变化频繁的模块。</p></article>
-              <article class="data-card"><div class="icon">Es</div><h3>Elasticsearch / 搜索</h3><p>用于商品搜索、客户检索、日志查询和复杂条件筛选。</p></article>
-              <article class="data-card"><div class="icon">Sq</div><h3>SQLite / 本地数据</h3><p>适合轻量工具、离线缓存、桌面应用和小规模内部系统。</p></article>
+              <article class="data-card"><div class="icon">DB</div><h3>业务数据库</h3><p>MySQL、MariaDB 或 PostgreSQL，承载订单、商品、客户和库存等核心数据。</p></article>
+              <article class="data-card"><div class="icon">Re</div><h3>缓存与任务</h3><p>Redis 用于登录态、验证码、缓存、限流和高频读取场景。</p></article>
+              <article class="data-card"><div class="icon">Mo</div><h3>文档与日志</h3><p>MongoDB 适合灵活表单、日志、配置和字段变化频繁的模块。</p></article>
+              <article class="data-card"><div class="icon">Es</div><h3>搜索与分析</h3><p>Elasticsearch 等组件用于商品搜索、客户检索、日志查询和复杂筛选。</p></article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="integration">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">第三方接口、系统安全和部署维护一起考虑</h2>
-            <p class="section-subtitle">定制系统经常要接支付、短信、地图、物流、公众号、企业微信和旧系统，开发能力必须覆盖联调与上线后的排查。</p>
+            <h2 class="section-title">从接口对接到上线维护，覆盖完整交付链路</h2>
+            <p class="section-subtitle">支付、短信、物流、旧系统对接，以及安全、部署和维护，都纳入交付范围。</p>
           </div>
           <div class="integration-grid">
             <article class="integration-card"><div class="icon">接</div><h3>接口与系统对接</h3><p>对接支付、短信、地图、物流、公众号、企业微信、ERP、CRM 或已有内部系统。</p><div class="feature-list"><span>API 规范</span><span>回调处理</span><span>异常重试</span></div></article>
@@ -214,50 +208,49 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="delivery-process">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">开发能力落到项目上，就是可评估、可开发、可上线、可维护</h2>
-            <p class="section-subtitle">把技术能力转成客户能理解的交付动作，让复杂系统也能按阶段推进。</p>
+            <h2 class="section-title">开发交付流程：先评估，再设计，分阶段上线</h2>
+            <p class="section-subtitle">先明确平台、范围和验收标准，再按业务优先级推进开发。</p>
           </div>
           <div class="process-grid">
             <article class="process-card"><div class="step-number">01 技术评估</div><h3>确认平台与技术栈</h3><p>根据业务目标、预算周期、访问量、数据规模和维护习惯选择语言、框架和数据库。</p></article>
             <article class="process-card"><div class="step-number">02 架构设计</div><h3>拆分端、接口与数据</h3><p>规划小程序、APP、后台、接口、数据库、第三方能力和部署环境之间的关系。</p></article>
-            <article class="process-card"><div class="step-number">03 模块开发</div><h3>按业务流程分批交付</h3><p>先跑通核心链路，再补齐后台管理、权限、报表、消息、支付和数据导入导出。</p></article>
+            <article class="process-card"><div class="step-number">03 模块开发</div><h3>按业务流程分批交付</h3><p>先跑通一条完整流程，再补齐后台管理、权限、报表、消息、支付和数据导入导出。</p></article>
             <article class="process-card"><div class="step-number">04 上线维护</div><h3>部署发布与持续迭代</h3><p>完成服务器部署、账号配置、上线发布、问题修复、备份策略和后续版本计划。</p></article>
           </div>
+          <div class="process-result"><strong>技术评估输出：</strong>平台建议、技术路线、首期范围、对接条件和验收标准。</div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="faq">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">开发能力常见问题，把技术问题说得直接清楚</h2>
-            <p class="section-subtitle">客户不需要先懂所有技术名词，只需要知道项目能不能做、怎么选型、后续是否方便维护。</p>
+            <h2 class="section-title">开发能力常见问题</h2>
+            <p class="section-subtitle">先回答选型、复用、对接和维护中的常见问题。</p>
           </div>
           <div class="faq-grid">
-            <article class="faq-card"><h3>已经有旧系统，能继续开发或重构吗？</h3><p>可以先评估现有代码、数据库、服务器和业务流程，能维护则继续迭代，不适合维护时再拆分重构范围。</p></article>
-            <article class="faq-card"><h3>小程序、APP 和后台能共用一套接口吗？</h3><p>可以。常见做法是前端多端适配，后端统一接口、权限和数据模型，减少重复开发与后续维护成本。</p></article>
-            <article class="faq-card"><h3>数据库应该选 MySQL 还是 PostgreSQL？</h3><p>要看查询复杂度、团队习惯、部署环境和数据类型。一般商业系统 MySQL 足够，复杂报表和地理数据可考虑 PostgreSQL。</p></article>
-            <article class="faq-card"><h3>后续换团队维护会不会很难？</h3><p>会尽量采用成熟框架、清晰目录、常见数据库和可读的接口结构，交接时说明账号、环境、部署和核心业务规则。</p></article>
+            <details class="faq-card"><summary><h3>已经有旧系统，能继续开发或重构吗？</h3></summary><p>可以先评估现有代码、数据库、服务器和业务流程，能维护则继续迭代，不适合维护时再拆分重构范围。</p></details>
+            <details class="faq-card"><summary><h3>小程序、APP 和后台能共用一套接口吗？</h3></summary><p>可以。常见做法是前端多端适配，后端统一接口、权限和数据模型，减少重复开发与后续维护成本。</p></details>
+            <details class="faq-card"><summary><h3>数据库应该选 MySQL 还是 PostgreSQL？</h3></summary><p>要看查询复杂度、团队习惯、部署环境和数据类型。一般商业系统 MySQL 足够，复杂报表和地理数据可考虑 PostgreSQL。</p></details>
+            <details class="faq-card"><summary><h3>后续换团队维护会不会很难？</h3></summary><p>会尽量采用成熟框架、清晰目录、常见数据库和可读的接口结构，交接时说明账号、环境、部署和核心业务规则。</p></details>
           </div>
         </div>
       </section>
-
-      </details>
 
       <section class="contact-section" id="contact">
         <div class="wrap">
           <div class="contact-panel">
             <div>
               <h2>有多端、多语言、多数据库或全栈开发需求，可以直接联系我评估。</h2>
-              <p>可以从你的业务目标、现有系统、上线平台和数据规模开始聊，我会帮你判断适合小程序、APP、Web 后台还是完整商业系统。</p>
-              <div class="chip-row"><span class="chip">技术选型</span><span class="chip">系统架构</span><span class="chip">全栈开发</span><span class="chip">上线维护</span></div>
+              <p>提供业务目标、现有系统、上线平台和数据规模即可开始评估，我会帮你确定平台、技术路线和首期范围。</p>
+              <div class="chip-row"><span class="chip">平台建议</span><span class="chip">技术路线</span><span class="chip">首期范围</span><span class="chip">对接条件</span></div>
             </div>
             <div class="contact-box">
-              <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
-              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
-              <a class="btn dark" href="tel:15566047217">立即预约技术评估</a>
+              <WechatQr compact />
+              <div class="contact-line"><span>手机号</span><a href="tel:18201117988">18201117988</a></div>
+              <a class="btn dark" href="tel:18201117988">立即预约技术评估</a>
             </div>
           </div>
         </div>
@@ -272,6 +265,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import SiteNav from '../components/SiteNav.vue'
+import WechatQr from '../components/WechatQr.vue'
 
 const activeStackTab = ref('language')
 const activeArchitectureTab = ref('frontend')
@@ -291,7 +285,7 @@ const stackTabs = [
     key: 'platform',
     label: '平台',
     rows: [
-      { tag: '小程序', title: '微信小程序 / 私域交易入口', description: '承接商城、团购、预约、点餐、会员中心、核销和微信支付。', state: 'Mini' },
+      { tag: '小程序', title: '微信小程序 / 会员交易入口', description: '承接商城、团购、预约、点餐、会员中心、核销和微信支付。', state: 'Mini' },
       { tag: 'APP', title: 'iOS / Android 独立应用', description: '适合高频会员服务、移动办公、推送通知、扫码定位和设备能力调用。', state: 'App' },
       { tag: 'H5', title: 'Web / H5 / 移动官网', description: '适合活动页、表单收集、外部分享、客户查询和轻量业务入口。', state: 'Web' },
       { tag: '后台', title: '管理后台 / CRM / ERP', description: '支持商品、订单、客户、库存、审批、权限、财务和数据报表管理。', state: 'Admin' }

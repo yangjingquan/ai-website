@@ -50,16 +50,16 @@
       <section class="section">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">常见产品方向，先选接近的业务底座</h2>
+            <h2 class="section-title">常见产品方向，先选接近的基础方案</h2>
             <p class="section-subtitle">先选接近的产品方向，再确认页面、流程和数据规则。</p>
           </div>
           <div class="product-grid">
-            <article class="product-card"><div class="icon">商</div><h3>商城小程序</h3><p>商品售卖、会员复购、优惠活动和微信支付，适合品牌零售、电商和私域交易。</p><div class="initial-recommendation"><strong>首期建议</strong><span>商品、订单、支付、基础后台</span></div><div class="feature-list"><span>商品规格库存</span><span>订单支付退款</span><span>会员积分优惠</span></div></article>
+            <article class="product-card"><div class="icon">商</div><h3>商城小程序</h3><p>商品售卖、会员复购、优惠活动和微信支付，适合品牌零售、电商和微信社群销售。</p><div class="initial-recommendation"><strong>首期建议</strong><span>商品、订单、支付、基础后台</span></div><div class="feature-list"><span>商品规格库存</span><span>订单支付退款</span><span>会员积分优惠</span></div></article>
             <article class="product-card"><div class="icon">团</div><h3>团购小程序</h3><p>活动商品、团长管理、自提核销和分销统计，适合社区团购、社群团购和预售业务。</p><div class="initial-recommendation"><strong>首期建议</strong><span>活动配置、团长管理、提货核销</span></div><div class="feature-list"><span>活动批次配置</span><span>团长佣金统计</span><span>自提核销流程</span></div></article>
             <article class="product-card"><div class="icon">餐</div><h3>点餐小程序</h3><p>桌台点餐、外带自取、套餐规格和后厨打印，适合餐饮门店和连锁轻餐。</p><div class="initial-recommendation"><strong>首期建议</strong><span>菜品、桌台、点餐、订单打印</span></div><div class="feature-list"><span>扫码点餐</span><span>菜品规格口味</span><span>营业时段设置</span></div></article>
             <article class="product-card"><div class="icon">约</div><h3>预约小程序</h3><p>服务项目、时段库存、员工排班和到店记录，适合美业、维修、课程和场馆预约。</p><div class="initial-recommendation"><strong>首期建议</strong><span>服务项目、时段排期、预约提醒</span></div><div class="feature-list"><span>时段排期</span><span>服务人员管理</span><span>预约提醒</span></div></article>
-            <article class="product-card"><div class="icon">APP</div><h3>APP 定制开发</h3><p>会员服务、移动办公、业务表单、消息推送和版本发布，适合会员服务、移动办公和业务工具。</p><div class="initial-recommendation"><strong>首期建议</strong><span>核心移动端流程、登录、消息和接口</span></div><div class="feature-list"><span>iOS / Android</span><span>推送与扫码</span><span>接口联调发布</span></div></article>
-            <article class="product-card"><div class="icon">客</div><h3>CRM 客户系统</h3><p>客户档案、线索分配、跟进记录、标签分群和转化报表，帮助客户资产沉淀。</p><div class="initial-recommendation"><strong>首期建议</strong><span>客户档案、线索跟进、标签和转化</span></div><div class="feature-list"><span>线索分配</span><span>客户标签</span><span>转化看板</span></div></article>
+            <article class="product-card"><div class="icon">APP</div><h3>APP 定制开发</h3><p>会员服务、移动办公、业务表单、消息推送和版本发布，适合会员服务、移动办公和企业内部工具。</p><div class="initial-recommendation"><strong>首期建议</strong><span>核心移动端流程、登录、消息和接口</span></div><div class="feature-list"><span>iOS / Android</span><span>推送与扫码</span><span>接口测试发布</span></div></article>
+            <article class="product-card"><div class="icon">客</div><h3>CRM 客户系统</h3><p>客户档案、线索分配、跟进记录、标签分群和转化报表，把客户资料和跟进过程统一保存。</p><div class="initial-recommendation"><strong>首期建议</strong><span>客户档案、线索跟进、标签和转化</span></div><div class="feature-list"><span>线索分配</span><span>客户标签</span><span>转化看板</span></div></article>
             <article class="product-card"><div class="icon">ERP</div><h3>ERP 管理系统</h3><p>采购、库存、订单、财务、审批和权限管理，帮助内部流程统一到一个后台。</p><div class="initial-recommendation"><strong>首期建议</strong><span>采购、库存、审批和基础报表</span></div><div class="feature-list"><span>进销存管理</span><span>审批权限</span><span>经营报表</span></div></article>
           </div>
         </div>
@@ -136,13 +136,13 @@
         <div class="wrap">
           <div class="section-head">
             <h2 class="section-title">不同业务可以选择不同组合，不必一次做成庞大系统</h2>
-            <p class="section-subtitle">先跑通核心链路，再按运营反馈扩展 CRM、ERP、营销和财务能力。</p>
+            <p class="section-subtitle">先跑通一条完整业务流程，再按运营反馈扩展 CRM、ERP、营销和财务能力。</p>
           </div>
           <div class="package-row">
             <article class="package-card"><div class="package-top"><div class="icon">轻</div><div class="mini-tag">快速上线</div></div><h3>轻量交易方案</h3><p>小程序前台 + 商品服务 + 订单支付 + 基础后台，适合先验证业务闭环。</p><div class="feature-list"><span>商城 / 预约 / 点餐</span><span>支付订单</span><span>基础运营后台</span></div></article>
-            <article class="package-card"><div class="package-top"><div class="icon">客</div><div class="mini-tag">客户沉淀</div></div><h3>客户增长方案</h3><p>交易入口 + CRM 客户管理 + 标签分群 + 跟进记录，适合私域运营和销售团队。</p><div class="feature-list"><span>线索分配</span><span>客户标签</span><span>转化报表</span></div></article>
+            <article class="package-card"><div class="package-top"><div class="icon">客</div><div class="mini-tag">客户沉淀</div></div><h3>客户增长方案</h3><p>交易入口 + CRM 客户管理 + 标签分群 + 跟进记录，适合微信社群、会员和老客户复购运营。</p><div class="feature-list"><span>线索分配</span><span>客户标签</span><span>转化报表</span></div></article>
             <article class="package-card"><div class="package-top"><div class="icon">管</div><div class="mini-tag">内部协同</div></div><h3>业务管理方案</h3><p>后台管理 + 库存采购 + 审批权限 + 财务统计，适合把内部流程系统化。</p><div class="feature-list"><span>进销存</span><span>审批权限</span><span>经营报表</span></div></article>
-            <article class="package-card"><div class="package-top"><div class="icon">全</div><div class="mini-tag">完整系统</div></div><h3>多端一体方案</h3><p>小程序 / APP + CRM + ERP + 数据看板，适合从获客到管理一套打通。</p><div class="feature-list"><span>多端统一</span><span>前后台联动</span><span>长期迭代</span></div></article>
+            <article class="package-card"><div class="package-top"><div class="icon">全</div><div class="mini-tag">完整系统</div></div><h3>多端一体方案</h3><p>小程序 / APP + CRM + ERP + 数据看板，适合把获客、交易和内部管理连接起来。</p><div class="feature-list"><span>多端统一</span><span>前后台联动</span><span>长期迭代</span></div></article>
           </div>
         </div>
       </section>
@@ -154,7 +154,7 @@
             <p class="section-subtitle">先确认核心业务闭环和首期边界，再逐步补齐细节。</p>
           </div>
           <div class="process-grid">
-            <article class="process-card"><div class="step-number">01 选择方向</div><h3>确定接近的产品底座</h3><p>先判断适合商城、预约、点餐、APP、CRM、ERP 或复合系统。</p></article>
+            <article class="process-card"><div class="step-number">01 选择方向</div><h3>确定接近的基础方案</h3><p>先判断适合商城、预约、点餐、APP、CRM、ERP 或复合系统。</p></article>
             <article class="process-card"><div class="step-number">02 梳理差异</div><h3>确认客户专属规则</h3><p>梳理角色、流程、字段、价格、权限、接口和报表等定制内容。</p></article>
             <article class="process-card"><div class="step-number">03 组合开发</div><h3>预设模块加定制模块</h3><p>先跑通通用链路，再补齐行业差异、后台管理和第三方能力。</p></article>
             <article class="process-card"><div class="step-number">04 上线迭代</div><h3>交付后继续扩展</h3><p>根据真实运营反馈继续增加营销、客户、库存、财务和报表能力。</p></article>
@@ -188,9 +188,9 @@
               <div class="chip-row"><span class="chip">预设模块</span><span class="chip">定制功能</span><span class="chip">组合方案</span><span class="chip">上线迭代</span></div>
             </div>
             <div class="contact-box">
-              <div class="contact-line"><span>微信号</span><strong>Yizhixiaofeiyang7988</strong></div>
-              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
-              <a class="btn dark" href="tel:15566047217">立即预约产品评估</a>
+              <WechatQr compact />
+              <div class="contact-line"><span>手机号</span><a href="tel:18201117988">18201117988</a></div>
+              <a class="btn dark" href="tel:18201117988">立即预约产品评估</a>
             </div>
           </div>
         </div>
@@ -205,6 +205,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import SiteNav from '../components/SiteNav.vue'
+import WechatQr from '../components/WechatQr.vue'
 
 const activeSolutionTab = ref('preset')
 

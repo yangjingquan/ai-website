@@ -6,9 +6,9 @@
 
         <section class="hero">
           <div class="hero-copy">
-            <div class="eyebrow">需求评估 · 原型设计 · 开发联调 · 上线维护</div>
-            <h1>把项目拆成阶段，每一步都有交付物。</h1>
-            <p class="lead">面向小程序、APP、CRM、ERP 等商业系统定制开发，把合作拆成清晰阶段：先定业务边界，再定页面与数据结构，随后开发联调、测试验收、部署上线与持续迭代。</p>
+            <div class="eyebrow">需求评估 · 原型设计 · 开发与接口测试 · 上线维护</div>
+            <h1>把项目拆成阶段，每一步都有交付成果。</h1>
+            <p class="lead">面向小程序、APP、CRM、ERP 等商业系统定制开发，把合作拆成清晰阶段：先定业务边界，再定页面与数据结构，随后开发和接口测试、验收、部署上线与持续迭代。</p>
             <div class="hero-actions">
               <a class="btn primary" href="#contact">查看交付阶段</a>
               <a class="btn secondary" href="#contact">发起排期评估</a>
@@ -26,11 +26,11 @@
               <div class="milestone-stack">
                 <div class="milestone"><div class="milestone-num">01</div><div><strong>需求边界确认</strong><span>角色、流程、模块、第三方能力和验收范围。</span></div><div class="progress-pill">已确认</div></div>
                 <div class="milestone"><div class="milestone-num">02</div><div><strong>原型与数据结构</strong><span>页面路径、字段、订单状态和后台管理逻辑。</span></div><div class="progress-pill">设计中</div></div>
-                <div class="milestone"><div class="milestone-num">03</div><div><strong>开发联调与测试</strong><span>前台、后台、接口、支付、消息、权限同步推进。</span></div><div class="progress-pill">待启动</div></div>
+                <div class="milestone"><div class="milestone-num">03</div><div><strong>开发与接口测试</strong><span>前台、后台、接口、支付、消息、权限同步推进。</span></div><div class="progress-pill">待启动</div></div>
                 <div class="milestone"><div class="milestone-num">04</div><div><strong>部署上线与维护</strong><span>审核发布、服务器部署、问题修复和迭代计划。</span></div><div class="progress-pill">持续</div></div>
               </div>
             </div>
-            <div class="floating-note"><strong>确认后再进入下一步</strong><span>每个阶段都有可查看、可沟通、可验收的交付物，减少返工。</span></div>
+            <div class="floating-note"><strong>确认后再进入下一步</strong><span>每个阶段都有可查看、可沟通、可确认的成果，减少返工。</span></div>
           </div>
         </section>
       </div>
@@ -38,7 +38,7 @@
       <section class="section">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">从想法到上线，拆成适合个人开发合作的六个阶段</h2>
+            <h2 class="section-title">从想法到上线，拆成适合一对一合作的六个阶段</h2>
             <p class="section-subtitle">流程不做复杂包装，重点让客户知道什么时候沟通、什么时候确认、什么时候能看到阶段成果。</p>
           </div>
           <div class="stage-grid">
@@ -61,10 +61,10 @@
               <div class="feature-list"><span>视觉组件规范</span><span>技术架构确认</span><span>第三方能力准备</span></div>
             </article>
             <article class="stage-card">
-              <div class="stage-top"><div class="stage-icon">开发</div><div class="stage-time">04 联调</div></div>
-              <h3>前后端开发与联调</h3>
+              <div class="stage-top"><div class="stage-icon">开发</div><div class="stage-time">04 接口测试</div></div>
+              <h3>前后端开发与接口测试</h3>
               <p>按模块推进移动端、管理后台、服务端接口、数据库和第三方接入，关键节点提供演示版本。</p>
-              <div class="feature-list"><span>模块分批交付</span><span>接口支付联调</span><span>后台权限配置</span></div>
+              <div class="feature-list"><span>模块分批交付</span><span>支付和接口测试</span><span>后台权限配置</span></div>
             </article>
             <article class="stage-card">
               <div class="stage-top"><div class="stage-icon">测试</div><div class="stage-time">05 测试</div></div>
@@ -86,7 +86,7 @@
         <div class="wrap">
           <div class="section-head">
             <h2 class="section-title">交付过程像项目后台一样清楚，进度、成果和风险都能看见</h2>
-            <p class="section-subtitle">客户不用猜“现在做到哪了”，每个阶段对应具体交付物和确认点，沟通成本会低很多。</p>
+            <p class="section-subtitle">客户不用猜“现在做到哪了”，每个阶段对应具体成果和确认点，沟通成本会低很多。</p>
           </div>
           <div class="showcase-grid">
             <div class="project-dashboard">
@@ -163,7 +163,7 @@
             <article class="scope-card">
               <div class="eyebrow">质量控制重点</div>
               <h3>业务系统不只要能打开，更要能稳定跑流程。</h3>
-              <p>验收时会围绕真实业务链路检查：用户注册登录、商品或服务配置、订单状态、支付退款、后台权限、数据统计、异常提示、移动端适配和上线环境稳定性。</p>
+              <p>确认上线前会围绕完整业务流程检查：用户注册登录、商品或服务配置、订单状态、支付退款、后台权限、数据统计、异常提示、移动端适配和上线环境稳定性。</p>
               <div class="chip-row"><span class="chip">主流程可跑通</span><span class="chip">后台可运营</span><span class="chip">数据可追踪</span><span class="chip">上线可维护</span></div>
             </article>
             <div class="risk-grid">
@@ -217,9 +217,9 @@
               <div class="chip-row"><span class="chip">需求评估</span><span class="chip">原型梳理</span><span class="chip">阶段交付</span><span class="chip">上线维护</span></div>
             </div>
             <div class="contact-box">
-              <div class="contact-line"><span>微信号</span>Yizhixiaofeiyang7988</div>
-              <div class="contact-line"><span>手机号</span><a href="tel:15566047217">15566047217</a></div>
-              <a class="btn dark" href="tel:15566047217">立即预约交付评估</a>
+              <WechatQr compact />
+              <div class="contact-line"><span>手机号</span><a href="tel:18201117988">18201117988</a></div>
+              <a class="btn dark" href="tel:18201117988">立即预约交付评估</a>
             </div>
           </div>
         </div>
@@ -234,6 +234,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import SiteNav from '../components/SiteNav.vue'
+import WechatQr from '../components/WechatQr.vue'
 
 const activeDeliveryTab = ref('phase')
 
@@ -244,27 +245,27 @@ const deliveryTabs = [
     items: [
       { tag: '需求', title: '需求说明与功能清单', description: '确认业务角色、页面模块、后台配置、第三方接口和不包含范围。', status: '100%' },
       { tag: '原型', title: '前台路径与后台结构', description: '确认首页、列表、详情、表单、订单状态、权限和数据字段。', status: '80%' },
-      { tag: '开发', title: '模块开发与接口联调', description: '移动端、管理端、服务端、数据库、支付回调和消息通知分批交付。', status: '45%' },
+      { tag: '开发', title: '模块开发与接口测试', description: '移动端、管理端、服务端、数据库、支付回调和消息通知分批交付。', status: '45%' },
       { tag: '上线', title: '发布部署与资料交接', description: '小程序审核、APP 发布、服务器部署、账号权限和维护方式交接。', status: '待启' }
     ],
     artifacts: [
-      { title: '需求阶段交付物', description: '需求说明、功能范围、页面清单、后台模块、第三方能力、预算与周期评估。', chips: ['范围清晰', '可报价', '可排期'] },
-      { title: '设计开发阶段交付物', description: '页面原型、视觉规范、数据库结构、接口文档、阶段演示版本和联调记录。', chips: ['可预览', '可确认', '可迭代'] },
-      { title: '上线维护阶段交付物', description: '生产环境、发布版本、后台账号、部署说明、验收清单、问题修复和后续优化建议。', chips: ['可使用', '可交接', '可维护'] }
+      { title: '需求阶段成果', description: '需求说明、功能范围、页面清单、后台模块、第三方能力、预算与周期评估。', chips: ['范围清晰', '可报价', '可排期'] },
+      { title: '设计开发阶段成果', description: '页面原型、视觉规范、数据库结构、接口文档、阶段演示版本和测试记录。', chips: ['可预览', '可确认', '可迭代'] },
+      { title: '上线维护阶段成果', description: '生产环境、发布版本、后台账号、部署说明、验收清单、问题修复和后续优化建议。', chips: ['可使用', '可交接', '可维护'] }
     ]
   },
   {
     key: 'artifact',
-    label: '交付物',
+    label: '阶段成果',
     items: [
       { tag: '文档', title: '需求与功能范围文档', description: '记录业务目标、角色权限、页面清单、字段说明、第三方能力和首期边界。', status: '确认' },
       { tag: '原型', title: '页面原型与视觉规范', description: '输出前台路径、后台结构、核心表单、交互状态和统一组件样式。', status: '预览' },
-      { tag: '接口', title: '接口与数据库结构', description: '沉淀接口规则、数据表结构、状态流转、支付回调和消息通知逻辑。', status: '联调' },
+      { tag: '接口', title: '接口与数据库结构', description: '记录接口规则、数据表结构、状态流转、支付回调和消息通知逻辑。', status: '测试中' },
       { tag: '版本', title: '演示版本与上线包', description: '按阶段提供可演示版本，最终交付生产环境、部署说明和后台账号。', status: '交接' }
     ],
     artifacts: [
       { title: '沟通阶段资料', description: '需求说明、业务流程图、页面模块、报价周期和不包含范围。', chips: ['可确认', '可估价', '可控范围'] },
-      { title: '开发阶段资料', description: '页面原型、视觉规范、接口文档、数据库结构、阶段演示版本和联调记录。', chips: ['可预览', '可联调', '可追踪'] },
+      { title: '开发阶段资料', description: '页面原型、视觉规范、接口文档、数据库结构、阶段演示版本和测试记录。', chips: ['可预览', '可测试', '可追踪'] },
       { title: '上线阶段资料', description: '部署环境、后台账号、发布版本、验收清单、使用说明和维护建议。', chips: ['可上线', '可使用', '可维护'] }
     ]
   },

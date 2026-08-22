@@ -3653,6 +3653,10 @@ html {
   letter-spacing: 0.14em;
 }
 
+.legal-page .hero-summary::before {
+  content: "隐私说明";
+}
+
 .content-page .hero-summary > strong {
   color: #101828;
   font-size: 22px;
@@ -5865,29 +5869,6 @@ html {
   margin-top: 12px;
 }
 
-.case-directory-placeholder {
-  display: grid;
-  align-content: center;
-  min-height: 360px;
-  border-style: dashed;
-  background: rgba(255, 255, 255, 0.54);
-}
-
-.case-directory-placeholder-mark {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border: 1px dashed #9ccfc5;
-  border-radius: 12px;
-  color: var(--teal);
-  font-size: 28px;
-}
-
-.case-directory-placeholder .detail-kicker {
-  margin-top: 22px;
-}
-
 .case-detail-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 380px;
@@ -6322,5 +6303,985 @@ body.lightbox-open {
 
   .contact-panel h2 {
     font-size: 28px !important;
+  }
+}
+
+/* System capability page: keep the capability story visible and compact. */
+.system-capability-page .hero {
+  min-height: 650px;
+  padding-top: 72px;
+}
+
+.system-capability-page .pain-card {
+  min-height: 260px;
+}
+
+.system-capability-page .resolve strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f766e;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.system-capability-page .mapping-card {
+  padding: 30px;
+}
+
+.system-capability-page .mapping-card h3 {
+  max-width: 380px;
+  font-size: 28px;
+}
+
+.system-capability-page .showcase {
+  margin-top: 12px;
+  padding: 68px 0;
+}
+
+.system-capability-page .ops-board {
+  padding: 22px;
+}
+
+.system-capability-page .ops-block {
+  min-height: 112px;
+  padding: 16px;
+}
+
+.system-capability-page .module-card {
+  min-height: 142px;
+  padding: 20px;
+}
+
+.system-capability-page .process-result {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 1px solid #c9f4e6;
+  border-radius: 8px;
+  color: #0f766e;
+  background: #ecfdf5;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.system-capability-page .process-result strong {
+  font-weight: 900;
+}
+
+.system-capability-page .faq-card {
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.system-capability-page .faq-card > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.system-capability-page .faq-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.system-capability-page .faq-card > summary::after {
+  flex: 0 0 auto;
+  color: var(--teal);
+  content: "+";
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.system-capability-page .faq-card[open] > summary::after {
+  content: "−";
+}
+
+.system-capability-page .faq-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.system-capability-page .faq-card > p {
+  margin: -4px 24px 24px;
+}
+
+/* Development capability page: make delivery outcomes more prominent than
+   the technical catalog while keeping the existing visual language. */
+.development-capability-page .hero {
+  min-height: 650px;
+  padding-top: 72px;
+}
+
+.development-capability-page .language-card {
+  min-height: 270px;
+}
+
+.development-capability-page .choice-card h3 {
+  max-width: 390px;
+  font-size: 28px;
+}
+
+.development-capability-page .showcase {
+  padding: 68px 0;
+}
+
+.development-capability-page .tech-dashboard {
+  min-height: 480px;
+}
+
+.development-capability-page .layer-row {
+  min-height: 68px;
+  padding: 14px;
+}
+
+.development-capability-page .data-grid.compact .data-card {
+  min-height: 188px;
+}
+
+.development-capability-page .process-result {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 1px solid #c9f4e6;
+  border-radius: 8px;
+  color: #0f766e;
+  background: #ecfdf5;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.development-capability-page .process-result strong {
+  font-weight: 900;
+}
+
+/* Cooperation process page: make the sequence and working rules feel final,
+   with no internal placeholders exposed to visitors. */
+.process-page .content-hero {
+  min-height: 500px;
+  padding-bottom: 64px;
+}
+
+.process-page .content-hero h1 {
+  max-width: 680px;
+}
+
+.process-page .process-phase-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.process-page .process-phase-row span {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid #c9f4e6;
+  border-radius: 8px;
+  color: var(--teal);
+  background: #ecfdf5;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.process-page .delivery-stage {
+  display: flex;
+  flex-direction: column;
+  min-height: 268px;
+}
+
+.process-page .delivery-stage small {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #e7eef3;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.process-page .rule-card {
+  min-height: 244px;
+}
+
+.process-page .rule-card span {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #e7eef3;
+  color: var(--teal);
+  font-size: 13px;
+}
+
+.process-page .rule-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-page .contact-panel .chip {
+  color: var(--teal);
+  background: #ecfdf5;
+}
+
+@media (max-width: 1024px) {
+  .process-page .process-phase-row {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  .process-page .process-phase-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .process-page .delivery-stage,
+  .process-page .rule-card {
+    min-height: 0;
+  }
+
+  .process-page .delivery-stage small,
+  .process-page .rule-card span {
+    margin-top: 16px;
+  }
+}
+
+.development-capability-page .faq-card {
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.development-capability-page .faq-card > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.development-capability-page .faq-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.development-capability-page .faq-card > summary::after {
+  flex: 0 0 auto;
+  color: var(--teal);
+  content: "+";
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.development-capability-page .faq-card[open] > summary::after {
+  content: "−";
+}
+
+.development-capability-page .faq-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.development-capability-page .faq-card > p {
+  margin: -4px 24px 24px;
+}
+
+@media (max-width: 1024px) {
+  .development-capability-page .hero {
+    min-height: auto;
+    padding-top: 54px;
+  }
+
+  .development-capability-page .showcase {
+    padding: 58px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .development-capability-page .hero {
+    padding-top: 38px;
+  }
+
+  .development-capability-page .language-card,
+  .development-capability-page .data-grid.compact .data-card {
+    min-height: 0;
+  }
+
+  .development-capability-page .showcase {
+    padding: 52px 0;
+  }
+
+  .development-capability-page .dash-nav {
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+  }
+
+  .development-capability-page .dash-tabs,
+  .development-capability-page .stack-tabs {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .development-capability-page .process-result {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .system-capability-page .hero {
+    min-height: auto;
+    padding-top: 54px;
+  }
+
+  .system-capability-page .showcase {
+    padding: 58px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .system-capability-page .hero {
+    padding-top: 38px;
+  }
+
+  .system-capability-page .pain-card,
+  .system-capability-page .cap-card {
+    min-height: 0;
+  }
+
+  .system-capability-page .showcase {
+    margin-top: 0;
+    padding: 52px 0;
+  }
+
+  .system-capability-page .dash-nav {
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+  }
+
+  .system-capability-page .dash-tabs {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+.system-capability-page .process-result {
+    font-size: 13px;
+  }
+}
+
+/* Pricing page: turn the quotation explanation into a clear decision path. */
+.pricing-page .content-hero {
+  min-height: 500px;
+  padding-bottom: 64px;
+}
+
+.pricing-page .content-hero h1 {
+  max-width: 680px;
+}
+
+.pricing-page .pricing-flow-section {
+  padding-top: 24px;
+  padding-bottom: 52px;
+}
+
+.pricing-page .pricing-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pricing-page .pricing-flow-card {
+  min-height: 170px;
+  padding: 22px;
+  border: 1px solid #c9f4e6;
+  border-radius: 14px;
+  background: #effaf7;
+}
+
+.pricing-page .pricing-flow-card > span {
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.pricing-page .pricing-flow-card h3 {
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.pricing-page .pricing-flow-card p {
+  margin-top: 8px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.pricing-page .pricing-packages-section {
+  padding-top: 52px;
+}
+
+.pricing-page .pricing-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+}
+
+.pricing-page .pricing-card .check-list {
+  margin-top: auto;
+}
+
+.pricing-page .pricing-price {
+  margin-top: 18px;
+  color: var(--teal);
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.pricing-page .payment-card {
+  min-height: 176px;
+}
+
+.pricing-page .payment-card.support-card {
+  border-color: #a7e6d7;
+  background: #effaf7;
+}
+
+.pricing-page .payment-card.support-card > span {
+  font-size: 14px;
+}
+
+.pricing-page .pricing-contact-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pricing-page .pricing-contact-chips span {
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  color: #e0f2fe;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Contact page: keep the real contact paths clear while being honest about the demo form state. */
+.contact-page .copy-contact {
+  min-height: 42px;
+  margin-top: 16px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: var(--teal);
+  background: #f0fdfa;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.contact-page .copy-contact:hover,
+.contact-page .copy-contact:focus-visible {
+  border-color: var(--teal);
+  background: #ccfbf1;
+}
+
+.contact-page .copy-status {
+  display: block;
+  margin-top: 8px;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.contact-page .contact-form-note {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e7eef3;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* About page: replace profile placeholders with a clear identity card and a real project proof point. */
+.about-page .about-profile-card {
+  align-content: start;
+}
+
+.about-page .about-profile-mark {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 148px;
+  border: 1px solid #c9f4e6;
+  border-radius: 12px;
+  color: var(--teal);
+  background: linear-gradient(145deg, #effaf7, #e0f2fe);
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.about-page .about-project-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.055);
+}
+
+.about-page .about-project-visual {
+  overflow: hidden;
+  min-height: 270px;
+  border-radius: 12px;
+  background: #e8eef7;
+}
+
+.about-page .about-project-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-page .about-project-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.about-page .about-project-meta,
+.about-page .about-project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-page .about-project-meta {
+  justify-content: space-between;
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.about-page .about-project-copy h3 {
+  margin-top: 18px;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.about-page .about-project-copy p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about-page .about-project-tags {
+  margin-top: 18px;
+}
+
+.about-page .about-project-tags span {
+  padding: 6px 10px;
+  border: 1px solid #c9f4e6;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #effaf7;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.about-page .about-project-copy .text-link {
+  align-self: flex-start;
+  margin-top: 22px;
+}
+
+@media (max-width: 720px) {
+  .about-page .about-project-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .about-page .about-project-visual {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .about-page .about-project-meta {
+    justify-content: flex-start;
+  }
+}
+
+/* Case detail page: make delivery evidence easier to scan than the raw stack string. */
+.case-detail-page .case-detail-result {
+  border-color: #a7e6d7;
+  background: #effaf7;
+}
+
+.case-detail-page .case-delivery-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #c9f4e6;
+  border-radius: 14px;
+  background: #f5fffc;
+}
+
+.case-detail-page .case-delivery-flow > div {
+  display: grid;
+  gap: 6px;
+  padding-left: 14px;
+  border-left: 3px solid #99e0d0;
+}
+
+.case-detail-page .case-delivery-flow span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.case-detail-page .case-delivery-flow strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.case-detail-page .case-stack-card > div > span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 720px) {
+  .case-detail-page .case-delivery-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Cases index: give a single authorized project the visual weight it deserves. */
+.cases-index-page .case-directory-grid.single-case {
+  grid-template-columns: 1fr;
+}
+
+.cases-index-page .case-directory-grid.single-case .case-directory-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 28px;
+  padding: 24px;
+}
+
+.cases-index-page .case-directory-grid.single-case .case-directory-cover {
+  min-height: 300px;
+  aspect-ratio: auto;
+}
+
+.cases-index-page .case-directory-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.cases-index-page .case-directory-copy .case-directory-meta {
+  margin-top: 0;
+}
+
+.cases-index-page .case-directory-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.cases-index-page .case-directory-tags span {
+  padding: 6px 10px;
+  border: 1px solid #c9f4e6;
+  border-radius: 999px;
+  color: var(--teal);
+  background: #effaf7;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.cases-index-page .case-directory-result {
+  display: grid;
+  gap: 5px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e7eef3;
+}
+
+.cases-index-page .case-directory-result strong {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.cases-index-page .case-directory-copy .text-link {
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.cases-index-page .case-directory-note {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border: 1px solid #dbe7ee;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.cases-index-page .case-directory-note strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.cases-index-page .case-directory-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 720px) {
+  .cases-index-page .case-directory-grid.single-case .case-directory-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .cases-index-page .case-directory-grid.single-case .case-directory-cover {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .cases-index-page .case-directory-note {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-page .pricing-flow-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .pricing-page .pricing-flow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-page .pricing-flow-card,
+  .pricing-page .pricing-card,
+  .pricing-page .payment-card {
+    min-height: 0;
+  }
+
+  .pricing-page .pricing-card .check-list {
+    margin-top: 20px;
+  }
+}
+
+/* WeChat contact display: keep the QR code scan-friendly while giving it a branded, polished frame. */
+.wechat-qr {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+.wechat-qr__frame {
+  position: relative;
+  width: min(100%, 214px);
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ffffff 0%, #f0fdfa 55%, #dbeafe 100%);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.2), 0 0 0 6px rgba(255, 255, 255, 0.08);
+}
+
+.wechat-qr img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 712 / 670;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.wechat-qr figcaption {
+  display: grid;
+  gap: 3px;
+}
+
+.wechat-qr figcaption strong {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.wechat-qr figcaption span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.wechat-qr__corner {
+  position: absolute;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  border-color: #14b8a6;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.wechat-qr__corner--tl {
+  top: 7px;
+  left: 7px;
+  border-width: 3px 0 0 3px;
+  border-radius: 8px 0 0;
+}
+
+.wechat-qr__corner--tr {
+  top: 7px;
+  right: 7px;
+  border-width: 3px 3px 0 0;
+  border-radius: 0 8px 0 0;
+}
+
+.wechat-qr__corner--bl {
+  bottom: 7px;
+  left: 7px;
+  border-width: 0 0 3px 3px;
+  border-radius: 0 0 0 8px;
+}
+
+.wechat-qr__corner--br {
+  right: 7px;
+  bottom: 7px;
+  border-width: 0 3px 3px 0;
+  border-radius: 0 0 8px;
+}
+
+.wechat-qr--compact {
+  justify-items: stretch;
+  gap: 8px;
+}
+
+.wechat-qr--compact .wechat-qr__frame {
+  width: min(100%, 178px);
+  padding: 9px;
+  border-radius: 16px;
+}
+
+.wechat-qr--compact figcaption {
+  text-align: left;
+}
+
+.wechat-qr--compact figcaption strong {
+  font-size: 13px;
+}
+
+.wechat-qr--compact figcaption span {
+  font-size: 11px;
+}
+
+.contact-box .wechat-qr {
+  justify-items: start;
+}
+
+.contact-box .wechat-qr figcaption {
+  text-align: left;
+}
+
+.channel-card .wechat-qr {
+  margin-top: 16px;
+  justify-items: start;
+}
+
+.channel-card .wechat-qr figcaption strong {
+  color: var(--ink);
+}
+
+.channel-card .wechat-qr figcaption span {
+  color: var(--muted);
+}
+
+/* Keep the three contact cards visually aligned while giving each card a clear bottom action area. */
+.contact-page .channel-grid {
+  align-items: stretch;
+}
+
+.contact-page .channel-card {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page .channel-card > .text-link {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e7eef3;
+}
+
+.contact-page .channel-card .wechat-qr {
+  align-self: center;
+  justify-items: center;
+}
+
+.contact-page .channel-card .wechat-qr figcaption {
+  text-align: center;
+}
+
+.contact-page .channel-card .wechat-qr__frame {
+  width: min(100%, 190px);
+}
+
+.contact-page .channel-card .wechat-qr + p {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e7eef3;
+}
+
+.contact-page .channel-card--plain > strong + p {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .wechat-qr__frame {
+    width: min(100%, 190px);
+  }
+
+  .contact-box .wechat-qr__frame {
+    width: min(100%, 168px);
   }
 }

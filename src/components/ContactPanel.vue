@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="contact-box">
-          <div class="contact-line"><span>微信号</span><strong>{{ wechat }}</strong></div>
+          <WechatQr compact />
           <div class="contact-line"><span>手机号</span><strong>{{ phone }}</strong></div>
           <button class="btn dark" type="button">{{ buttonText }}</button>
         </div>
@@ -24,8 +24,9 @@ defineProps({
   title: { type: String, required: true },
   description: { type: String, required: true },
   chips: { type: Array, default: () => [] },
-  wechat: { type: String, default: 'Yizhixiaofeiyang7988' },
-  phone: { type: String, default: '15566047217' },
+  phone: { type: String, default: '18201117988' },
   buttonText: { type: String, default: '立即沟通需求' }
 })
+
+import WechatQr from './WechatQr.vue'
 </script>
