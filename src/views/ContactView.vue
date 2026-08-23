@@ -24,7 +24,10 @@ const touched = ref(false)
 const submitted = ref(false)
 const submitting = ref(false)
 const submitError = ref('')
-const apiBase = (import.meta.env.VITE_API_BASE || 'http://wbapi.nexbyte.top').replace(/\/$/, '')
+// Keep the browser request same-origin by default. Vite (and the production
+// web server) can proxy /api to the API host, so the browser does not need
+// CORS permission from wbapi.nexbyte.top.
+const apiEndpoint = import.meta.env.VITE_CONTACT_API_URL || '/api/public/contact-submissions'
 
 async function submitForm() {
   touched.value = true
@@ -34,7 +37,7 @@ async function submitForm() {
 
   submitting.value = true
   try {
-    const response = await fetch(`${apiBase}/api/public/contact-submissions`, {
+    const response = await fetch(apiEndpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
