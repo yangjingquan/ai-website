@@ -24,7 +24,7 @@
     <section class="section" aria-labelledby="service-faq-title"><div class="wrap"><div class="section-head"><h2 id="service-faq-title" class="section-title">服务方案常见问题</h2></div><div class="faq-grid"><article class="faq-card"><h3>没有完整需求文档可以开始吗？</h3><p>可以。先提供业务目标、参考系统和必须上线的功能，再共同整理范围。</p></article><article class="faq-card"><h3>可以只做一个模块吗？</h3><p>可以，但需要确认它与现有系统的接口、数据和后续扩展关系。</p></article><article class="faq-card"><h3>服务是否包含设计稿和源代码？</h3><p>根据报价和合同约定交付。报价前会明确设计稿、源代码、账号和部署资料的归属与交接范围。</p></article><article class="faq-card"><h3>第三方费用谁承担？</h3><p>第三方平台认证、服务器、短信、支付和发布费用由项目方承担；如需代办，按实际费用结算。</p></article><article class="faq-card"><h3>什么时候可以确定报价和周期？</h3><p>确认平台数量、功能范围、接口和验收方式后，再给出报价与排期。</p></article><article class="faq-card"><h3>可以先做原型再决定开发吗？</h3><p>可以。先确认页面结构和核心流程，再决定首期开发范围。</p></article></div></div></section>
 
     <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>先把你的业务方向发来，我会帮你判断首期应该做什么。</h2><p>告诉我业务类型、核心功能和目标上线时间，我会先帮你拆出首期范围。</p></div><RouterLink class="btn dark" to="/contact">开始需求评估</RouterLink></div></div></section>
-    <SiteFooter text="小肥羊开发工作室 · 服务方案" />
+    <SiteFooter text="纳启字节信息技术工作室 · 服务方案" />
   </main>
 </template>
 

@@ -9,7 +9,7 @@
     <section class="section" id="rules" aria-labelledby="rules-title"><div class="wrap"><div class="section-head"><h2 id="rules-title" class="section-title">需求变更、验收和延期规则</h2><p class="section-subtitle">提前约定变更、验收、延期和维护规则，减少后续沟通成本。</p></div><div class="rule-grid"><article class="rule-card"><h3>需求变更</h3><p>小范围文案或样式优化可在阶段内调整；涉及流程、数据结构、平台数量或第三方能力的变化，需要重新评估。</p><span>按变更影响评估费用与排期</span></article><article class="rule-card"><h3>阶段验收</h3><p>以确认的功能清单和验收标准为准，客户在约定时间内集中反馈，避免反复零散修改。</p><span>约定时间内集中反馈并确认结论</span></article><article class="rule-card"><h3>项目延期</h3><p>客户资料、账号或确认延迟会影响排期，需记录原因和新的预计时间。</p><span>排期相应顺延并记录原因</span></article><article class="rule-card"><h3>上线维护</h3><p>区分上线问题修复与新需求开发，分别记录优先级、响应方式和费用。</p><span>维护期限、响应方式和费用按报价与合同约定</span></article></div></div></section>
 
     <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>想先确认合作节奏，可以把项目范围发来。</h2><p>准备业务类型、主要功能、参考系统和预计上线时间，我会按阶段说明资料、阶段成果和确认节点。</p><div class="chip-row"><span class="chip">业务类型</span><span class="chip">主要功能</span><span class="chip">参考系统</span><span class="chip">上线时间</span></div></div><RouterLink class="btn dark" to="/contact">预约流程沟通</RouterLink></div></div></section>
-    <SiteFooter text="小肥羊开发工作室 · 合作流程" />
+    <SiteFooter text="纳启字节信息技术工作室 · 合作流程" />
   </main>
 </template>
 

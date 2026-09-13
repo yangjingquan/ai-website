@@ -7,7 +7,7 @@
         <div>
           <div class="eyebrow">关于我 · 杨井泉 · 个人开发工作室</div>
           <h1 id="about-title">把复杂业务，做成可运行、可维护的系统。</h1>
-          <p class="content-lead">小肥羊开发工作室由杨井泉负责，拥有 11 年开发经验，常驻沈阳并支持远程合作，提供从业务梳理、系统开发到测试部署和上线维护的一对一项目合作。</p>
+          <p class="content-lead">纳启字节信息技术工作室由杨井泉负责，拥有 11 年开发经验，常驻沈阳并支持远程合作，提供从业务梳理、系统开发到测试部署和上线维护的一对一项目合作。</p>
           <div class="hero-actions"><RouterLink class="btn primary" to="/services">查看服务方案</RouterLink><RouterLink class="btn secondary" to="/contact">联系我</RouterLink></div>
         </div>
         <aside class="profile-placeholder about-profile-card" aria-label="个人资料">
@@ -51,7 +51,7 @@
     <section class="contact-section" id="contact">
       <div class="wrap"><div class="contact-panel"><div><h2>如果你需要一位能持续跟进的开发负责人，可以先聊聊业务目标。</h2><p>无需准备完整需求文档，先说清业务、用户和最麻烦的环节即可。</p></div><RouterLink class="btn dark" to="/contact">进入联系页面</RouterLink></div></div>
     </section>
-    <SiteFooter text="小肥羊开发工作室 · 关于我" />
+    <SiteFooter text="纳启字节信息技术工作室 · 关于我" />
   </main>
 </template>
 

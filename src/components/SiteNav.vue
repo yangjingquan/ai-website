@@ -1,8 +1,8 @@
 <template>
   <nav class="nav" aria-label="主导航">
     <RouterLink class="brand" to="/" aria-label="返回首页">
-      <span class="mark">羊</span>
-      <span>小肥羊开发工作室</span>
+      <span class="mark">Nex</span>
+      <span>纳启字节信息技术工作室</span>
     </RouterLink>
     <div class="navlinks" aria-label="页面导航">
       <RouterLink to="/about" active-class="active">关于我</RouterLink>

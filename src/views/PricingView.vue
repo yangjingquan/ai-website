@@ -13,7 +13,7 @@
     <section class="section" aria-labelledby="pricing-faq-title"><div class="wrap"><div class="section-head"><h2 id="pricing-faq-title" class="section-title">报价说明常见问题</h2><p class="section-subtitle">以下内容用于说明常见合作口径，最终以确认的报价单与合同为准。</p></div><div class="faq-grid"><article class="faq-card"><h3>报价会根据哪些因素确定？</h3><p>平台数量、功能模块、流程复杂度、接口与数据迁移、交付要求都会影响报价。</p></article><article class="faq-card"><h3>可以先做首期核心版本吗？</h3><p>可以。建议先定义首期完整业务流程，并为后续模块预留接口和数据结构。</p></article><article class="faq-card"><h3>需求中途变化怎么办？</h3><p>先记录变更影响，再确认新的费用、排期和验收范围。</p></article><article class="faq-card"><h3>上线后的维护怎么计算？</h3><p>按报价单与合同约定执行，问题修复、小幅优化和新增功能分别评估。</p></article><article class="faq-card"><h3>是否包含源代码和部署资料？</h3><p>根据报价和合同约定交付，报价确认时会明确源代码、设计稿、账号和部署资料的归属与交接范围。</p></article><article class="faq-card"><h3>第三方费用由谁承担？</h3><p>服务器、域名、短信、支付、地图和应用市场等平台费用由项目方承担；如需代办，按实际费用结算。</p></article></div></div></section>
 
     <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>把业务类型、核心功能和上线目标发来，我先帮你确认报价范围。</h2><p>建议同时提供需要的端、参考系统、第三方接口和预计上线时间。</p><div class="pricing-contact-chips" aria-label="报价前准备信息"><span>业务类型</span><span>核心功能</span><span>需要的端</span><span>预计上线时间</span></div></div><RouterLink class="btn dark" to="/contact">提交需求信息</RouterLink></div></div></section>
-    <SiteFooter text="小肥羊开发工作室 · 报价说明" />
+    <SiteFooter text="纳启字节信息技术工作室 · 报价说明" />
   </main>
 </template>
 

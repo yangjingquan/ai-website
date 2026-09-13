@@ -14,7 +14,7 @@
         </div>
       </section>
     </div>
-    <SiteFooter text="小肥羊开发工作室 · 页面导航与服务介绍" />
+    <SiteFooter text="纳启字节信息技术工作室 · 页面导航与服务介绍" />
   </main>
 </template>
 
