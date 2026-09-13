@@ -7,8 +7,8 @@
         <section class="hero">
           <div class="hero-copy">
             <div class="eyebrow">订单 · 客户 · 商品 · 库存 · 权限 · 财务 · 数据 · 接口</div>
-            <h1>从高频业务问题出发，搭建能实际使用的系统。</h1>
-            <p class="lead">围绕订单、客户、库存、权限和数据，先解决最耗时、最容易出错的环节，再按实际流程扩展系统。</p>
+            <h1>把分散的业务动作，变成可追踪、可协同、可管理的系统。</h1>
+            <p class="lead">围绕订单、客户、库存、权限和数据，先把最耗时、最容易出错的环节拉回同一套规则，再按真实使用反馈扩展系统。</p>
             <div class="hero-actions">
               <a class="btn primary" href="#pain-points">查看业务痛点</a>
               <a class="btn secondary" href="#contact">发起系统评估</a>
@@ -37,16 +37,16 @@
       <section class="section" id="pain-points">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">先解决最影响业务的 6 个问题</h2>
-            <p class="section-subtitle">从订单、客户、库存、权限、数据和接口入手，优先处理最耗时、最易错的环节。</p>
+            <h2 class="section-title">先解决最影响经营的 6 个问题</h2>
+            <p class="section-subtitle">不只说明“能做什么”，更说明系统接入后，业务人员和管理者的工作会发生什么变化。</p>
           </div>
           <div class="pain-grid">
-            <article class="pain-card"><div class="icon">单</div><h3>订单状态混乱</h3><p>订单状态散落在微信、表格和收银系统，支付、核销、退款和售后难追踪。</p><div class="resolve"><strong>对应能力</strong>订单状态流转、支付回调、售后记录</div></article>
-            <article class="pain-card"><div class="icon">客</div><h3>客户跟进断层</h3><p>客户资料留在个人手机，线索、跟进和成交记录无法沉淀。</p><div class="resolve"><strong>对应能力</strong>客户档案、标签分群、跟进提醒</div></article>
-            <article class="pain-card"><div class="icon">库</div><h3>库存经常不准</h3><p>入库、出库、调拨和预售库存靠人工同步，容易超卖或漏发。</p><div class="resolve"><strong>对应能力</strong>库存台账、预警、订单占用</div></article>
-            <article class="pain-card"><div class="icon">权</div><h3>员工权限不清</h3><p>岗位、门店和财务的数据边界不清，容易出现误操作。</p><div class="resolve"><strong>对应能力</strong>角色权限、数据范围、操作日志</div></article>
-            <article class="pain-card"><div class="icon">数</div><h3>经营数据靠手算</h3><p>销售额、利润和活动效果依赖导表汇总，决策总是慢一步。</p><div class="resolve"><strong>对应能力</strong>数据看板、统一口径、报表导出</div></article>
-            <article class="pain-card"><div class="icon">接</div><h3>系统互相割裂</h3><p>支付、物流、公众号和旧系统彼此割裂，业务人员重复录入。</p><div class="resolve"><strong>对应能力</strong>接口集成、消息通知、异常重试</div></article>
+            <article class="pain-card"><div class="icon">单</div><h3>订单状态混乱</h3><p>订单状态散落在微信、表格和收银系统，支付、核销、退款和售后难追踪。</p><div class="resolve"><strong>系统改变</strong>订单按状态推进，异常订单可直接筛出。</div></article>
+            <article class="pain-card"><div class="icon">客</div><h3>客户跟进断层</h3><p>客户资料留在个人手机，线索、跟进和成交记录无法沉淀。</p><div class="resolve"><strong>系统改变</strong>客户资产留在企业，人员变化不断层。</div></article>
+            <article class="pain-card"><div class="icon">库</div><h3>库存经常不准</h3><p>入库、出库、调拨和预售库存靠人工同步，容易超卖或漏发。</p><div class="resolve"><strong>系统改变</strong>库存变化有台账、有依据，也能提前预警。</div></article>
+            <article class="pain-card"><div class="icon">权</div><h3>员工权限不清</h3><p>岗位、门店和财务的数据边界不清，容易出现误操作。</p><div class="resolve"><strong>系统改变</strong>按岗位与数据范围授权，关键操作可回溯。</div></article>
+            <article class="pain-card"><div class="icon">数</div><h3>经营数据靠手算</h3><p>销售额、利润和活动效果依赖导表汇总，决策总是慢一步。</p><div class="resolve"><strong>系统改变</strong>经营数据按统一口径汇总，减少等待人工报表。</div></article>
+            <article class="pain-card"><div class="icon">接</div><h3>系统互相割裂</h3><p>支付、物流、公众号和旧系统彼此割裂，业务人员重复录入。</p><div class="resolve"><strong>系统改变</strong>按现有条件集成、导入或自动同步，减少重复劳动。</div></article>
           </div>
         </div>
       </section>
@@ -56,8 +56,8 @@
           <div class="mapping-band">
             <article class="mapping-card">
               <div class="eyebrow">首期建议</div>
-              <h3>先跑通一条完整流程，再扩展高级能力。</h3>
-              <p>不堆功能，先让交易、客户、库存、权限和数据能够顺畅流转，再按使用反馈扩展自动化。</p>
+              <h3>系统不是把线下动作搬到屏幕上，而是把关键规则固定下来。</h3>
+              <p>首期不追求大而全，先让交易、客户、库存、权限和数据顺畅流转；随后再根据使用反馈扩展自动化与数据能力。</p>
               <div class="chip-row"><span class="chip">流程可追</span><span class="chip">客户可管</span><span class="chip">库存可控</span><span class="chip">数据可看</span></div>
             </article>
             <div class="mapping-list">

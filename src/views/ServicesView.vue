@@ -3,18 +3,22 @@
     <div class="wrap">
       <SiteNav />
       <section class="content-hero" aria-labelledby="services-title">
-        <div><div class="eyebrow">服务方案 · 范围 · 交付方式</div><h1 id="services-title">先把需求范围说清，再按阶段交付。</h1><p class="content-lead">从需求梳理到上线维护，按项目范围分阶段交付。</p><div class="hero-actions"><RouterLink class="btn primary" to="/pricing">查看报价说明</RouterLink><RouterLink class="btn secondary" to="/contact">预约需求评估</RouterLink></div></div>
-        <div class="hero-summary"><span>服务覆盖</span><strong>选方向 · 解问题 · 做系统 · 交付上线</strong><p>适合需要小程序、APP、后台或业务系统定制的团队。</p><div class="summary-line"><b>首期目标</b><span>先跑通一条完整业务流程</span></div><div class="summary-line"><b>后续方式</b><span>按模块继续扩展和维护</span></div></div>
+        <div><div class="eyebrow">问题诊断 · 系统开发 · 存量升级</div><h1 id="services-title">不从“做什么功能”开始，而从“哪一个问题最值得先解决”开始。</h1><p class="content-lead">无论是获客转化、订单履约、客户管理、库存协同，还是内部审批与经营分析，先识别问题根源，再确定首期系统范围。</p><div class="hero-actions"><RouterLink class="btn primary" to="/pricing">查看报价说明</RouterLink><RouterLink class="btn secondary" to="/contact">预约业务评估</RouterLink></div></div>
+        <div class="hero-summary"><span>服务覆盖</span><strong>找卡点 · 定闭环 · 做系统 · 持续优化</strong><p>适合需要新建业务系统，或希望在现有系统上改善效率与稳定性的团队。</p><div class="summary-line"><b>首期目标</b><span>优先跑通一条关键业务流程</span></div><div class="summary-line"><b>后续方式</b><span>按模块扩展、维护与自动化</span></div></div>
       </section>
     </div>
 
     <section class="section" aria-labelledby="service-type-title">
-      <div class="wrap"><div class="section-head"><h2 id="service-type-title" class="section-title">四类服务，分别解决不同阶段的问题</h2><p class="section-subtitle">报价会根据功能范围、需要开发的平台、第三方接口和验收要求确认。</p></div><div class="service-package-grid">
-        <article class="service-package"><div class="package-kicker">01 · 选方向</div><h3>需求梳理与方案设计</h3><p>把业务想法拆成角色、页面、流程、字段、权限和首期功能清单。</p><div class="feature-list"><span>需求访谈</span><span>功能范围</span><span>页面结构</span></div><RouterLink class="text-link" to="/product-solution">查看产品方案 →</RouterLink></article>
-        <article class="service-package"><div class="package-kicker">02 · 解问题</div><h3>业务流程与系统设计</h3><p>围绕订单、客户、库存、审批和数据，设计一条能被团队实际使用的业务流程。</p><div class="feature-list"><span>流程设计</span><span>权限规则</span><span>数据结构</span></div><RouterLink class="text-link" to="/system-capability">查看系统能力 →</RouterLink></article>
-        <article class="service-package"><div class="package-kicker">03 · 做系统</div><h3>多端系统开发</h3><p>开发小程序、APP、H5、后台和配套接口，并完成前后台及第三方接口测试。</p><div class="feature-list"><span>多端开发</span><span>接口测试</span><span>上线发布</span></div><RouterLink class="text-link" to="/development-capability">查看开发能力 →</RouterLink></article>
-        <article class="service-package"><div class="package-kicker">04 · 交付上线</div><h3>分阶段交付维护</h3><p>按阶段提供演示版本、验收清单、上线资料、问题修复和后续迭代建议。</p><div class="feature-list"><span>阶段确认</span><span>部署交接</span><span>持续维护</span></div><RouterLink class="text-link" to="/process">查看合作流程 →</RouterLink></article>
+      <div class="wrap"><div class="section-head"><h2 id="service-type-title" class="section-title">企业最终获得的，不只是功能清单</h2><p class="section-subtitle">报价会根据问题优先级、功能范围、平台、第三方接口和验收要求确认。</p></div><div class="service-package-grid">
+        <article class="service-package"><div class="package-kicker">01 · 明确优先级</div><h3>把模糊需求变成可执行方案</h3><p>梳理角色、流程、字段、权限和优先级，明确首期必须做什么、暂时不做什么，减少反复返工。</p><div class="feature-list"><span>问题定位</span><span>功能边界</span><span>首期路线</span></div><RouterLink class="text-link" to="/product-solution">查看产品方案 →</RouterLink></article>
+        <article class="service-package"><div class="package-kicker">02 · 固化关键规则</div><h3>让业务不再依赖个人记忆</h3><p>把订单、客户、库存、审批等动作变成标准流程；谁负责、做到哪一步、异常在哪里，都能追踪。</p><div class="feature-list"><span>流程设计</span><span>权限规则</span><span>数据追踪</span></div><RouterLink class="text-link" to="/system-capability">查看系统能力 →</RouterLink></article>
+        <article class="service-package"><div class="package-kicker">03 · 连接前台与后台</div><h3>让获客、交易与管理真正连起来</h3><p>小程序、APP、H5 承接客户；CRM、ERP 与后台支撑员工处理；数据不再在多个工具间反复搬运。</p><div class="feature-list"><span>多端开发</span><span>接口集成</span><span>数据协同</span></div><RouterLink class="text-link" to="/development-capability">查看开发能力 →</RouterLink></article>
+        <article class="service-package"><div class="package-kicker">04 · 持续可用</div><h3>让系统能上线，更能长期使用</h3><p>提供测试、部署、账号权限、交接资料和迭代建议，避免系统上线后无人维护、无法扩展。</p><div class="feature-list"><span>阶段验收</span><span>部署交接</span><span>维护迭代</span></div><RouterLink class="text-link" to="/process">查看合作流程 →</RouterLink></article>
       </div></div>
+    </section>
+
+    <section class="section" aria-labelledby="signal-title">
+      <div class="wrap"><div class="section-head"><h2 id="signal-title" class="section-title">出现这些信号，通常值得启动系统化评估</h2><p class="section-subtitle">不一定需要重做系统；先确认哪个环节造成的效率与稳定性损失最大。</p></div><div class="faq-grid"><article class="faq-card"><h3>每天都在复制、核对、催进度</h3><p>说明数据和流程没有自动衔接，适合先梳理高频动作与责任节点。</p></article><article class="faq-card"><h3>客户、订单或库存总对不上</h3><p>说明数据来源与流转规则需要统一，避免继续靠人工补漏洞。</p></article><article class="faq-card"><h3>关键人员不在，业务就容易停摆</h3><p>说明业务知识仍在个人手里，应优先沉淀客户、流程与操作记录。</p></article><article class="faq-card"><h3>多个部门各有一份“正确数据”</h3><p>说明系统或表格之间缺少同步与统一口径，需要先确定唯一数据来源。</p></article></div></div>
     </section>
 
     <section class="section soft-section" aria-labelledby="scope-title">

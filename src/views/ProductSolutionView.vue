@@ -6,17 +6,17 @@
 
         <section class="hero">
           <div class="hero-copy">
-            <div class="eyebrow">预设产品模块 · 客户定制功能 · 一体化交付</div>
-            <h1>先选业务方向，再组合产品模块。</h1>
-            <p class="lead">提供商城、团购、点餐、预约、APP、CRM、ERP 等产品方向，先复用成熟模块，再按业务流程定制。</p>
+            <div class="eyebrow">获客交易 · 客户沉淀 · 内部协同 · 经营管理</div>
+            <h1>先确定企业想改善什么，再组合适合的系统能力。</h1>
+            <p class="lead">不是从商城、CRM 或 ERP 的名称开始选，而是先判断要解决的是客户自助交易、老客复购、内部履约，还是经营决策，再组合成熟模块与专属流程。</p>
             <div class="hero-actions">
               <a class="btn primary" href="#contact">获取适合的方案</a>
               <a class="btn secondary" href="#contact">发起范围评估</a>
             </div>
             <div class="trust-row">
-              <div class="trust-item"><strong>7类</strong><span>预设产品方向</span></div>
-              <div class="trust-item"><strong>模块化</strong><span>按需组合扩展</span></div>
-              <div class="trust-item"><strong>定制</strong><span>按业务流程扩展</span></div>
+              <div class="trust-item"><strong>先定目标</strong><span>不盲目购买功能</span></div>
+              <div class="trust-item"><strong>首期闭环</strong><span>先验证关键流程</span></div>
+              <div class="trust-item"><strong>持续扩展</strong><span>按使用反馈补能力</span></div>
             </div>
           </div>
 
@@ -50,17 +50,17 @@
       <section class="section">
         <div class="wrap">
           <div class="section-head">
-            <h2 class="section-title">常见产品方向，先选接近的基础方案</h2>
-            <p class="section-subtitle">先选接近的产品方向，再确认页面、流程和数据规则。</p>
+            <h2 class="section-title">先按业务目标找方案，不必一开始就选技术产品</h2>
+            <p class="section-subtitle">以下方向分别支撑获客交易、客户沉淀、履约协同与内部管理；再根据页面、流程和数据规则组合落地。</p>
           </div>
           <div class="product-grid">
-            <article class="product-card"><div class="icon">商</div><h3>商城小程序</h3><p>商品售卖、会员复购、优惠活动和微信支付，适合品牌零售、电商和微信社群销售。</p><div class="initial-recommendation"><strong>首期建议</strong><span>商品、订单、支付、基础后台</span></div><div class="feature-list"><span>商品规格库存</span><span>订单支付退款</span><span>会员积分优惠</span></div></article>
-            <article class="product-card"><div class="icon">团</div><h3>团购小程序</h3><p>活动商品、团长管理、自提核销和分销统计，适合社区团购、社群团购和预售业务。</p><div class="initial-recommendation"><strong>首期建议</strong><span>活动配置、团长管理、提货核销</span></div><div class="feature-list"><span>活动批次配置</span><span>团长佣金统计</span><span>自提核销流程</span></div></article>
+            <article class="product-card"><div class="icon">商</div><h3>商城小程序</h3><p>让客户能自主浏览、下单、支付和查询，减少客服反复确认；适合品牌零售、电商和微信社群销售。</p><div class="initial-recommendation"><strong>首期建议</strong><span>商品、订单、支付、基础后台</span></div><div class="feature-list"><span>商品规格库存</span><span>订单支付退款</span><span>会员积分优惠</span></div></article>
+            <article class="product-card"><div class="icon">团</div><h3>团购小程序</h3><p>让活动、团长、库存、提货和核销围绕同一份订单记录流转，减少表格与聊天里的遗漏。</p><div class="initial-recommendation"><strong>首期建议</strong><span>活动配置、团长管理、提货核销</span></div><div class="feature-list"><span>活动批次配置</span><span>团长佣金统计</span><span>自提核销流程</span></div></article>
             <article class="product-card"><div class="icon">餐</div><h3>点餐小程序</h3><p>桌台点餐、外带自取、套餐规格和后厨打印，适合餐饮门店和连锁轻餐。</p><div class="initial-recommendation"><strong>首期建议</strong><span>菜品、桌台、点餐、订单打印</span></div><div class="feature-list"><span>扫码点餐</span><span>菜品规格口味</span><span>营业时段设置</span></div></article>
-            <article class="product-card"><div class="icon">约</div><h3>预约小程序</h3><p>服务项目、时段库存、员工排班和到店记录，适合美业、维修、课程和场馆预约。</p><div class="initial-recommendation"><strong>首期建议</strong><span>服务项目、时段排期、预约提醒</span></div><div class="feature-list"><span>时段排期</span><span>服务人员管理</span><span>预约提醒</span></div></article>
+            <article class="product-card"><div class="icon">约</div><h3>预约小程序</h3><p>把预约、排班、提醒和客户历史记录放在一起，避免人工确认冲突；适合美业、维修、课程和场馆预约。</p><div class="initial-recommendation"><strong>首期建议</strong><span>服务项目、时段排期、预约提醒</span></div><div class="feature-list"><span>时段排期</span><span>服务人员管理</span><span>预约提醒</span></div></article>
             <article class="product-card"><div class="icon">APP</div><h3>APP 定制开发</h3><p>会员服务、移动办公、业务表单、消息推送和版本发布，适合会员服务、移动办公和企业内部工具。</p><div class="initial-recommendation"><strong>首期建议</strong><span>核心移动端流程、登录、消息和接口</span></div><div class="feature-list"><span>iOS / Android</span><span>推送与扫码</span><span>接口测试发布</span></div></article>
-            <article class="product-card"><div class="icon">客</div><h3>CRM 客户系统</h3><p>客户档案、线索分配、跟进记录、标签分群和转化报表，把客户资料和跟进过程统一保存。</p><div class="initial-recommendation"><strong>首期建议</strong><span>客户档案、线索跟进、标签和转化</span></div><div class="feature-list"><span>线索分配</span><span>客户标签</span><span>转化看板</span></div></article>
-            <article class="product-card"><div class="icon">ERP</div><h3>ERP 管理系统</h3><p>采购、库存、订单、财务、审批和权限管理，帮助内部流程统一到一个后台。</p><div class="initial-recommendation"><strong>首期建议</strong><span>采购、库存、审批和基础报表</span></div><div class="feature-list"><span>进销存管理</span><span>审批权限</span><span>经营报表</span></div></article>
+            <article class="product-card"><div class="icon">客</div><h3>CRM 客户系统</h3><p>把线索、跟进、成交和服务记录沉淀为企业资产，避免客户资料跟着员工走。</p><div class="initial-recommendation"><strong>首期建议</strong><span>客户档案、线索跟进、标签和转化</span></div><div class="feature-list"><span>线索分配</span><span>客户标签</span><span>转化看板</span></div></article>
+            <article class="product-card"><div class="icon">ERP</div><h3>ERP 管理系统</h3><p>把采购、库存、订单、财务和审批纳入同一份业务数据，减少内部反复核对与协作断层。</p><div class="initial-recommendation"><strong>首期建议</strong><span>采购、库存、审批和基础报表</span></div><div class="feature-list"><span>进销存管理</span><span>审批权限</span><span>经营报表</span></div></article>
           </div>
         </div>
       </section>

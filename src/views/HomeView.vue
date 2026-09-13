@@ -5,17 +5,17 @@
 
       <section class="hero" aria-labelledby="home-title">
         <div class="hero-copy">
-          <div class="eyebrow">小程序 · APP · CRM · ERP 定制开发</div>
-          <h1 id="home-title">把业务想法，做成能上线的系统。</h1>
-          <p class="lead">从需求梳理到开发上线，交付清晰、可验收、可继续迭代。</p>
+          <div class="eyebrow">业务系统定制 · 存量系统升级 · AI 自动化</div>
+          <h1 id="home-title">企业不缺软件，缺的是让业务顺畅运转的一套流程。</h1>
+          <p class="lead">当订单靠微信群催、客户资料留在员工手机、库存总对不上、老板靠导表看经营时，问题不在于不够努力，而在于流程、数据和责任没有进入同一套系统。</p>
           <div class="hero-actions">
-            <RouterLink class="btn primary" to="/services">查看服务方案</RouterLink>
-            <a class="btn secondary" href="#contact">发起需求评估</a>
+            <RouterLink class="btn primary" to="/services">诊断业务卡点</RouterLink>
+            <a class="btn secondary" href="#system-health">了解存量系统升级</a>
           </div>
           <div class="trust-row" aria-label="合作特点">
-            <div class="trust-item"><strong>先评估</strong><span>先给功能清单与范围</span></div>
-            <div class="trust-item"><strong>分阶段</strong><span>原型、开发、上线可确认</span></div>
-            <div class="trust-item"><strong>全流程</strong><span>前后台与部署持续跟进</span></div>
+            <div class="trust-item"><strong>先找卡点</strong><span>定位最耗时、最易出错的环节</span></div>
+            <div class="trust-item"><strong>先做闭环</strong><span>首期先跑通一条完整业务链路</span></div>
+            <div class="trust-item"><strong>交付可运营</strong><span>系统、数据、权限与部署一并跟进</span></div>
           </div>
         </div>
 
@@ -39,13 +39,43 @@
     <section class="section" id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="services-title" class="section-title">你可以从一个核心业务场景开始</h2>
+          <h2 id="services-title" class="section-title">不从堆功能开始，先解决最卡业务的一环</h2>
+          <p class="section-subtitle">从获客、交易到内部协同，先确定问题根源与首期闭环，再选择合适的系统能力。</p>
         </div>
         <div class="product-grid compact-service-grid">
-          <article class="product-card compact-service-card"><div class="icon">产</div><h3>产品方案</h3><p>商城、团购、点餐、预约、APP、CRM、ERP 等预设方向，按业务差异继续定制。</p><RouterLink class="text-link" to="/product-solution">查看产品方案 →</RouterLink></article>
-          <article class="product-card compact-service-card"><div class="icon">系</div><h3>系统能力</h3><p>围绕订单、客户、库存、权限、数据和第三方接口，解决真实业务问题。</p><RouterLink class="text-link" to="/system-capability">查看系统能力 →</RouterLink></article>
-          <article class="product-card compact-service-card"><div class="icon">技</div><h3>开发能力</h3><p>覆盖多端应用、管理后台、接口服务、数据库设计、部署发布和后续维护。</p><RouterLink class="text-link" to="/development-capability">查看开发能力 →</RouterLink></article>
-          <article class="product-card compact-service-card"><div class="icon">交</div><h3>交付流程</h3><p>从需求评估、原型设计到开发、验收、上线和交接，每阶段都有可确认成果。</p><RouterLink class="text-link" to="/process">查看交付流程 →</RouterLink></article>
+          <article class="product-card compact-service-card"><div class="icon">获</div><h3>获客与交易</h3><p>让客户能自主咨询、下单、预约、支付和查询，减少客服反复解释与人工确认。</p><RouterLink class="text-link" to="/product-solution">查看交易方案 →</RouterLink></article>
+          <article class="product-card compact-service-card"><div class="icon">管</div><h3>客户与内部管理</h3><p>把客户、订单、库存、审批和角色权限放进一套规则，业务不再依赖个人记忆。</p><RouterLink class="text-link" to="/system-capability">查看系统能力 →</RouterLink></article>
+          <article class="product-card compact-service-card"><div class="icon">升</div><h3>存量系统升级</h3><p>维护和升级 Java、PHP 老系统，补齐报表、接口、稳定性与自动化能力，不必轻易推倒重来。</p><a class="text-link" href="#system-health">查看升级方式 →</a></article>
+          <article class="product-card compact-service-card"><div class="icon">交</div><h3>分阶段交付</h3><p>先验证关键流程，再逐步扩展；每个阶段都有可演示版本、验收范围与后续建议。</p><RouterLink class="text-link" to="/process">查看合作流程 →</RouterLink></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="system-health" aria-labelledby="system-health-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="system-health-title" class="section-title">已有系统不必推倒重来，也能先解决最影响经营的问题</h2>
+          <p class="section-subtitle">适合正在使用 Java、PHP 或其他老系统，同时依赖 Excel、ERP、客户资料和人工流程的中小企业。</p>
+        </div>
+        <div class="split-grid">
+          <article class="info-panel">
+            <div class="eyebrow">系统维护与升级</div>
+            <h3>把分散工具接回一条可追踪的业务链</h3>
+            <ul class="check-list">
+              <li>维护和升级 Java、PHP 老系统，排查稳定性、接口、权限和关键流程问题。</li>
+              <li>通过 Python 与全栈开发，把 Excel、ERP、客户资料和人工操作连接为可管理的数据流程。</li>
+              <li>补齐订单、客户、库存、审批、日志和报表能力，让关键动作有记录、有责任、有进度。</li>
+            </ul>
+          </article>
+          <article class="info-panel">
+            <div class="eyebrow">轻量技术体检与 AI 自动化</div>
+            <h3>在有限预算内，快速交付看得见的改进</h3>
+            <ul class="check-list">
+              <li>从高频故障、重复录入、人工汇总和数据不一致中找出最值得优先处理的环节。</li>
+              <li>提供数据报表自动化、AI 知识库维护与日常流程自动化，减少重复查询和手工整理。</li>
+              <li>目标不是重做系统，而是先交付能投入使用的修复、报表、工具或流程改进成果。</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
@@ -53,14 +83,18 @@
     <section class="section proof-section" id="cases" aria-labelledby="cases-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="cases-title" class="section-title">先看典型业务问题，再判断是否适合定制开发</h2>
+          <h2 id="cases-title" class="section-title">这些问题，正在悄悄拖慢企业</h2>
+          <p class="section-subtitle">如果已出现其中两项以上，通常值得先做一次业务与系统评估。</p>
         </div>
-        <div class="proof-grid compact-proof-grid">
-          <article class="proof-card"><div class="proof-meta"><span class="proof-label">业务场景 01</span></div><h3>社区团购：从活动发布到提货核销</h3><div class="proof-row"><strong>问题</strong><span>团长、活动库存、提货记录分散在表格和聊天里。</span></div><div class="proof-row"><strong>首期范围</strong><span>团长权限、活动配置、库存同步、订单查询、核销与统计。</span></div></article>
-          <article class="proof-card"><div class="proof-meta"><span class="proof-label">业务场景 02</span></div><h3>服务预约：把排班、提醒和客户档案放在一起</h3><div class="proof-row"><strong>问题</strong><span>预约靠人工确认，客户历史记录和员工排班难同步。</span></div><div class="proof-row"><strong>首期范围</strong><span>服务项目、时段库存、员工排班、预约状态、提醒和 CRM 档案。</span></div></article>
-          <article class="proof-card"><div class="proof-meta"><span class="proof-label">业务场景 03</span></div><h3>进销存后台：让采购、库存和审批有记录</h3><div class="proof-row"><strong>问题</strong><span>采购、入库、出库和盘点数据不同步，异常难以追查。</span></div><div class="proof-row"><strong>首期范围</strong><span>采购单、库存变动、盘点、角色权限、审批流和经营报表。</span></div></article>
+        <div class="pain-grid">
+          <article class="pain-card"><div class="icon">单</div><h3>订单和售后靠人盯</h3><p>订单散在微信、表格和收银系统，付款、发货、退款与售后状态难追踪。</p><div class="resolve"><strong>系统改变</strong>让订单按状态推进，异常可直接筛出。</div></article>
+          <article class="pain-card"><div class="icon">客</div><h3>客户资料跟着员工走</h3><p>线索、跟进和成交记录留在个人手机，人员变化后客户关系也随之断层。</p><div class="resolve"><strong>系统改变</strong>让客户资产沉淀在企业，而非个人账号。</div></article>
+          <article class="pain-card"><div class="icon">库</div><h3>库存和履约总对不上</h3><p>入库、出库、调拨与预售库存靠人工同步，超卖、漏发和盘点差异反复出现。</p><div class="resolve"><strong>系统改变</strong>让每次库存变化都有依据和预警。</div></article>
+          <article class="pain-card"><div class="icon">协</div><h3>跨部门协作靠催</h3><p>进度不透明、职责不清楚，事情卡在哪里只能逐个询问。</p><div class="resolve"><strong>系统改变</strong>让待办、审批和关键操作都有记录。</div></article>
+          <article class="pain-card"><div class="icon">数</div><h3>经营数据靠月底汇总</h3><p>销售、回款、库存和活动效果依赖人工导表，管理决策总是慢一步。</p><div class="resolve"><strong>系统改变</strong>让经营数据按统一口径自动汇总。</div></article>
+          <article class="pain-card"><div class="icon">接</div><h3>新旧系统各自为政</h3><p>ERP、Excel、支付、物流和客户工具彼此割裂，员工重复录入、数据相互矛盾。</p><div class="resolve"><strong>系统改变</strong>按现有条件集成、导入或自动同步。</div></article>
         </div>
-        <div class="section-inline-cta"><RouterLink class="btn secondary" to="/cases">查看项目案例</RouterLink></div>
+        <div class="section-inline-cta"><RouterLink class="btn secondary" to="/system-capability">查看问题对应的系统能力</RouterLink></div>
       </div>
     </section>
 
