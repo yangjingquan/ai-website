@@ -243,8 +243,8 @@
         <div class="wrap">
           <div class="contact-panel">
             <div>
-              <h2>有多端、多语言、多数据库或全栈开发需求，可以直接联系我评估。</h2>
-              <p>提供业务目标、现有系统、上线平台和数据规模即可开始评估，我会帮你确定平台、技术路线和首期范围。</p>
+              <h2>有多端、多语言、多数据库或全栈开发需求，可以直接联系工作室评估。</h2>
+              <p>提供业务目标、现有系统、上线平台和数据规模即可开始评估，工作室会帮你确定平台、技术路线和首期范围。</p>
               <div class="chip-row"><span class="chip">平台建议</span><span class="chip">技术路线</span><span class="chip">首期范围</span><span class="chip">对接条件</span></div>
             </div>
             <div class="contact-box">

@@ -1,36 +1,47 @@
 <template>
-  <main class="site compact-home" id="site" tabindex="-1">
+  <main class="site compact-home homepage-redesign" id="site" tabindex="-1">
     <div class="wrap">
       <SiteNav />
 
       <section class="hero" aria-labelledby="home-title">
         <div class="hero-copy">
-          <div class="eyebrow">业务系统定制 · 存量系统升级 · AI 自动化</div>
-          <h1 id="home-title">企业不缺软件，缺的是让业务顺畅运转的一套流程。</h1>
-          <p class="lead">当订单靠微信群催、客户资料留在员工手机、库存总对不上、老板靠导表看经营时，问题不在于不够努力，而在于流程、数据和责任没有进入同一套系统。</p>
+          <div class="eyebrow">存量系统维护 · 业务流程升级 · AI 自动化</div>
+          <h1 id="home-title">让业务回到系统里。</h1>
+          <p class="lead">别再让表格、聊天和个人经验承担企业的关键流程。为中小企业维护和升级 Java / PHP 老系统，打通 Excel、ERP、客户资料与人工流程，并通过 Python、全栈开发和 AI 自动化，快速交付可用的改进成果。</p>
           <div class="hero-actions">
             <RouterLink class="btn primary" to="/services">诊断业务卡点</RouterLink>
-            <a class="btn secondary" href="#system-health">了解存量系统升级</a>
+            <RouterLink class="btn secondary" to="/cases">查看解决案例</RouterLink>
           </div>
           <div class="trust-row" aria-label="合作特点">
-            <div class="trust-item"><strong>先找卡点</strong><span>定位最耗时、最易出错的环节</span></div>
-            <div class="trust-item"><strong>先做闭环</strong><span>首期先跑通一条完整业务链路</span></div>
-            <div class="trust-item"><strong>交付可运营</strong><span>系统、数据、权限与部署一并跟进</span></div>
+            <div class="trust-item"><strong>轻量评估</strong><span>先找到最影响效率和稳定性的环节</span></div>
+            <div class="trust-item"><strong>分阶段交付</strong><span>先解决一个关键问题，再逐步扩展</span></div>
+            <div class="trust-item"><strong>持续维护</strong><span>支持老系统、报表和自动化升级</span></div>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="商业系统示意看板">
-          <div class="admin-window">
-            <div class="window-top"><div class="window-title">商业系统管理中心</div></div>
-            <div class="metric-row">
-              <div class="metric-card"><strong>订单</strong><span>状态、支付、退款</span></div>
-              <div class="metric-card"><strong>客户</strong><span>档案、跟进、分群</span></div>
-              <div class="metric-card"><strong>权限</strong><span>角色、日志、范围</span></div>
+        <div class="hero-visual" aria-label="业务诊断流程示意">
+          <div class="diagnostic-window">
+            <div class="diagnostic-top">
+              <div><span class="diagnostic-kicker">轻量技术体检</span><strong>业务诊断台</strong></div>
+              <span class="diagnostic-status"><i aria-hidden="true"></i>先找最值得改的环节</span>
             </div>
-            <div class="bar-chart" aria-hidden="true">
-              <div class="bar" style="height: 62px"></div><div class="bar" style="height: 86px"></div><div class="bar" style="height: 122px"></div><div class="bar" style="height: 94px"></div><div class="bar" style="height: 132px"></div><div class="bar" style="height: 106px"></div><div class="bar" style="height: 76px"></div>
+            <div class="diagnostic-path" aria-label="现状到改进结果的流程">
+              <div class="diagnostic-node"><span class="diagnostic-index">01</span><div><b>现状</b><p>Excel、ERP 与人工流程</p></div></div>
+              <span class="diagnostic-arrow" aria-hidden="true">→</span>
+              <div class="diagnostic-node"><span class="diagnostic-index">02</span><div><b>处理</b><p>体检、连接、修复与自动化</p></div></div>
+              <span class="diagnostic-arrow" aria-hidden="true">→</span>
+              <div class="diagnostic-node diagnostic-node--active"><span class="diagnostic-index">03</span><div><b>结果</b><p>数据统一、流程可追踪</p></div></div>
             </div>
-            <div class="admin-flow" aria-hidden="true"><div class="line"></div><div class="line"></div><div class="line" style="width: 74%"></div><div class="line" style="width: 58%"></div></div>
+            <div class="diagnostic-grid">
+              <div class="diagnostic-list">
+                <span class="diagnostic-label">常见卡点</span>
+                <div class="diagnostic-item"><span aria-hidden="true">!</span>订单与库存需要反复核对</div>
+                <div class="diagnostic-item"><span aria-hidden="true">!</span>老系统能用，但没人敢改</div>
+                <div class="diagnostic-item"><span aria-hidden="true">!</span>报表依赖月底人工汇总</div>
+              </div>
+              <div class="diagnostic-result"><span class="diagnostic-label">可交付结果</span><strong>数据统一<br>流程可追踪</strong><p>先交付修复、报表或自动化工具。</p></div>
+            </div>
+            <div class="diagnostic-footer"><span>Java · PHP · Python · Full-stack</span><span>可维护 · 可扩展</span></div>
           </div>
         </div>
       </section>

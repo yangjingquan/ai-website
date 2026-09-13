@@ -132,7 +132,7 @@
         <div class="wrap">
           <div class="section-head">
             <h2 class="section-title">合作中谁确认、谁交付，说在前面更容易推进</h2>
-            <p class="section-subtitle">个人开发合作最怕信息反复补充，所以流程页面要把客户需要准备的内容和开发者负责的事项讲清楚。</p>
+            <p class="section-subtitle">项目合作最怕信息反复补充，所以流程页面会把客户需要准备的内容和工作室负责的事项讲清楚。</p>
           </div>
           <div class="confirm-grid">
             <article class="confirm-card">
@@ -145,8 +145,8 @@
               </div>
             </article>
             <article class="confirm-card">
-              <div class="eyebrow">开发者负责交付</div>
-              <h3>从需求拆解到上线维护，由同一个人持续跟进，减少转述偏差。</h3>
+              <div class="eyebrow">工作室负责交付</div>
+              <h3>从需求拆解到上线维护，由固定项目成员持续跟进，减少转述偏差。</h3>
               <div class="confirm-table">
                 <div class="confirm-row"><strong>产品梳理</strong><span>把业务目标拆成页面、模块、字段、流程、权限和后台管理能力。</span></div>
                 <div class="confirm-row"><strong>系统实现</strong><span>完成移动端、后台、接口、数据库、支付、消息通知和第三方系统对接。</span></div>
@@ -212,8 +212,8 @@
         <div class="wrap">
           <div class="contact-panel">
             <div>
-              <h2>想确认你的项目适合怎样交付，可以先把需求发我评估。</h2>
-              <p>你可以准备业务类型、主要功能、参考案例、是否需要后台、期望上线时间。我会先帮你拆成页面、流程、功能清单和大致排期。</p>
+              <h2>想确认你的项目适合怎样交付，可以先把需求发工作室评估。</h2>
+              <p>你可以准备业务类型、主要功能、参考案例、是否需要后台、期望上线时间。工作室会先帮你拆成页面、流程、功能清单和大致排期。</p>
               <div class="chip-row"><span class="chip">需求评估</span><span class="chip">原型梳理</span><span class="chip">阶段交付</span><span class="chip">上线维护</span></div>
             </div>
             <div class="contact-box">

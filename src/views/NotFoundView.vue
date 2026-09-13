@@ -10,7 +10,7 @@
         <div class="hero-actions">
           <RouterLink class="btn primary" to="/">返回首页</RouterLink>
           <RouterLink class="btn secondary" to="/product-solution">查看服务方案</RouterLink>
-          <RouterLink class="btn ghost" to="/contact">联系我</RouterLink>
+          <RouterLink class="btn ghost" to="/contact">联系工作室</RouterLink>
         </div>
       </section>
     </div>
