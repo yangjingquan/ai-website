@@ -24,6 +24,11 @@ const touched = ref(false)
 const submitted = ref(false)
 const submitting = ref(false)
 const submitError = ref('')
+const createIdempotencyKey = () => {
+  if (typeof crypto !== 'undefined' && crypto.randomUUID) return crypto.randomUUID()
+  return `contact-${Date.now()}-${Math.random().toString(36).slice(2)}`
+}
+const idempotencyKey = ref(createIdempotencyKey())
 // Keep the browser request same-origin by default. Vite (and the production
 // web server) can proxy /api to the API host, so the browser does not need
 // CORS permission from wbapi.nexbyte.top.
@@ -39,7 +44,10 @@ async function submitForm() {
   try {
     const response = await fetch(apiEndpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Idempotency-Key': idempotencyKey.value,
+      },
       body: JSON.stringify({
         name: form.name,
         contact: form.contact,
@@ -53,9 +61,10 @@ async function submitForm() {
     })
     const result = await response.json().catch(() => null)
     if (!response.ok || result?.code !== 0) {
-      throw new Error(result?.msg || '提交失败，请稍后重试')
+      throw new Error(result?.msg || result?.detail || '提交失败，请稍后重试')
     }
     submitted.value = true
+    idempotencyKey.value = createIdempotencyKey()
   } catch (error) {
     submitError.value = error instanceof Error ? error.message : '提交失败，请稍后重试'
   } finally {
