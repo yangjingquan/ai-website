@@ -9,8 +9,8 @@
           <h1 id="case-detail-title">{{ project.name }}</h1>
           <p class="content-lead">{{ project.summary }}</p>
           <div class="hero-actions">
-            <a class="btn primary" :href="project.link" target="_blank" rel="noopener noreferrer" :aria-label="`访问${project.name}`">访问案例系统</a>
-            <RouterLink class="btn secondary" to="/contact">提交类似需求</RouterLink>
+            <RouterLink class="btn primary" to="/contact#form-section">{{ project.contactAction }}</RouterLink>
+            <a class="btn secondary" href="#case-modules-title">查看项目截图</a>
           </div>
         </div>
         <aside class="case-detail-summary" aria-label="项目概览">
@@ -25,17 +25,18 @@
 
       <template v-if="project">
         <section class="section case-detail-section" aria-labelledby="case-background-title">
-          <div class="section-head"><h2 id="case-background-title" class="section-title">从业务问题到系统交付</h2><p class="section-subtitle">把业务问题、负责内容和交付结果集中说明。</p></div>
-          <div class="case-detail-overview-grid">
-            <article class="case-detail-panel"><span class="detail-kicker">01 / 项目背景</span><h3>为什么要做</h3><p>{{ project.overview }}</p></article>
-            <article class="case-detail-panel"><span class="detail-kicker">02 / 负责内容</span><h3>工作室负责什么</h3><p>{{ project.work }}</p></article>
-            <article class="case-detail-panel case-detail-result"><span class="detail-kicker">03 / 交付结果</span><h3>最终交付</h3><p>{{ project.result }}</p></article>
+          <div class="section-head"><h2 id="case-background-title" class="section-title">业务场景、项目范围与实际交付</h2><p class="section-subtitle">先说明适用场景与交付边界，再展示负责工作和可核验结果。</p></div>
+          <div class="case-story-grid">
+            <article class="case-story-panel"><span class="detail-kicker">01 / 客户场景</span><h3>适合这样的业务</h3><p>{{ project.customerScene }}</p></article>
+            <article class="case-story-panel case-story-scope"><span class="detail-kicker">02 / 项目范围</span><h3>{{ project.scope }}</h3><dl><div v-for="item in project.scopeItems" :key="item.label"><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd></div></dl></article>
+            <article class="case-story-panel"><span class="detail-kicker">03 / 实际负责</span><h3>我承担的工作</h3><p>{{ project.work }}</p></article>
+            <article class="case-story-panel case-detail-result"><span class="detail-kicker">04 / 可核验交付</span><h3>已经交付的结果</h3><p>{{ project.result }}</p></article>
           </div>
           <div class="case-delivery-flow" aria-label="项目交付过程"><div v-for="(step, index) in project.deliveryFlow" :key="step"><span>{{ String(index + 1).padStart(2, '0') }}</span><strong>{{ step }}</strong></div></div>
         </section>
 
         <section class="section soft-section case-detail-section" aria-labelledby="case-modules-title">
-          <div class="section-head"><h2 id="case-modules-title" class="section-title">{{ project.moduleTitle }}</h2></div>
+          <div class="section-head"><div><h2 id="case-modules-title" class="section-title">{{ project.moduleTitle }}</h2><p class="section-subtitle">{{ project.moduleSubtitle }}</p></div></div>
           <div class="case-module-grid">
             <article v-for="(module, index) in project.modules" :key="module.title" class="case-module-card" :class="{ 'case-module-card--portrait': module.portrait }">
               <figure>
@@ -43,7 +44,7 @@
                   <span class="case-phone-side-buttons" aria-hidden="true"></span>
                   <ImageLightbox :src="module.image" :alt="`${project.name}${module.title}模块截图`" />
                 </div>
-                <figcaption>{{ String(index + 1).padStart(2, '0') }} / 模块</figcaption>
+                <figcaption>{{ String(index + 1).padStart(2, '0') }} / {{ module.title }} · 项目截图</figcaption>
               </figure>
               <div><h3>{{ module.title }}</h3><p>{{ module.description }}</p></div>
             </article>
@@ -57,7 +58,7 @@
           </div>
         </section>
 
-        <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>{{ project.contactTitle }}</h2><p>工作室会先了解现有流程和角色，再判断适合的系统范围、交付方式和排期。</p></div><RouterLink class="btn dark" to="/contact">发起需求评估</RouterLink></div></div></section>
+        <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>{{ project.contactTitle }}</h2><p>先描述当前业务、最卡的流程和期望改善的结果，再一起确认适合的系统范围与交付方式。</p></div><RouterLink class="btn dark" to="/contact#form-section">{{ project.contactAction }}</RouterLink></div></div></section>
       </template>
 
       <section v-else class="case-detail-missing"><div class="eyebrow">案例不存在</div><h1>暂时找不到这个案例。</h1><RouterLink class="btn primary" to="/cases">返回项目案例</RouterLink></section>

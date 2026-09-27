@@ -5,47 +5,46 @@
 
       <section class="hero" aria-labelledby="home-title">
         <div class="hero-copy">
-          <div class="eyebrow">存量系统维护 · 业务流程升级 · AI 自动化</div>
-          <h1 id="home-title">让业务回到系统里。</h1>
-          <p class="lead">别再让表格、聊天和个人经验承担企业的关键流程。为中小企业维护和升级 Java / PHP 老系统，打通 Excel、ERP、客户资料与人工流程，并通过 Python、全栈开发和 AI 自动化，快速交付可用的改进成果。</p>
+          <div class="eyebrow">中小企业交易系统与内部管理系统定制开发</div>
+          <h1 id="home-title">把订单、生产和管理流程，<br class="hero-desktop-break">做成真正能用的系统。</h1>
+          <p class="lead">从多商户商城小程序到制造业 ERP，我负责需求梳理、开发上线与后续维护。已有系统的修复、升级和自动化，也可以从最卡业务的一环开始。让业务回到系统里。</p>
           <div class="hero-actions">
-            <RouterLink class="btn primary" to="/services">诊断业务卡点</RouterLink>
-            <RouterLink class="btn secondary" to="/cases">查看解决案例</RouterLink>
-          </div>
-          <div class="trust-row" aria-label="合作特点">
-            <div class="trust-item"><strong>轻量评估</strong><span>先找到最影响效率和稳定性的环节</span></div>
-            <div class="trust-item"><strong>分阶段交付</strong><span>先解决一个关键问题，再逐步扩展</span></div>
-            <div class="trust-item"><strong>持续维护</strong><span>支持老系统、报表和自动化升级</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="业务诊断流程示意">
-          <div class="diagnostic-window">
-            <div class="diagnostic-top">
-              <div><span class="diagnostic-kicker">轻量技术体检</span><strong>业务诊断台</strong></div>
-              <span class="diagnostic-status"><i aria-hidden="true"></i>先找最值得改的环节</span>
-            </div>
-            <div class="diagnostic-path" aria-label="现状到改进结果的流程">
-              <div class="diagnostic-node"><span class="diagnostic-index">01</span><div><b>现状</b><p>Excel、ERP 与人工流程</p></div></div>
-              <span class="diagnostic-arrow" aria-hidden="true">→</span>
-              <div class="diagnostic-node"><span class="diagnostic-index">02</span><div><b>处理</b><p>体检、连接、修复与自动化</p></div></div>
-              <span class="diagnostic-arrow" aria-hidden="true">→</span>
-              <div class="diagnostic-node diagnostic-node--active"><span class="diagnostic-index">03</span><div><b>结果</b><p>数据统一、流程可追踪</p></div></div>
-            </div>
-            <div class="diagnostic-grid">
-              <div class="diagnostic-list">
-                <span class="diagnostic-label">常见卡点</span>
-                <div class="diagnostic-item"><span aria-hidden="true">!</span>订单与库存需要反复核对</div>
-                <div class="diagnostic-item"><span aria-hidden="true">!</span>老系统能用，但没人敢改</div>
-                <div class="diagnostic-item"><span aria-hidden="true">!</span>报表依赖月底人工汇总</div>
-              </div>
-              <div class="diagnostic-result"><span class="diagnostic-label">可交付结果</span><strong>数据统一<br>流程可追踪</strong><p>先交付修复、报表或自动化工具。</p></div>
-            </div>
-            <div class="diagnostic-footer"><span>Java · PHP · Python · Full-stack</span><span>可维护 · 可扩展</span></div>
+            <RouterLink class="btn primary" to="/contact#form-section">描述你的业务问题</RouterLink>
+            <a class="btn secondary" href="#featured-cases">查看两个已交付案例</a>
           </div>
         </div>
       </section>
     </div>
+
+    <section class="section featured-cases-section" id="featured-cases" aria-labelledby="featured-cases-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="featured-cases-title" class="section-title">两类业务，已经做成可用的系统</h2>
+          <p class="section-subtitle">先看适用场景、打通的流程和实际交付范围，再判断你的项目可以从哪里开始。</p>
+        </div>
+        <div class="featured-cases-grid">
+          <article v-for="project in caseCatalog" :key="project.slug" class="case-directory-card featured-case-card">
+            <div class="case-directory-cover" :class="{ 'case-directory-cover--portrait-contain': project.coverFit === 'portrait-contain', 'case-directory-cover--gallery': project.coverImages?.length, [`case-directory-cover--${project.coverLayout}`]: project.coverImages?.length }">
+              <div v-if="project.coverImages?.length" class="case-directory-cover-gallery">
+                <ImageLightbox v-for="(image, index) in project.coverImages" :key="image" :src="image" :alt="`${project.name}项目封面截图${index + 1}`" />
+              </div>
+              <ImageLightbox v-else :src="project.cover" :alt="`${project.name}项目封面`" />
+              <RouterLink class="case-directory-cover-link" :to="`/cases/${project.slug}`">查看详情 →</RouterLink>
+            </div>
+            <div class="case-directory-copy">
+              <div class="case-directory-meta"><span>{{ project.category }}</span><span>{{ project.duration }}</span></div>
+              <h3><RouterLink :to="`/cases/${project.slug}`">{{ project.name }}</RouterLink></h3>
+              <div class="case-directory-tags" aria-label="项目范围"><span v-for="module in project.modules" :key="module.title">{{ module.title }}</span></div>
+              <p><strong>业务原状</strong>{{ project.overview }}</p>
+              <p><strong>解决重点</strong>{{ project.summary }}</p>
+              <p class="case-directory-result"><strong>系统交付</strong>{{ project.result }}</p>
+              <RouterLink class="text-link" :to="`/cases/${project.slug}`">查看案例详情 →</RouterLink>
+            </div>
+          </article>
+        </div>
+        <div class="section-inline-cta"><RouterLink class="btn secondary" to="/cases">查看全部案例</RouterLink></div>
+      </div>
+    </section>
 
     <section class="section" id="services" aria-labelledby="services-title">
       <div class="wrap">
@@ -151,4 +150,6 @@
 <script setup>
 import SiteNav from '../components/SiteNav.vue'
 import WechatQr from '../components/WechatQr.vue'
+import ImageLightbox from '../components/ImageLightbox.vue'
+import { caseCatalog } from '../data/cases'
 </script>

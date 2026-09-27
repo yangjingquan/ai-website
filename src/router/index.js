@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createMemoryHistory, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProductSolutionView from '../views/ProductSolutionView.vue'
 import SystemCapabilityView from '../views/SystemCapabilityView.vue'
@@ -15,7 +15,7 @@ import PrivacyView from '../views/PrivacyView.vue'
 import CaseDetailView from '../views/CaseDetailView.vue'
 import { getCaseBySlug } from '../data/cases'
 
-const routes = [
+export const routes = [
   { path: '/', name: 'home', component: HomeView, meta: { title: '纳启字节信息技术工作室 - 商业系统定制开发', description: '纳启字节信息技术工作室，提供小程序、APP、CRM、ERP 商业系统定制开发服务。' } },
   { path: '/about', name: 'about', component: AboutView, meta: { title: '关于我 - 纳启字节信息技术工作室', description: '了解纳启字节信息技术工作室的个人背景、擅长方向、合作方式和能力边界。' } },
   { path: '/services', name: 'services', component: ServicesView, meta: { title: '服务方案 - 纳启字节信息技术工作室', description: '产品方案、业务系统、多端开发和分阶段交付服务说明。' } },
@@ -33,20 +33,39 @@ const routes = [
   { path: '/:pathMatch(.*)*', name: 'not-found-catchall', component: NotFoundView, meta: { title: '页面不存在 - 纳启字节信息技术工作室', description: '你访问的页面不存在，请返回首页或查看服务方案。' } }
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-  scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) return savedPosition
-    if (to.hash) return { el: to.hash, behavior: 'smooth', top: 16 }
-    return { top: 0 }
+export function createSiteRouter(ssr = false) {
+  const router = createRouter({
+    history: ssr ? createMemoryHistory() : createWebHistory(),
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) return savedPosition
+      if (to.hash) return { el: to.hash, behavior: 'smooth', top: 16 }
+      return { top: 0 }
+    }
+  })
+
+  if (!ssr) {
+    router.afterEach((to) => {
+      const { title, description, canonical, image } = getPageMetadata(to)
+      document.title = title
+      document.querySelector('meta[name="description"]')?.setAttribute('content', description)
+      document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical)
+      document.querySelector('meta[property="og:title"]')?.setAttribute('content', title)
+      document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
+      document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical)
+      document.querySelector('meta[property="og:image"]')?.setAttribute('content', image)
+    })
   }
-})
 
-router.afterEach((to) => {
-  document.title = to.meta.title || '纳启字节信息技术工作室 - 商业系统定制开发'
-  const description = document.querySelector('meta[name="description"]')
-  if (description && to.meta.description) description.setAttribute('content', to.meta.description)
-})
+  return router
+}
 
-export default router
+export function getPageMetadata(to) {
+  const project = to.name === 'case-detail' ? getCaseBySlug(to.params.slug) : null
+  const title = project ? `${project.name} - 纳启字节信息技术工作室` : to.meta.title || '纳启字节信息技术工作室'
+  const description = project ? project.summary : to.meta.description || ''
+  const canonicalPath = to.name === 'not-found' || to.name === 'not-found-catchall' ? '/404' : to.path
+  const canonical = `https://www.nexbyte.top${canonicalPath}`
+  const image = `https://www.nexbyte.top${project?.cover || '/Nex.png'}`
+  return { title, description, canonical, image }
+}

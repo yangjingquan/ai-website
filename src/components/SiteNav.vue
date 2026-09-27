@@ -35,18 +35,16 @@
       <RouterLink to="/pricing" active-class="active">报价说明</RouterLink>
       <RouterLink to="/process" active-class="active">合作流程</RouterLink>
       <RouterLink to="/about" active-class="active">关于我们</RouterLink>
-      <button class="btn primary" type="button" @click="goContact">发起需求评估</button>
+      <RouterLink class="btn primary" to="/contact">发起需求评估</RouterLink>
     </div>
   </nav>
 </template>
 
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { useRouter } from 'vue-router'
 import { useRoute } from 'vue-router'
 import { caseCatalog } from '../data/cases'
 
-const router = useRouter()
 const route = useRoute()
 const caseMenuOpen = ref(false)
 const isCaseRoute = computed(() => route.path === '/cases' || route.path.startsWith('/cases/'))
@@ -79,7 +77,4 @@ onBeforeUnmount(() => {
 
 watch(() => route.path, closeCaseMenu)
 
-function goContact() {
-  router.push({ path: '/contact' })
-}
 </script>

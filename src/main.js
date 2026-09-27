@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import { createSiteRouter } from './router'
 import './styles/site.css'
 
-createApp(App).use(router).mount('#app')
+const router = createSiteRouter()
+const app = createApp(App).use(router)
+router.isReady().then(() => app.mount('#app'))
