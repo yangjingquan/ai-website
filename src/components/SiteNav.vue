@@ -6,6 +6,7 @@
     </RouterLink>
     <div class="navlinks" aria-label="页面导航">
       <RouterLink to="/services" active-class="active">服务方案</RouterLink>
+      <RouterLink to="/pricing" active-class="active">报价说明</RouterLink>
       <div class="case-nav-dropdown" :class="{ open: caseMenuOpen }" @click.stop>
         <button
           class="case-nav-trigger"
@@ -32,7 +33,6 @@
           </RouterLink>
         </div>
       </div>
-      <RouterLink to="/pricing" active-class="active">报价说明</RouterLink>
       <RouterLink to="/process" active-class="active">合作流程</RouterLink>
       <RouterLink to="/about" active-class="active">关于我们</RouterLink>
       <RouterLink class="btn primary" to="/contact">发起需求评估</RouterLink>
