@@ -8622,6 +8622,126 @@ body.lightbox-open {
   }
 }
 
+/* Shared mobile navigation polish: every page uses the same action language. */
+@media (max-width: 720px) {
+  .navlinks {
+    gap: 8px;
+  }
+
+  .navlinks > a,
+  .navlinks .case-nav-trigger {
+    min-height: 48px;
+    padding: 0 14px;
+    border: 1px solid #dbe4ee;
+    border-radius: 12px;
+    color: #334155;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+    touch-action: manipulation;
+  }
+
+  .navlinks > a.active,
+  .navlinks .case-nav-trigger.active {
+    border-color: #9ddfd3;
+    color: #0f766e;
+    background: #effaf7;
+  }
+
+  .navlinks > a:active,
+  .navlinks .case-nav-trigger:active,
+  .navlinks .btn:active,
+  .homepage-redesign .hero-actions .btn:active {
+    transform: scale(0.985);
+  }
+
+  .case-nav-dropdown {
+    grid-column: 1 / -1;
+  }
+
+  .navlinks .case-nav-trigger {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navlinks .btn.primary {
+    min-height: 50px;
+    border-color: transparent;
+    border-radius: 12px;
+  }
+
+  .homepage-redesign .hero-copy {
+    max-width: none;
+    text-align: center;
+  }
+
+  .homepage-redesign .hero .eyebrow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .homepage-redesign .hero h1 {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(34px, 9.6vw, 46px);
+    line-height: 1.18;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .homepage-redesign .hero .lead {
+    max-width: none;
+    text-align: center;
+  }
+
+  .homepage-redesign .hero-actions {
+    width: min(100%, 348px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .homepage-redesign .hero-actions .btn {
+    min-height: 52px;
+  }
+
+  .homepage-redesign .section-inline-cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .homepage-redesign .case-directory-cover--row {
+    height: auto;
+    padding: 10px;
+    aspect-ratio: auto;
+  }
+
+  .homepage-redesign .case-directory-cover--row .case-directory-cover-gallery {
+    height: auto;
+    gap: 10px;
+  }
+
+  .homepage-redesign .case-directory-cover--row .image-lightbox-trigger {
+    height: auto;
+    aspect-ratio: 367 / 794;
+  }
+
+  .homepage-redesign .case-directory-cover--row .image-lightbox-trigger img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navlinks > a,
+  .navlinks .case-nav-trigger {
+    transition: none;
+  }
+}
+
 /* Case pages: make the buyer's context, scope, delivery, and proof easy to scan. */
 .case-detail-page .case-story-grid {
   display: grid;

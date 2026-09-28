@@ -31,7 +31,7 @@
               <ImageLightbox v-else :src="project.cover" :alt="`${project.name}项目封面`" />
               <RouterLink class="case-directory-cover-link" :to="`/cases/${project.slug}`">查看详情 →</RouterLink>
             </div>
-            <div class="case-directory-copy">
+            <div class="case-directory-copy featured-case-copy">
               <div class="case-directory-meta"><span>{{ project.category }}</span><span>{{ project.duration }}</span></div>
               <h3><RouterLink :to="`/cases/${project.slug}`">{{ project.name }}</RouterLink></h3>
               <div class="case-directory-tags" aria-label="项目范围"><span v-for="module in project.modules" :key="module.title">{{ module.title }}</span></div>
