@@ -9,7 +9,7 @@
           <h1 id="case-detail-title">{{ project.name }}</h1>
           <p class="content-lead">{{ project.summary }}</p>
           <div class="hero-actions">
-            <RouterLink class="btn primary" to="/contact#form-section">{{ project.contactAction }}</RouterLink>
+            <RouterLink class="btn primary" :to="{ path: '/contact', query: { projectType: project.contactProjectType, source: project.contactSource }, hash: '#form-section' }">{{ project.contactAction }}</RouterLink>
             <a class="btn secondary" href="#case-modules-title">查看项目截图</a>
           </div>
         </div>
@@ -58,7 +58,7 @@
           </div>
         </section>
 
-        <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>{{ project.contactTitle }}</h2><p>先描述当前业务、最卡的流程和期望改善的结果，再一起确认适合的系统范围与交付方式。</p></div><RouterLink class="btn dark" to="/contact#form-section">{{ project.contactAction }}</RouterLink></div></div></section>
+        <section class="contact-section" id="contact"><div class="wrap"><div class="contact-panel"><div><h2>{{ project.contactTitle }}</h2><p>先描述当前业务、最卡的流程和期望改善的结果，再一起确认适合的系统范围与交付方式。</p></div><RouterLink class="btn dark" :to="{ path: '/contact', query: { projectType: project.contactProjectType, source: project.contactSource }, hash: '#form-section' }">{{ project.contactAction }}</RouterLink></div></div></section>
       </template>
 
       <section v-else class="case-detail-missing"><div class="eyebrow">案例不存在</div><h1>暂时找不到这个案例。</h1><RouterLink class="btn primary" to="/cases">返回项目案例</RouterLink></section>

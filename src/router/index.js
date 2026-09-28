@@ -16,7 +16,7 @@ import CaseDetailView from '../views/CaseDetailView.vue'
 import { getCaseBySlug } from '../data/cases'
 
 export const routes = [
-  { path: '/', name: 'home', component: HomeView, meta: { title: '纳启字节信息技术工作室 - 商业系统定制开发', description: '纳启字节信息技术工作室，提供小程序、APP、CRM、ERP 商业系统定制开发服务。' } },
+  { path: '/', name: 'home', component: HomeView, meta: { title: '纳启字节信息技术工作室 - 商业系统定制开发', description: '从多商户商城小程序到制造业 ERP，纳启字节为中小企业梳理、开发并交付交易与内部管理系统，也提供存量系统升级维护。' } },
   { path: '/about', name: 'about', component: AboutView, meta: { title: '关于我 - 纳启字节信息技术工作室', description: '了解纳启字节信息技术工作室的个人背景、擅长方向、合作方式和能力边界。' } },
   { path: '/services', name: 'services', component: ServicesView, meta: { title: '服务方案 - 纳启字节信息技术工作室', description: '产品方案、业务系统、多端开发和分阶段交付服务说明。' } },
   { path: '/cases', name: 'cases', component: CasesView, meta: { title: '项目案例 - 纳启字节信息技术工作室', description: '查看项目背景、解决方案、交付范围和结果说明。' } },
@@ -46,7 +46,7 @@ export function createSiteRouter(ssr = false) {
 
   if (!ssr) {
     router.afterEach((to) => {
-      const { title, description, canonical, image } = getPageMetadata(to)
+      const { title, description, canonical, image, imageAlt } = getPageMetadata(to)
       document.title = title
       document.querySelector('meta[name="description"]')?.setAttribute('content', description)
       document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical)
@@ -54,6 +54,11 @@ export function createSiteRouter(ssr = false) {
       document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
       document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical)
       document.querySelector('meta[property="og:image"]')?.setAttribute('content', image)
+      document.querySelector('meta[property="og:image:alt"]')?.setAttribute('content', imageAlt)
+      document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', title)
+      document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', description)
+      document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', image)
+      document.querySelector('meta[name="twitter:image:alt"]')?.setAttribute('content', imageAlt)
     })
   }
 
@@ -66,6 +71,7 @@ export function getPageMetadata(to) {
   const description = project ? project.summary : to.meta.description || ''
   const canonicalPath = to.name === 'not-found' || to.name === 'not-found-catchall' ? '/404' : to.path
   const canonical = `https://www.nexbyte.top${canonicalPath}`
-  const image = `https://www.nexbyte.top${project?.cover || '/Nex.png'}`
-  return { title, description, canonical, image }
+  const image = `https://www.nexbyte.top${project?.shareImage || '/og/home.png'}`
+  const imageAlt = project?.shareImageAlt || '纳启字节信息技术工作室：多商户商城小程序与制造业 ERP 项目'
+  return { title, description, canonical, image, imageAlt }
 }

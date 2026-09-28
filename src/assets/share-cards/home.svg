@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">纳启字节信息技术工作室分享预览</title>
+  <desc id="description">多商户商城小程序与制鞋厂 ERP，面向中小企业的交易和内部管理系统定制开发。</desc>
+  <defs>
+    <clipPath id="phone-screen"><rect x="790" y="104" width="178" height="430" rx="22" /></clipPath>
+    <clipPath id="erp-screen"><rect x="924" y="315" width="222" height="136" rx="9" /></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="#f2f6fa" />
+  <rect x="26" y="26" width="1148" height="578" rx="26" fill="#ffffff" stroke="#dbe5ee" />
+  <image href="/Nex.png" x="64" y="52" width="68" height="34" preserveAspectRatio="xMidYMid meet" />
+  <text x="148" y="78" fill="#17243a" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">纳启字节信息技术工作室</text>
+  <rect x="64" y="132" width="250" height="34" rx="17" fill="#e8f0ff" />
+  <text x="82" y="155" fill="#1d4ed8" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">中小企业商业系统定制开发</text>
+  <text x="64" y="237" fill="#142036" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="43" font-weight="800">把订单、生产和管理流程，</text>
+  <text x="64" y="294" fill="#142036" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="43" font-weight="800">做成真正能用的系统。</text>
+  <text x="64" y="356" fill="#4b5d72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="21">多商户商城小程序 · 制造业 ERP</text>
+  <text x="64" y="390" fill="#4b5d72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="19">需求梳理、开发上线与后续维护</text>
+  <rect x="64" y="438" width="144" height="38" rx="19" fill="#e8f7f5" />
+  <text x="86" y="463" fill="#0f766e" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">交易与履约</text>
+  <rect x="222" y="438" width="174" height="38" rx="19" fill="#edf2f8" />
+  <text x="244" y="463" fill="#334155" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">生产与内部管理</text>
+  <text x="64" y="556" fill="#64748b" font-family="Arial, sans-serif" font-size="15">www.nexbyte.top</text>
+  <rect x="778" y="92" width="202" height="454" rx="30" fill="#ffffff" stroke="#d7e0e9" stroke-width="2" />
+  <image href="/cases/shop-miniap-cover.png" x="790" y="104" width="178" height="430" preserveAspectRatio="xMidYMid slice" clip-path="url(#phone-screen)" />
+  <rect x="912" y="303" width="250" height="160" rx="15" fill="#ffffff" stroke="#d7e0e9" stroke-width="2" />
+  <image href="/cases/erp-production-execution.jpg" x="924" y="315" width="222" height="136" preserveAspectRatio="xMidYMid slice" clip-path="url(#erp-screen)" />
+</svg>

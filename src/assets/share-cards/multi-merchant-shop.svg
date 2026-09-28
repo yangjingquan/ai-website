@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">多商户商城小程序与经营后台案例分享图</title>
+  <desc id="description">展示消费者小程序页面，以及消费者下单、商家履约和平台运营的项目范围。</desc>
+  <defs>
+    <clipPath id="phone-screen"><rect x="877" y="92" width="214" height="466" rx="24" /></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="#f2f6fa" />
+  <rect x="26" y="26" width="1148" height="578" rx="26" fill="#ffffff" stroke="#dbe5ee" />
+  <image href="/Nex.png" x="64" y="52" width="68" height="34" preserveAspectRatio="xMidYMid meet" />
+  <text x="148" y="78" fill="#17243a" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700">纳启字节信息技术工作室</text>
+  <rect x="64" y="136" width="208" height="34" rx="17" fill="#e8f7f5" />
+  <text x="82" y="159" fill="#0f766e" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">零售电商 · 多端交易系统</text>
+  <text x="64" y="260" fill="#142036" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="45" font-weight="800">多商户商城小程序</text>
+  <text x="64" y="320" fill="#142036" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="45" font-weight="800">与经营后台</text>
+  <text x="64" y="380" fill="#4b5d72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="20">覆盖消费者下单、商家商品与履约、</text>
+  <text x="64" y="413" fill="#4b5d72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="20">平台运营管理等协同流程。</text>
+  <rect x="64" y="462" width="153" height="38" rx="19" fill="#e8f7f5" />
+  <text x="86" y="487" fill="#0f766e" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">小程序与订单</text>
+  <rect x="231" y="462" width="162" height="38" rx="19" fill="#edf2f8" />
+  <text x="253" y="487" fill="#334155" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">商家与平台后台</text>
+  <text x="64" y="556" fill="#64748b" font-family="Arial, sans-serif" font-size="15">www.nexbyte.top/cases/multi-merchant-shop</text>
+  <rect x="865" y="80" width="238" height="490" rx="34" fill="#ffffff" stroke="#d7e0e9" stroke-width="2" />
+  <image href="/cases/shop-miniap-cover.png" x="877" y="92" width="214" height="466" preserveAspectRatio="xMidYMid meet" clip-path="url(#phone-screen)" />
+</svg>

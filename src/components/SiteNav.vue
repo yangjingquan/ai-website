@@ -27,8 +27,8 @@
             role="menuitem"
             @click="closeCaseMenu"
           >
-            <span>{{ item.name }}</span>
-            <small>{{ item.category }}</small>
+            <span>{{ item.problemTitle }}</span>
+            <small>{{ item.name }}</small>
           </RouterLink>
         </div>
       </div>

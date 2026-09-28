@@ -9,11 +9,10 @@
     </div>
 
     <section class="section" aria-labelledby="service-type-title">
-      <div class="wrap"><div class="section-head"><h2 id="service-type-title" class="section-title">企业最终获得的，不只是功能清单</h2><p class="section-subtitle">报价会根据问题优先级、功能范围、平台、第三方接口和验收要求确认。</p></div><div class="service-package-grid">
-        <article class="service-package"><div class="package-kicker">01 · 明确优先级</div><h3>把模糊需求变成可执行方案</h3><p>梳理角色、流程、字段、权限和优先级，明确首期必须做什么、暂时不做什么，减少反复返工。</p><div class="feature-list"><span>问题定位</span><span>功能边界</span><span>首期路线</span></div><RouterLink class="text-link" to="/product-solution">查看产品方案 →</RouterLink></article>
-        <article class="service-package"><div class="package-kicker">02 · 固化关键规则</div><h3>让业务不再依赖个人记忆</h3><p>把订单、客户、库存、审批等动作变成标准流程；谁负责、做到哪一步、异常在哪里，都能追踪。</p><div class="feature-list"><span>流程设计</span><span>权限规则</span><span>数据追踪</span></div><RouterLink class="text-link" to="/system-capability">查看系统能力 →</RouterLink></article>
-        <article class="service-package"><div class="package-kicker">03 · 连接前台与后台</div><h3>让获客、交易与管理真正连起来</h3><p>小程序、APP、H5 承接客户；CRM、ERP 与后台支撑员工处理；数据不再在多个工具间反复搬运。</p><div class="feature-list"><span>多端开发</span><span>接口集成</span><span>数据协同</span></div><RouterLink class="text-link" to="/development-capability">查看开发能力 →</RouterLink></article>
-        <article class="service-package"><div class="package-kicker">04 · 持续可用</div><h3>让系统能上线，更能长期使用</h3><p>提供测试、部署、账号权限、交接资料和迭代建议，避免系统上线后无人维护、无法扩展。</p><div class="feature-list"><span>阶段验收</span><span>部署交接</span><span>维护迭代</span></div><RouterLink class="text-link" to="/process">查看合作流程 →</RouterLink></article>
+      <div class="wrap"><div class="section-head"><h2 id="service-type-title" class="section-title">从业务问题找到对应案例与服务</h2><p class="section-subtitle">前两个入口对应已公开案例；老系统维护、报表与自动化作为独立服务方向，按现有系统情况评估。</p></div><div class="service-package-grid">
+        <article v-for="(project, index) in caseCatalog" :key="project.slug" class="service-package"><div class="package-kicker">0{{ index + 1 }} · {{ project.category }}</div><h3>{{ project.problemTitle }}</h3><p>{{ project.problemDescription }}</p><div class="feature-list"><span v-for="topic in project.problemTopics" :key="topic">{{ topic }}</span></div><RouterLink class="text-link" :to="`/cases/${project.slug}`">查看对应案例：{{ project.name }} →</RouterLink></article>
+        <article class="service-package"><div class="package-kicker">03 · 独立服务方向</div><h3>老系统维护、报表与自动化</h3><p>针对正在运行的 Java、PHP 等系统和现有 Excel 或人工流程，评估故障修复、接口、报表与日常自动化的可行范围。</p><div class="feature-list"><span>存量系统排查</span><span>接口与报表</span><span>流程自动化</span></div><RouterLink class="text-link" :to="{ path: '/contact', query: { source: '服务方案：老系统维护、报表与自动化' }, hash: '#form-section' }">描述现有系统问题 →</RouterLink></article>
+        <article class="service-package"><div class="package-kicker">04 · 分阶段交付</div><h3>每个阶段都有可确认成果</h3><p>先验证关键流程，再逐步扩展；每个阶段明确演示版本、验收范围和后续建议。</p><div class="feature-list"><span>阶段验收</span><span>部署交接</span><span>维护迭代</span></div><RouterLink class="text-link" to="/process">查看合作流程 →</RouterLink></article>
       </div></div>
     </section>
 
@@ -35,4 +34,5 @@
 <script setup>
 import SiteNav from '../components/SiteNav.vue'
 import SiteFooter from '../components/SiteFooter.vue'
+import { caseCatalog } from '../data/cases'
 </script>

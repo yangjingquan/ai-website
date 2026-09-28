@@ -3820,6 +3820,51 @@ html {
   box-shadow: 0 16px 48px rgba(15, 23, 42, 0.055);
 }
 
+.consultation-boundary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto 18px;
+}
+
+.consultation-boundary > div {
+  padding: 18px 20px;
+  border: 1px solid #d9e7e8;
+  border-radius: 10px;
+  background: #f8fcfb;
+}
+
+.consultation-boundary strong {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.consultation-boundary p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.consultation-boundary a,
+.form-error a {
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.consultation-boundary a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3940,6 +3985,10 @@ html {
 
   .contact-form {
     padding: 22px;
+  }
+
+  .consultation-boundary {
+    grid-template-columns: 1fr;
   }
 
   .form-grid {
@@ -5894,7 +5943,12 @@ html {
   position: absolute;
   right: 12px;
   bottom: 12px;
-  padding: 7px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 14px;
   border-radius: 999px;
   color: #fff;
   background: rgba(15, 23, 42, 0.82);
@@ -8384,6 +8438,9 @@ body.lightbox-open {
 }
 
 .site .footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
   color: #075985;
   font-weight: 700;
 }

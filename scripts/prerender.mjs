@@ -40,9 +40,18 @@ try {
       'og:title': metadata.title,
       'og:description': metadata.description,
       'og:url': metadata.canonical,
-      'og:image': metadata.image
+      'og:image': metadata.image,
+      'og:image:alt': metadata.imageAlt
     })) {
       page = replaceTag(page, new RegExp(`<meta property="${name}" content="[^"]*"\\s*\\/>`), `<meta property="${name}" content="${escapeAttribute(value)}" />`)
+    }
+    for (const [name, value] of Object.entries({
+      'twitter:title': metadata.title,
+      'twitter:description': metadata.description,
+      'twitter:image': metadata.image,
+      'twitter:image:alt': metadata.imageAlt
+    })) {
+      page = replaceTag(page, new RegExp(`<meta name="${name}" content="[^"]*"\\s*\\/>`), `<meta name="${name}" content="${escapeAttribute(value)}" />`)
     }
     if (path === '/404') page = page.replace('</head>', '    <meta name="robots" content="noindex,follow" />\n  </head>')
     const output = path === '/' ? join(dist, 'index.html') : join(dist, path.slice(1), 'index.html')
