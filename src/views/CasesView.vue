@@ -14,7 +14,7 @@
     </div>
 
     <section class="section" aria-labelledby="case-list-title"><div class="wrap"><div class="section-head"><h2 id="case-list-title" class="section-title">从业务原状到系统交付</h2><p class="section-subtitle">不使用未经证实的效率百分比；以真实的业务范围、模块和上线结果建立判断依据。</p></div><div class="case-directory-grid" :class="{ 'single-case': caseCatalog.length === 1 }">
-      <article v-for="project in caseCatalog" :key="project.slug" class="case-directory-card">
+      <article v-for="(project, index) in caseCatalog" :key="project.slug" class="case-directory-card" :class="{ 'case-directory-card--wide': caseCatalog.length > 2 && caseCatalog.length % 2 === 1 && index === caseCatalog.length - 1 }">
         <div class="case-directory-cover" :class="{ 'case-directory-cover--portrait-contain': project.coverFit === 'portrait-contain', 'case-directory-cover--gallery': project.coverImages?.length, [`case-directory-cover--${project.coverLayout}`]: project.coverImages?.length }">
           <div v-if="project.coverImages?.length" class="case-directory-cover-gallery">
             <ImageLightbox v-for="(image, index) in project.coverImages" :key="image" :src="image" :alt="`${project.name}项目封面截图${index + 1}`" />
@@ -22,7 +22,7 @@
           <ImageLightbox v-else :src="project.cover" :alt="`${project.name}项目封面`" />
           <RouterLink class="case-directory-cover-link" :to="`/cases/${project.slug}`">查看详情 →</RouterLink>
         </div>
-        <div class="case-directory-copy"><div class="case-directory-meta"><span>{{ project.category }}</span><span>{{ project.duration }}</span></div><h3><RouterLink :to="`/cases/${project.slug}`">{{ project.name }}</RouterLink></h3><div class="case-directory-tags" aria-label="项目范围"><span v-for="module in project.modules" :key="module.title">{{ module.title }}</span></div><p><strong>业务原状</strong>{{ project.overview }}</p><p><strong>解决重点</strong>{{ project.summary }}</p><p class="case-directory-result"><strong>系统交付</strong>{{ project.result }}</p><RouterLink class="text-link" :to="`/cases/${project.slug}`">查看案例详情 →</RouterLink></div>
+        <div class="case-directory-copy"><div class="case-directory-meta"><span>{{ project.category }}</span><span>{{ project.duration }}</span></div><h3><RouterLink :to="`/cases/${project.slug}`">{{ project.name }}</RouterLink></h3><div class="case-directory-tags" aria-label="项目范围"><span v-for="module in project.modules" :key="module.title">{{ module.title }}</span></div><p><strong>{{ project.overviewLabel || '业务原状' }}</strong>{{ project.overview }}</p><p><strong>解决重点</strong>{{ project.summary }}</p><p class="case-directory-result"><strong>系统交付</strong>{{ project.result }}</p><RouterLink class="text-link" :to="`/cases/${project.slug}`">查看案例详情 →</RouterLink><a v-if="project.demoUrl" class="text-link" :href="project.demoUrl" target="_blank" rel="noopener noreferrer">打开在线系统 ↗</a></div>
       </article>
     </div></div></section>
 

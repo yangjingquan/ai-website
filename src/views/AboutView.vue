@@ -43,10 +43,11 @@
 
     <section class="section" aria-labelledby="timeline-title">
       <div class="wrap">
-        <div class="section-head"><h2 id="timeline-title" class="section-title">代表案例</h2><p class="section-subtitle">通过多商户交易与制造业 ERP 两类项目，了解工作室如何把复杂业务落成可运行系统。</p></div>
+        <div class="section-head"><h2 id="timeline-title" class="section-title">代表案例</h2><p class="section-subtitle">通过多商户交易、制造管理和企业知识库项目，了解工作室如何把业务需求落成可运行系统。</p></div>
         <div class="about-project-grid">
           <article class="about-project-card"><div class="about-project-visual"><img src="/cases/shop-miniap-cover.png" alt="多商户商城小程序与经营后台截图"></div><div class="about-project-copy"><div class="about-project-meta"><span>持续迭代</span><span>零售电商 · 多商户</span></div><h3>多商户商城小程序与经营后台</h3><p>围绕消费者下单、商家履约与平台运营，交付微信小程序、商家后台、运营后台和服务端接口。</p><div class="about-project-tags"><span>多角色交易</span><span>商家履约</span><span>运营后台</span></div><RouterLink class="text-link" to="/cases/multi-merchant-shop">查看案例详情 →</RouterLink></div></article>
           <article class="about-project-card about-project-card--stacked"><div class="about-project-visual"><img src="/cases/erp-production-execution.jpg" alt="制鞋厂 ERP 生产执行模块截图"></div><div class="about-project-copy"><div class="about-project-meta"><span>已上线</span><span>制造业 · ERP</span></div><h3>制鞋厂流程管理 ERP 系统</h3><p>负责需求梳理、前后端开发、接口测试和上线部署，覆盖生产、财务、仓储和发货流程。</p><div class="about-project-tags"><span>生产管理</span><span>财务控制</span><span>仓储履约</span></div><RouterLink class="text-link" to="/cases/shoe-factory-erp">查看案例详情 →</RouterLink></div></article>
+          <article class="about-project-card about-project-card--wide"><div class="about-project-visual"><img src="/cases/ai-kb-chat-answer.png" alt="企业 AI 知识库智能问答与文档引用界面"></div><div class="about-project-copy"><div class="about-project-meta"><span>已上线 · 持续迭代</span><span>AI 应用 · 企业知识管理</span></div><h3>企业 AI 知识库系统</h3><p>自主开发并上线，支持多格式文档问答、原文引用、知识库权限与表格数据分析。</p><div class="about-project-tags"><span>RAG 检索</span><span>知识库权限</span><span>表格问数</span></div><RouterLink class="text-link" to="/cases/ai-enterprise-knowledge-base">查看案例详情 →</RouterLink></div></article>
         </div>
       </div>
     </section>

@@ -95,6 +95,56 @@ export const caseCatalog = [
     stack: 'Vue 3、TypeScript、Vite、Element Plus、Vue Router、Pinia、Axios、ECharts；Python FastAPI、Uvicorn、SQLAlchemy 2、Pydantic、PyMySQL、MySQL 8.0；JWT、bcrypt、openpyxl、Docker。',
     testing: '前端使用 Vitest、vue-tsc，后端使用 Pytest、HTTPX 进行自动化测试。',
     note: '截图来自 ERP 实际页面，展示数据已按示例信息处理；管理员账号不会写入网站。'
+  },
+  {
+    slug: 'ai-enterprise-knowledge-base',
+    name: '企业 AI 知识库系统',
+    shortName: 'AI 企业知识库',
+    category: 'AI 应用 · 企业知识管理',
+    shareImage: '/cases/ai-kb-chat-answer.png',
+    shareImageAlt: '企业 AI 知识库智能问答页面，展示回答与文档引用来源',
+    demoUrl: 'https://kb.nexbyte.top/',
+    problemTitle: '企业知识问答',
+    problemDescription: '适合制度、手册、产品文档和表格数据分散在多处，需要可追溯问答、分组权限与快速分析的企业团队。',
+    problemTopics: ['多格式文档', '带出处问答', '知识库权限', '数据集分析'],
+    summary: '自主开发并上线企业 AI 知识库，支持文档问答、原文引用、多轮追问、知识库权限与表格数据分析。',
+    status: '已上线 · 持续迭代',
+    duration: '持续迭代',
+    cover: '/cases/ai-kb-chat-answer.png',
+    overviewLabel: '应用场景',
+    sceneKicker: '产品定位',
+    sceneHeading: '企业知识检索与数据分析',
+    overview: '制度、手册、培训资料和业务表格常分散在不同文件里，查找答案依赖人工搜索，也不容易核对信息出处。项目把文档问答、原文查阅与表格分析放进统一工作台。',
+    customerScene: '面向需要集中管理 PDF、Office 文件、文本、Markdown 与网页资料，并希望员工可以快速查到依据的企业团队；知识内容按知识库分组，不同成员拥有查看或编辑权限。',
+    scopeItems: [
+      { label: '系统组成', value: 'Vue 3 前端、Spring Boot 服务端与 Python 检索服务，覆盖智能问答、文档管理、知识库管理、用户管理和效果评测。' },
+      { label: '问答与数据流程', value: '支持 PDF、Word、Excel、PPT、TXT、Markdown 和网页导入；文档问答展示文件与页码等引用来源。Excel / CSV 数据集可用于自然语言分析，并查看图表、结果表与 SQL。' },
+      { label: '权限与边界', value: '按知识库配置查看或编辑权限；数据分析按只读查询执行。公开案例中的界面截图来自本地演示数据。' }
+    ],
+    work: '自主完成产品流程设计与前后端实现：包括文档解析和 OCR、混合检索与重排、带引用的多轮问答、知识库权限隔离、表格数据分析，以及容器化部署和上线维护。',
+    result: '系统已部署在 kb.nexbyte.top，可通过浏览器访问。当前覆盖文档问答与原文定位、知识库成员权限、问答反馈和历史，以及 Excel / CSV 数据集的自然语言分析。',
+    scope: '文档问答 · 原文引用 · 知识库权限 · 表格问数',
+    summaryDescription: '员工可用自然语言查找企业资料、核对回答出处；表格数据也能用于查询、图表与结果分析。',
+    contactTitle: '正在整理企业文档、制度或表格数据？可以先讨论知识检索和权限需求。',
+    contactAction: '讨论企业知识库',
+    contactProjectType: 'AI / 企业知识库',
+    contactSource: '项目案例页：企业 AI 知识库系统',
+    moduleTitle: '从文档到答案，关键流程都有实际页面',
+    moduleSubtitle: '界面截图取自本地演示环境，展示系统交互；示例文档与问题为演示数据。',
+    deliveryFlow: ['资料导入与解析', '检索与来源引用', '权限与数据分析', '上线与持续迭代'],
+    modules: [
+      { title: '智能问答与引用来源', description: '回答关联到具体文档和页码，可继续追问，并打开原文查看引用上下文。', image: '/cases/ai-kb-chat-answer.png', contain: true },
+      { title: '多格式文档管理', description: '查看文档所属知识库、处理状态与切片数量，支持文件与网页内容集中管理。', image: '/cases/ai-kb-documents.png', contain: true },
+      { title: '检索效果评测', description: '使用 60 道评测题覆盖事实检索、多轮问答、Excel、PPT、OCR 与拒答场景，比较不同检索策略。', image: '/cases/ai-kb-eval.png', contain: true }
+    ],
+    stackGroups: [
+      { label: '前端与交互', value: 'Vue 3、Element Plus、Vite、Vue Router、ECharts。' },
+      { label: '业务服务', value: 'Java 17、Spring Boot 3、Spring Security、MyBatis-Plus、MySQL 8。' },
+      { label: '检索与模型', value: 'Python FastAPI、LangChain、Chroma、向量检索、BM25 混合检索与重排；DeepSeek 生成回答。' },
+      { label: '部署', value: 'Docker Compose、Nginx，拆分前端、Java 服务与 Python 检索服务。' }
+    ],
+    testing: '项目包含 60 道检索与问答评测题，覆盖事实问题、多轮追问、文档编号、Excel、PPT、扫描件 OCR 和知识库外问题。',
+    note: '线上体验地址为 https://kb.nexbyte.top/；本页截图来自项目本地演示环境，不代表线上用户数据。'
   }
 ]
 

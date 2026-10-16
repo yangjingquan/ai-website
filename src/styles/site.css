@@ -5843,6 +5843,20 @@ html {
   box-shadow: 0 16px 48px rgba(15, 23, 42, 0.055);
 }
 
+.cases-index-page .case-directory-card--wide {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.cases-index-page .case-directory-card--wide .case-directory-cover {
+  height: 100%;
+  min-height: 320px;
+  aspect-ratio: auto;
+}
+
 .case-directory-cover {
   position: relative;
   display: block;
@@ -6114,6 +6128,15 @@ html {
 
 .case-module-card figure {
   margin: 0;
+}
+
+.case-module-card--contain .image-lightbox-trigger {
+  background: #f1f5f9;
+}
+
+.case-module-card--contain .image-lightbox-trigger img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
 }
 
 .case-module-card .image-lightbox-trigger,
@@ -8330,6 +8353,15 @@ body.lightbox-open {
   gap: 18px;
 }
 
+.about-page .about-project-card--wide {
+  grid-column: 1 / -1;
+}
+
+.about-page .about-project-card--wide .about-project-visual img {
+  object-fit: contain;
+  background: #f1f5f9;
+}
+
 .about-page .about-project-card--stacked {
   grid-template-columns: 1fr;
 }
@@ -8528,6 +8560,20 @@ body.lightbox-open {
   gap: 20px;
 }
 
+.homepage-redesign .featured-case-card--wide {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.homepage-redesign .featured-case-card--wide .case-directory-cover {
+  height: 100%;
+  min-height: 320px;
+  aspect-ratio: auto;
+}
+
 .homepage-redesign .featured-case-card {
   padding: 20px;
 }
@@ -8613,6 +8659,32 @@ body.lightbox-open {
 
   .homepage-redesign .featured-case-card {
     padding: 16px;
+  }
+
+  .homepage-redesign .featured-case-card--wide {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .homepage-redesign .featured-case-card--wide .case-directory-cover {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 8.5;
+  }
+}
+
+@media (max-width: 720px) {
+  .cases-index-page .case-directory-card--wide {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .cases-index-page .case-directory-card--wide .case-directory-cover {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 8.5;
   }
 }
 

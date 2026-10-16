@@ -7,10 +7,10 @@
         <div class="hero-copy">
           <div class="eyebrow">中小企业交易系统与内部管理系统定制开发</div>
           <h1 id="home-title">把订单、生产和管理流程，<br class="hero-desktop-break">做成真正能用的系统。</h1>
-          <p class="lead">从多商户商城小程序到制造业 ERP，我负责需求梳理、开发上线与后续维护。已有系统的修复、升级和自动化，也可以从最卡业务的一环开始。让业务回到系统里。</p>
+          <p class="lead">从企业 AI 知识库、多商户商城小程序到制造业 ERP，我持续推进需求梳理、开发上线与后续维护。已有系统的修复、升级和自动化，也可以从最卡业务的一环开始。让业务回到系统里。</p>
           <div class="hero-actions">
             <RouterLink class="btn primary" to="/contact#form-section">描述你的业务问题</RouterLink>
-            <a class="btn secondary" href="#featured-cases">查看两个已交付案例</a>
+            <a class="btn secondary" href="#featured-cases">查看项目案例</a>
           </div>
         </div>
       </section>
@@ -19,11 +19,11 @@
     <section class="section featured-cases-section" id="featured-cases" aria-labelledby="featured-cases-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="featured-cases-title" class="section-title">两类业务，已经做成可用的系统</h2>
-          <p class="section-subtitle">先看适用场景、打通的流程和实际交付范围，再判断你的项目可以从哪里开始。</p>
+          <h2 id="featured-cases-title" class="section-title">交易、生产与知识管理，都已做成可用系统</h2>
+          <p class="section-subtitle">从多商户交易、制造管理到企业知识检索，先看实际项目如何解决业务问题。</p>
         </div>
         <div class="featured-cases-grid">
-          <article v-for="project in caseCatalog" :key="project.slug" class="case-directory-card featured-case-card">
+          <article v-for="(project, index) in caseCatalog" :key="project.slug" class="case-directory-card featured-case-card" :class="{ 'featured-case-card--wide': caseCatalog.length > 2 && caseCatalog.length % 2 === 1 && index === caseCatalog.length - 1 }">
             <div class="case-directory-cover" :class="{ 'case-directory-cover--portrait-contain': project.coverFit === 'portrait-contain', 'case-directory-cover--gallery': project.coverImages?.length, [`case-directory-cover--${project.coverLayout}`]: project.coverImages?.length }">
               <div v-if="project.coverImages?.length" class="case-directory-cover-gallery">
                 <ImageLightbox v-for="(image, index) in project.coverImages" :key="image" :src="image" :alt="`${project.name}项目封面截图${index + 1}`" />
@@ -35,7 +35,7 @@
               <div class="case-directory-meta"><span>{{ project.category }}</span><span>{{ project.duration }}</span></div>
               <h3><RouterLink :to="`/cases/${project.slug}`">{{ project.name }}</RouterLink></h3>
               <div class="case-directory-tags" aria-label="项目范围"><span v-for="module in project.modules" :key="module.title">{{ module.title }}</span></div>
-              <p><strong>业务原状</strong>{{ project.overview }}</p>
+              <p><strong>{{ project.overviewLabel || '业务原状' }}</strong>{{ project.overview }}</p>
               <p><strong>解决重点</strong>{{ project.summary }}</p>
               <p class="case-directory-result"><strong>系统交付</strong>{{ project.result }}</p>
               <RouterLink class="text-link" :to="`/cases/${project.slug}`">查看案例详情 →</RouterLink>

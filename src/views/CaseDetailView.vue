@@ -10,6 +10,7 @@
           <p class="content-lead">{{ project.summary }}</p>
           <div class="hero-actions">
             <RouterLink class="btn primary" :to="{ path: '/contact', query: { projectType: project.contactProjectType, source: project.contactSource }, hash: '#form-section' }">{{ project.contactAction }}</RouterLink>
+            <a v-if="project.demoUrl" class="btn secondary" :href="project.demoUrl" target="_blank" rel="noopener noreferrer">打开在线系统 ↗</a>
             <a class="btn secondary" href="#case-modules-title">查看项目截图</a>
           </div>
         </div>
@@ -27,7 +28,7 @@
         <section class="section case-detail-section" aria-labelledby="case-background-title">
           <div class="section-head"><h2 id="case-background-title" class="section-title">业务场景、项目范围与实际交付</h2><p class="section-subtitle">先说明适用场景与交付边界，再展示负责工作和可核验结果。</p></div>
           <div class="case-story-grid">
-            <article class="case-story-panel"><span class="detail-kicker">01 / 客户场景</span><h3>适合这样的业务</h3><p>{{ project.customerScene }}</p></article>
+            <article class="case-story-panel"><span class="detail-kicker">{{ project.sceneKicker || '客户场景' }}</span><h3>{{ project.sceneHeading || '适合这样的业务' }}</h3><p>{{ project.customerScene }}</p></article>
             <article class="case-story-panel case-story-scope"><span class="detail-kicker">02 / 项目范围</span><h3>{{ project.scope }}</h3><dl><div v-for="item in project.scopeItems" :key="item.label"><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd></div></dl></article>
             <article class="case-story-panel"><span class="detail-kicker">03 / 实际负责</span><h3>我承担的工作</h3><p>{{ project.work }}</p></article>
             <article class="case-story-panel case-detail-result"><span class="detail-kicker">04 / 可核验交付</span><h3>已经交付的结果</h3><p>{{ project.result }}</p></article>
@@ -38,7 +39,7 @@
         <section class="section soft-section case-detail-section" aria-labelledby="case-modules-title">
           <div class="section-head"><div><h2 id="case-modules-title" class="section-title">{{ project.moduleTitle }}</h2><p class="section-subtitle">{{ project.moduleSubtitle }}</p></div></div>
           <div class="case-module-grid">
-            <article v-for="(module, index) in project.modules" :key="module.title" class="case-module-card" :class="{ 'case-module-card--portrait': module.portrait }">
+            <article v-for="(module, index) in project.modules" :key="module.title" class="case-module-card" :class="{ 'case-module-card--portrait': module.portrait, 'case-module-card--contain': module.contain }">
               <figure>
                 <div class="case-phone-frame">
                   <span class="case-phone-side-buttons" aria-hidden="true"></span>
