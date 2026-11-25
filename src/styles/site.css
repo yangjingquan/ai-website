@@ -6384,7 +6384,7 @@ body.lightbox-open {
 
 @media (max-width: 720px) {
   .case-nav-dropdown {
-    display: block;
+    height: auto;
     grid-column: 1 / -1;
   }
 
@@ -6397,9 +6397,10 @@ body.lightbox-open {
   }
 
   .case-nav-menu {
-    position: static;
+    top: calc(100% + 8px);
+    left: 0;
     width: 100%;
-    margin-top: 8px;
+    background: #fff;
     box-shadow: none;
     transform: none;
   }
