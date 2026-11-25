@@ -145,6 +145,79 @@ export const caseCatalog = [
     ],
     testing: '项目包含 60 道检索与问答评测题，覆盖事实问题、多轮追问、文档编号、Excel、PPT、扫描件 OCR 和知识库外问题。',
     note: '线上体验地址为 https://kb.nexbyte.top/；本页截图来自项目本地演示环境，不代表线上用户数据。'
+  },
+  {
+    slug: 'campus-food-delivery',
+    name: '校园食递 · 校园外卖配送平台',
+    shortName: '校园食递',
+    category: '校园餐饮 · 多端配送系统',
+    shareImage: '/og/campus-food-delivery.png',
+    shareImageAlt: '校园食递的 PC 管理后台和用户、商户、骑手三个微信小程序',
+    problemTitle: '校园外卖集中交接与配送',
+    problemDescription: '面向外卖进校受限的校园，帮校外小商户在线接单，并让学生骑手从同一个暂存点分批送餐到寝室。',
+    problemTopics: ['跨店下单', '暂存点交接', '批次配送', '售后与结算'],
+    summary: '为校外商户和校园学生搭建统一点餐入口。学生可跨店下单，商户分店履约，骑手到暂存点逐单扫码，按批次把餐送到寝室。',
+    status: '四端已实现 · 持续迭代',
+    duration: '分阶段开发',
+    cover: '/cases/campus-food-delivery-cover.webp',
+    overview: '校外外卖进校受限，学生常要到校门口取餐。部分小商户缺少线上接单渠道，高峰期餐品交接和延迟订单也难以统一协调。',
+    customerScene: '以一所学校、一个暂存点为首期场景。学生在小程序选餐后可查看订单进度和预计配送批次，商户只需把餐送到固定交接点，校内骑手负责送到寝室门口。',
+    scopeItems: [
+      { label: '跨店点餐与分店履约', value: '一个结算单关联多笔商户订单。各店接收自己的订单，独立处理出餐、库存和售后，学生可按店查看进度。' },
+      { label: '集中交接与高峰配送', value: '商户确认到点后，骑手扫描对应小票二维码逐单领取，一趟可送多单。管理员按常规和高峰时段配置发车间隔，错过批次可顺延。' },
+      { label: '异常与资金可追溯', value: '按商户订单查看履约状态、支付记录、售后和结算。订单延迟可由管理员协调，退款和提现进度可单独追踪。' }
+    ],
+    work: '围绕跨店交易、暂存点交接和分批配送，梳理四端权限与订单状态，完成三个原生微信小程序、PC 管理后台和对应服务接口。',
+    result: '已实现四端界面，覆盖下单拆单、商户接单到点、骑手扫码与送达确认，以及平台运营管理。正式支付、退款与打款以渠道验收为准。',
+    scope: '用户端 · 商户端 · 骑手端 · PC 管理员端',
+    summaryDescription: '同一笔交易串联学生点餐、商户出餐、骑手配送和平台运营，以暂存点完成校外到校内的交接。',
+    contactTitle: '正在搭建校园点餐或集中交接配送系统？',
+    contactAction: '讨论校园配送方案',
+    contactProjectType: '电商 / 交易系统',
+    contactSource: '项目案例页：校园食递',
+    flowTitle: '一笔外卖订单如何送到寝室',
+    deliveryFlow: ['学生跨店点餐并合并结算', '商户接单出餐并送至暂存点', '骑手逐单扫码后按批配送', '送达寝室并确认完成'],
+    moduleTitle: '三个微信小程序与一个 PC 管理后台',
+    moduleSubtitle: '三个小程序取自微信开发者工具，管理后台取自本地运行界面。截图中的个人及订单信息已脱敏。',
+    modules: [
+      {
+        title: '用户端小程序',
+        description: '浏览校外商户与餐品，在购物车合并结算。按商户查看订单、预计配送时间和配送进度，并从对应订单发起售后。',
+        image: '/cases/campus-food-delivery-user.webp',
+        imageAlt: '用户端店铺菜单，展示餐品、起送条件以及外卖配送和到店自取选项',
+        portrait: true
+      },
+      {
+        title: '商户端小程序',
+        description: '在订单工作台处理本店接单、出餐、小票打印和到点确认，管理商品上下架、库存、售后及本店账务。',
+        image: '/cases/campus-food-delivery-merchant.webp',
+        imageAlt: '商户订单工作台，展示待接单、出餐中、待领取和配送中等状态筛选',
+        portrait: true
+      },
+      {
+        title: '骑手端小程序',
+        description: '审核通过后查看配送批次，在暂存点逐单扫码领取，可一次配送多单，按寝室地址导航并确认送达，同时查看收益和结算记录。',
+        image: '/cases/campus-food-delivery-rider.webp',
+        imageAlt: '骑手配送台，展示当前发车批次、扫码领取餐品入口和下一批时间',
+        portrait: true
+      },
+      {
+        title: '管理员端 PC 后台',
+        description: '审核商户和骑手入驻，设置配送费、抽成、发车批次和接单超时规则，跟踪异常订单、售后、资金流水和提现审核。',
+        image: '/cases/campus-food-delivery-admin.webp',
+        imageAlt: 'PC 运营配置页，展示配送时段、常规和高峰批次间隔、结算与接单超时设置',
+        wide: true
+      }
+    ],
+    stackTitle: '四端共用交易与配送状态',
+    stackLead: '三个微信小程序和 PC 后台统一通过 API 网关接入。订单、交接记录和结算数据在服务端关联，各端按角色查看和处理自己的业务。',
+    stackGroups: [
+      { label: '客户端', value: '用户、商户和骑手使用原生微信小程序。PC 管理后台使用 Vue 3、TypeScript 与 Element Plus。' },
+      { label: '统一接入', value: 'Spring Cloud Gateway 将端侧请求路由到对应服务，Nacos 提供服务注册发现与配置管理。' },
+      { label: '业务服务', value: 'Java 21 / Spring Boot 按用户、商户、骑手和管理员拆分 API，共享订单状态定义。下单、到点、扫码领取和送达由相应角色提交至服务端。' },
+      { label: '数据与部署', value: 'MySQL 保存订单、库存、配送和账本，Redis 支持管理员会话，Docker Compose 编排运行环境。' }
+    ],
+    testing: '项目内的隔离联调脚本覆盖跨店拆单、模拟支付、独立履约、售后和配送位置读取。'
   }
 ]
 

@@ -6130,6 +6130,10 @@ html {
   margin: 0;
 }
 
+.case-module-card--wide {
+  grid-column: 1 / -1;
+}
+
 .case-module-card--contain .image-lightbox-trigger {
   background: #f1f5f9;
 }
@@ -6152,6 +6156,12 @@ html {
 .case-module-card .image-lightbox-trigger img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.case-module-card--wide .image-lightbox-trigger img {
+  aspect-ratio: 2 / 1;
+  object-fit: contain;
+  background: #e8eef7;
 }
 
 .case-module-card--portrait figure {
@@ -7185,6 +7195,17 @@ body.lightbox-open {
   border: 1px solid #c9f4e6;
   border-radius: 14px;
   background: #f5fffc;
+}
+
+.case-flow-title {
+  margin: 28px 0 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.case-detail-page .case-flow-title + .case-delivery-flow {
+  margin-top: 12px;
 }
 
 .case-detail-page .case-delivery-flow > div {

@@ -33,17 +33,23 @@
             <article class="case-story-panel"><span class="detail-kicker">03 / 实际负责</span><h3>我承担的工作</h3><p>{{ project.work }}</p></article>
             <article class="case-story-panel case-detail-result"><span class="detail-kicker">04 / 可核验交付</span><h3>已经交付的结果</h3><p>{{ project.result }}</p></article>
           </div>
-          <div class="case-delivery-flow" aria-label="项目交付过程"><div v-for="(step, index) in project.deliveryFlow" :key="step"><span>{{ String(index + 1).padStart(2, '0') }}</span><strong>{{ step }}</strong></div></div>
+          <h3 v-if="project.flowTitle" id="case-flow-title" class="case-flow-title">{{ project.flowTitle }}</h3>
+          <div class="case-delivery-flow" :aria-labelledby="project.flowTitle ? 'case-flow-title' : undefined" :aria-label="project.flowTitle ? undefined : '项目交付过程'" role="list">
+            <div v-for="(step, index) in project.deliveryFlow" :key="step" role="listitem">
+              <span>{{ String(index + 1).padStart(2, '0') }}</span>
+              <strong>{{ step }}</strong>
+            </div>
+          </div>
         </section>
 
         <section class="section soft-section case-detail-section" aria-labelledby="case-modules-title">
           <div class="section-head"><div><h2 id="case-modules-title" class="section-title">{{ project.moduleTitle }}</h2><p class="section-subtitle">{{ project.moduleSubtitle }}</p></div></div>
           <div class="case-module-grid">
-            <article v-for="(module, index) in project.modules" :key="module.title" class="case-module-card" :class="{ 'case-module-card--portrait': module.portrait, 'case-module-card--contain': module.contain }">
+            <article v-for="(module, index) in project.modules" :key="module.title" class="case-module-card" :class="{ 'case-module-card--portrait': module.portrait, 'case-module-card--contain': module.contain, 'case-module-card--wide': module.wide }">
               <figure>
                 <div class="case-phone-frame">
                   <span class="case-phone-side-buttons" aria-hidden="true"></span>
-                  <ImageLightbox :src="module.image" :alt="`${project.name}${module.title}模块截图`" />
+                  <ImageLightbox :src="module.image" :alt="module.imageAlt || `${project.name}${module.title}模块截图`" />
                 </div>
                 <figcaption>{{ String(index + 1).padStart(2, '0') }} / {{ module.title }} · 项目截图</figcaption>
               </figure>
@@ -54,7 +60,7 @@
 
         <section class="section case-detail-section" aria-labelledby="case-stack-title">
           <div class="case-stack-layout">
-            <div><div class="eyebrow">工程实现</div><h2 id="case-stack-title" class="section-title">按业务拆分，便于持续迭代。</h2><p class="content-lead">前后端、数据库和部署环境分层，便于后续扩展模块、接入数据和维护线上版本。</p></div>
+            <div><div class="eyebrow">工程实现</div><h2 id="case-stack-title" class="section-title">{{ project.stackTitle || '按业务拆分，便于持续迭代。' }}</h2><p class="content-lead">{{ project.stackLead || '前后端、数据库和部署环境分层，便于后续扩展模块、接入数据和维护线上版本。' }}</p></div>
             <div class="case-stack-card"><div v-for="group in project.stackGroups" :key="group.label"><span>{{ group.label }}</span><p>{{ group.value }}</p></div><div><span>测试与质量</span><p>{{ project.testing }}</p></div></div>
           </div>
         </section>
